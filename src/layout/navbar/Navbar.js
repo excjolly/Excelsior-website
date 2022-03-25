@@ -9,8 +9,9 @@ import {
     BulbOutlined,
     BellOutlined,
     MenuUnfoldOutlined,
+    UserOutlined,
 } from "@ant-design/icons";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import images from "../../assets/images";
 import SidebarMenu from "./SidebarMenu";
@@ -36,24 +37,61 @@ const Navbar = () => {
                 />
             </Link>
             <div className="navbar__items">
-                <Link to="/test" className="navbar__link">
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? "navbar__link active" : "navbar__link"
+                    }
+                    to="/blogs"
+                >
                     <div>
                         <FileOutlined />
                         Blogs
                     </div>
-                </Link>
-                <Link to="/test" className="navbar__link">
+                </NavLink>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? "navbar__link active" : "navbar__link"
+                    }
+                    to="/programs"
+                >
                     <div>
-                        <StockOutlined />
+                        <UserOutlined />
+                        Programs
+                    </div>
+                </NavLink>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? "navbar__link active" : "navbar__link"
+                    }
+                    to="/scholarship"
+                >
+                    <div>
+                        <FileOutlined />
                         Scholarship
                     </div>
-                </Link>
-                <Link to="/test" className="navbar__link">
+                </NavLink>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? "navbar__link active" : "navbar__link"
+                    }
+                    to="/videos"
+                >
                     <div>
-                        <MessageOutlined />
-                        Community
+                        <FileOutlined />
+                        Videos
                     </div>
-                </Link>
+                </NavLink>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? "navbar__link active" : "navbar__link"
+                    }
+                    to="/contact"
+                >
+                    <div>
+                        <FileOutlined />
+                        Contact
+                    </div>
+                </NavLink>
             </div>
 
             <div className="navbar__options">

@@ -11,9 +11,18 @@ import {
     BulbOutlined,
     BellOutlined,
 } from "@ant-design/icons";
+
+import { useNavigate } from "react-router-dom";
 import images from "../../assets/images";
 
 const SidebarMenu = ({ visible, onClose }) => {
+    const navigate = useNavigate();
+
+    const handleClick = (e) => {
+        navigate(e.key);
+        onClose();
+    };
+
     return (
         <Drawer
             placement="left"
@@ -53,21 +62,24 @@ const SidebarMenu = ({ visible, onClose }) => {
                 </div>
 
                 <div className="sidebarmenu__menu-items">
-                    <Menu defaultSelectedKeys={["home"]}>
+                    <Menu defaultSelectedKeys={["home"]} onClick={handleClick}>
                         <Menu.Item key="home" icon={<HomeOutlined />}>
                             Home
                         </Menu.Item>
-                        <Menu.Item key="account" icon={<UserOutlined />}>
-                            Account
+                        <Menu.Item key="programs" icon={<UserOutlined />}>
+                            Programs
                         </Menu.Item>
-                        <Menu.Item key="blog" icon={<FileOutlined />}>
-                            Blog
-                        </Menu.Item>
-                        <Menu.Item key="scholarship" icon={<StockOutlined />}>
+                        <Menu.Item key="scholarship" icon={<FileOutlined />}>
                             Scholarship
                         </Menu.Item>
-                        <Menu.Item key="community" icon={<MessageOutlined />}>
-                            Community
+                        <Menu.Item key="videos" icon={<StockOutlined />}>
+                            Videos
+                        </Menu.Item>
+                        <Menu.Item key="blogs" icon={<MessageOutlined />}>
+                            Blogs
+                        </Menu.Item>
+                        <Menu.Item key="contact" icon={<MessageOutlined />}>
+                            Contact
                         </Menu.Item>
                     </Menu>
                 </div>

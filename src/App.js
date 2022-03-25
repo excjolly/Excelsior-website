@@ -1,3 +1,5 @@
+// h2 for page title
+
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Footer, Navbar } from "./layout";

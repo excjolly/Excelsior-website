@@ -1,13 +1,33 @@
 import React, { useState } from "react";
-import { Row, Col, Button, Avatar, Rate, Form, Input } from "antd";
+import {
+    Row,
+    Col,
+    Button,
+    Avatar,
+    Rate,
+    Form,
+    Input,
+    Steps,
+    Card,
+    Select,
+    Modal,
+} from "antd";
 import {
     RightOutlined,
     BorderOutlined,
     SearchOutlined,
 } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import images from "../../assets/images";
 
+const { Step } = Steps;
+const { Option } = Select;
+
 const Home = () => {
+    const navigate = useNavigate();
+    const [registerFormCurrentStep, setRegisterFormCurrentStep] = useState(0);
     const [apData, setApData] = useState([
         {
             image: images.mobileApp,
@@ -43,6 +63,14 @@ const Home = () => {
         {
             title: "Sessions",
             text: "463",
+        },
+        {
+            title: "Users",
+            text: "17",
+        },
+        {
+            title: "Users",
+            text: "17",
         },
         {
             title: "Users",
@@ -114,8 +142,135 @@ const Home = () => {
         },
     ]);
 
+    const [
+        isRecentTestimonialsModalVisible,
+        setIsRecentTestimonialsModalVisible,
+    ] = useState(false);
+   
+
+    const next = () => {
+        setRegisterFormCurrentStep((prev) => prev + 1);
+    };
+
+    const prev = () => {
+        setRegisterFormCurrentStep((prev) => prev - 1);
+    };
+
+    const RegisterForm = () => {
+        switch (registerFormCurrentStep) {
+            case 0:
+                return (
+                    <div>
+                        <h4>What was your major interest</h4>
+                        <Select
+                            style={{ width: "100%", marginTop: 20 }}
+                            defaultValue="lucy"
+                            onChange={() => {}}
+                        >
+                            <Option value="jack">Jack</Option>
+                            <Option value="lucy">Lucy</Option>
+                        </Select>
+                    </div>
+                );
+            case 1:
+                return (
+                    <div>
+                        <h4>What was your major interest</h4>
+                        <Select
+                            style={{ width: "100%", marginTop: 20 }}
+                            defaultValue="lucy"
+                            onChange={() => {}}
+                        >
+                            <Option value="jack">Jack</Option>
+                            <Option value="lucy">Lucy</Option>
+                        </Select>
+                    </div>
+                );
+            case 2:
+                return (
+                    <div>
+                        <h4>What was your major interest</h4>
+                        <Select
+                            style={{ width: "100%", marginTop: 20 }}
+                            defaultValue="lucy"
+                            onChange={() => {}}
+                        >
+                            <Option value="jack">Jack</Option>
+                            <Option value="lucy">Lucy</Option>
+                        </Select>
+                    </div>
+                );
+            case 3:
+                return (
+                    <div>
+                        <h4>What was your major interest</h4>
+                        <Select
+                            style={{ width: "100%", marginTop: 20 }}
+                            defaultValue="lucy"
+                            onChange={() => {}}
+                        >
+                            <Option value="jack">Jack</Option>
+                            <Option value="lucy">Lucy</Option>
+                        </Select>
+                    </div>
+                );
+
+            default:
+                return <div></div>;
+        }
+    };
+
+    const RecentTestimonialsModal = () => {
+        return (
+            <Modal
+                title="Recent Testimonials"
+                visible={isRecentTestimonialsModalVisible}
+                onCancel={() => setIsRecentTestimonialsModalVisible(false)}
+                width={"60%"}
+                footer={null}
+            >
+                <Carousel
+                showStatus={false}
+                showIndicators={false}
+                >
+                    {[1, 2, 3].map((item, index) => (
+                        <Row
+                            key={index}
+                            gutter={[20, 30]}
+                            style={{
+                                height: 300,
+                                padding: 10,
+                                paddingBottom: 20,
+                            }}
+                        >
+                            {[1, 2, 3].map((item, index) => (
+                                <Col xs={24} sm={24} md={12} lg={8} key={index}>
+                                    <Card className="box-shadow">
+                                        <Avatar />
+                                        <h4 style={{ margin: "10px 0" }}>
+                                            Panayappan
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Earum,
+                                            blanditiis illum est possimus culpa
+                                            architecto adipisci. Explicabo modi
+                                            ullam quo!
+                                        </p>
+                                    </Card>
+                                </Col>
+                            ))}
+                        </Row>
+                    ))}
+                </Carousel>
+            </Modal>
+        );
+    };
+  
     return (
         <div className="home__container">
+            <RecentTestimonialsModal />
+            
             <div className="home__getting-started">
                 <h2>Getting Started</h2>
                 <p>
@@ -141,7 +296,53 @@ const Home = () => {
                         </div>
                     </Col>
                     <Col xs={24} sm={24} md={24} lg={8}>
-                        <div className="home__banner-right">
+                        <Card className="home__register-form">
+                            <Steps
+                                current={registerFormCurrentStep}
+                                size="small"
+                                direction="horizontal"
+                            >
+                                <Step />
+                                <Step />
+                                <Step />
+                                <Step />
+                            </Steps>
+
+                            <div className="home__register-form-container">
+                                <RegisterForm />
+                                <Row style={{ marginTop: 20 }} gutter={[5, 30]}>
+                                    <Col>
+                                        {" "}
+                                        {registerFormCurrentStep === 3 && (
+                                            <Button type="primary">
+                                                Finish
+                                            </Button>
+                                        )}
+                                    </Col>
+                                    <Col>
+                                        {registerFormCurrentStep < 3 && (
+                                            <Button
+                                                onClick={() => next()}
+                                                type="primary"
+                                            >
+                                                Next
+                                            </Button>
+                                        )}
+                                    </Col>
+                                    <Col>
+                                        {registerFormCurrentStep > 0 && (
+                                            <Button
+                                                onClick={() => prev()}
+                                                type="primary"
+                                            >
+                                                Previous
+                                            </Button>
+                                        )}
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Card>
+                        {/* <div className="home__banner-right">
                             <h2>Ready to make bread? Start now!</h2>
                             <div>
                                 <p>
@@ -151,7 +352,79 @@ const Home = () => {
                                 </p>
                                 <Button icon={<RightOutlined />}>View</Button>
                             </div>
+                        </div> */}
+                    </Col>
+                </Row>
+            </div>
+
+            <div className="home__stats section">
+                <h3 className="section-title">Stats</h3>
+                <Row gutter={[20, 30]}>
+                    {statsData?.map((item, index) => (
+                        <Col xs={24} sm={24} md={6} lg={4} key={index}>
+                            <div className="home__stats-item">
+                                <Avatar size={42} />
+                                <p>{item.title}</p>
+                                <h3 className="text-primary">{item.text}</h3>
+                            </div>
+                        </Col>
+                    ))}
+                </Row>
+            </div>
+
+            <div className="home__help-section section">
+                <Row gutter={[20, 30]}>
+                    <Col xs={24} sm={24} md={24} lg={8}>
+                        <h3 className="section-title">Help</h3>
+                        <div className="home__help-container">
+                            <h3>Do you need help?</h3>
+                            <h4 className="text-primary">
+                                Search for documentation!
+                            </h4>
+                            <p>Cheesecake chocolate carrot cake pie cream.</p>
+                            <Form>
+                                <Form.Item>
+                                    <Input
+                                        placeholder="Keyword"
+                                        prefix={<SearchOutlined />}
+                                    />
+                                </Form.Item>
+                                <Button
+                                    type="primary"
+                                    ghost
+                                    icon={<RightOutlined />}
+                                >
+                                    Search
+                                </Button>
+                            </Form>
                         </div>
+                    </Col>
+                    <Col xs={24} sm={24} md={24} lg={16}>
+                        <h3 className="section-title">Videos</h3>
+                        <Row gutter={[10, 10]}>
+                            {[1, 2, 3, 4, 5, 6].map((item, index) => (
+                                <Col xs={24} sm={24} md={12} key={index}>
+                                    <div className="home__videos-item">
+                                        <div className="home__videos-item-left">
+                                            <h4>
+                                                Database <br />
+                                                Basics
+                                            </h4>
+                                            <div className="home__videos-item-time">
+                                                <p> 16.05</p>
+                                            </div>
+                                        </div>
+                                        <div className="home__videos-item-right">
+                                            <h3>Database Basics</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Col>
+                            ))}
+                        </Row>
                     </Col>
                 </Row>
             </div>
@@ -167,21 +440,6 @@ const Home = () => {
                                 <img src={item.image} alt={item.title} />
                                 <h3 className="text-primary">{item.title}</h3>
                                 <p className="text-center">{item.text}</p>
-                            </div>
-                        </Col>
-                    ))}
-                </Row>
-            </div>
-
-            <div className="home__stats section">
-                <h3 className="section-title">Stats</h3>
-                <Row gutter={[20, 30]}>
-                    {statsData?.map((item, index) => (
-                        <Col xs={24} sm={24} md={12} lg={6} key={index}>
-                            <div className="home__stats-item">
-                                <Avatar size={42} />
-                                <p>{item.title}</p>
-                                <h3 className="text-primary">{item.text}</h3>
                             </div>
                         </Col>
                     ))}
@@ -228,6 +486,19 @@ const Home = () => {
                                     </div>
                                 </div>
                             ))}
+                            <Row align="middle" justify="center">
+                                <Button
+                                    onClick={() =>
+                                        setIsRecentTestimonialsModalVisible(
+                                            true
+                                        )
+                                    }
+                                    type="primary"
+                                    ghost
+                                >
+                                    See More
+                                </Button>
+                            </Row>
                         </div>
                     </Col>
                     <Col xs={24} sm={24} md={24} lg={8}>
@@ -249,64 +520,18 @@ const Home = () => {
                                     </div>
                                 </div>
                             ))}
-                        </div>
-                    </Col>
-                </Row>
-            </div>
-
-            <div className="home__help-section section">
-                <Row gutter={[20, 30]}>
-                    <Col xs={24} sm={24} md={24} lg={8}>
-                        <h3 className="section-title">Help</h3>
-                        <div className="home__help-container">
-                            <h3>Do you need help?</h3>
-                            <h4 className="text-primary">
-                                Search for documentation!
-                            </h4>
-                            <p>Cheesecake chocolate carrot cake pie cream.</p>
-                            <Form>
-                                <Form.Item>
-                                    <Input
-                                        placeholder="Keyword"
-                                        prefix={<SearchOutlined />}
-                                    />
-                                </Form.Item>
+                            <Row align="middle" justify="center">
                                 <Button
+                                    onClick={() =>
+                                        navigate("/blogs")
+                                    }
                                     type="primary"
                                     ghost
-                                    icon={<RightOutlined />}
                                 >
-                                    Search
+                                    See More
                                 </Button>
-                            </Form>
+                            </Row>
                         </div>
-                    </Col>
-                    <Col xs={24} sm={24} md={24} lg={16}>
-                        <h3 className="section-title">Videos</h3>
-                        <Row gutter={[10, 10]}>
-                            {[1, 2, 3, 4, 5, 6].map((item, index) => (
-                                <Col span={12} key={index}>
-                                    <div className="home__videos-item">
-                                        <div className="home__videos-item-left">
-                                            <h4>
-                                                Database <br />
-                                                Basics
-                                            </h4>
-                                            <div className="home__videos-item-time">
-                                                <p> 16.05</p>
-                                            </div>
-                                        </div>
-                                        <div className="home__videos-item-right">
-                                            <h3>Database Basics</h3>
-                                            <p>
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                            </p>
-                                        </div>
-                                    </div>
-                                </Col>
-                            ))}
-                        </Row>
                     </Col>
                 </Row>
             </div>
@@ -320,18 +545,8 @@ const Home = () => {
                         Cheesecake chocolate carrot cake pie lollipop lemon
                         drops.
                     </p>
-                    <Form layout="vertical" style={{ width: "50%" }}>
-                        <Form.Item
-                            label="Name"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Name is Required!",
-                                },
-                            ]}
-                        >
-                            <Input />
-                        </Form.Item>
+                    <Form layout="horizontal" className="home__mail-list_form">
+                       
                         <Form.Item
                             label="Email"
                             rules={[
