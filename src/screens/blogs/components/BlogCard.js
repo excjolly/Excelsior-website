@@ -6,7 +6,7 @@ import images from "../../../assets/images";
 
 const { Meta } = Card;
 
-const BlogCard = () => {
+const BlogCard = ({title,description}) => {
     const navigate = useNavigate();
 
     return (
@@ -22,7 +22,8 @@ const BlogCard = () => {
                 />
             }
         >
-            <Meta title="Europe Street beat" />
+            <Meta title={title} />
+            <p>{description}</p>
             <div className="blogs__blog-card-footer">
                 <span>
                     <LikeOutlined style={{ color: "#F35D5D" }} />
