@@ -42,7 +42,7 @@ const Blogs = () => {
                     <Row gutter={[20, 30]}>
                         {data && data.data.map((item, index) => (
                             <Col xs={24} sm={24} md={12} lg={8} key={index}>
-                                <BlogCard title={item.attributes.Title} description={item.attributes.Blogdetails}/>
+                                <BlogCard title={item.attributes.Title} description={item.attributes.Description}/>
                             </Col>
                         ))}
                     </Row>
