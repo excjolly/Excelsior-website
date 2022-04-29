@@ -1,6 +1,15 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Home, Blogs, BlogDetails, Programs, ProgramsDetails } from "../screens";
+import Blogs from "../components/Blogs/Blogs";
+import Home from "../components/Home/Home";
+import BlogDetail from "../components/Blogs/BlogDetails";
+import Program from "../components/programs/Programs";
+import ProgramsDetails from "../components/programs/ProgramDetails"
+import Scholarship from "../components/Scholarship/Scholarship";
+import Quiz from "../components/Scholarship/Quiz";
+import Contact from "../components/contact/Contact";
+import Aboutus from "../components/About/Aboutus";
+import Data from "../components/About/Data";
 
 const AppRoutes = () => {
     return (
@@ -8,9 +17,14 @@ const AppRoutes = () => {
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/blog-details" element={<BlogDetails />} />
-            <Route path="/programs" element={<Programs />} />
-            <Route path="/programs/details" element={<ProgramsDetails />} />
+            <Route path="/scholarship" element={<Scholarship />} />
+            <Route path="/blog-details" element={<BlogDetail />} />
+            <Route path="/programs" element={<Program />} />
+            <Route path="/scholarship/quiz"  element={<Quiz />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/programs/details" element={<ProgramsDetails />} /> 
+            <Route path="/aboutus" element={<Aboutus />} />
+            <Route path="/data" element={<Data />} />
         </Routes>
     );
 };

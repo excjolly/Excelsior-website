@@ -247,22 +247,15 @@ h6 {
 
 .home__banner-left {
     width: 100%;
-    height: 270px;
+    height: 70vh;
     border-radius: $borderRadius;
-    background-color: #eaf1ec;
     display: flex;
     align-items: center;
     padding: 0 10px;
     box-shadow: $boxShadow;
 }
 
-.home__banner-left-content {
-    margin-left: 20px;
-    p {
-        margin: 15px 0 24px;
-        width: 80%;
-    }
-}
+
 
 .home__register-form {
     height: 270px;
@@ -379,10 +372,15 @@ h6 {
     box-shadow: $boxShadow;
     @include customScrollbar();
 }
+.test_admission img {
+    object-fit: contain;
+    max-width: 100px;
+    max-height: 100px;
+
+}
 
 .home__app-info_recent-testimonials-item {
     height: 100px;
-    display: flex;
     align-items: center;
     gap: 12px;
     margin: 10px 0;
@@ -491,7 +489,10 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    bottom: 0px;
+   width:100%;
     padding: 24px;
+    margin-top: 4rem;
     box-shadow: $boxShadow;
 }
 
@@ -521,7 +522,9 @@ h6 {
     border-radius: $borderRadius;
     box-shadow: $boxShadow;
 }
-
+.home__app-info_latest-news .ant-card-body {
+    padding: 0px !important;
+}
 .blogs__blog-card-image {
     height: 130px;
     width: 100%;
@@ -571,10 +574,24 @@ h6 {
         }
     }
 }
+.home__banner-left-content{
+    background-image: url("../images/Home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position: 50% 50%;   
+    height: 60vh;
+}
 
-// BLOG DETAIL STYLES
-
-.blog__details-container {
+#contact_section {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    background-position: 50% 50%;
+    padding-top: 9em !important;
+    padding-bottom: 9em !important;
+    background-color: transparent;
 }
 
 .blog__details__image {
@@ -809,7 +826,15 @@ h6 {
 }
 //ProgramDetails
 .banner{
-    background-color: #ebe5e5;
+    background-image: url("../images/DSforIT.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position: 50% 50%;   
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding:30px 0px;
 }
 .banner_wid{
@@ -880,8 +905,9 @@ background-color: rgba(255, 255, 255, 0.8);
 }
 .sticky {
     position: fixed;
-    top: 80px;
+    top: 75px;
     width: 100%;
+    z-index: 100;
     padding: 0px 10vw;
     background-color: #ebe5e5;
 }
@@ -910,12 +936,26 @@ background-color: rgba(255, 255, 255, 0.8);
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    height: 700px;
 }
 .overview_heading{
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: bolder;
+}
+.me-4 {
+    margin-right: 2.5rem !important;
+}
+.quizz_list .ant-card-body{
+    padding: 0px !important;
+
+}
+.quizz_list .quizz-eww
+{
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    -webkit-box-orient: vertical !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
 }
 .overview_text{
     margin-bottom: 20px;
@@ -933,7 +973,6 @@ background-color: rgba(255, 255, 255, 0.8);
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    height: 700px;
 }
 .curriculum_heading{
     font-size: 24px;
@@ -975,6 +1014,10 @@ background-color: rgba(255, 255, 255, 0.8);
     font-weight: bolder;
     margin-bottom: 20px;
 }
+.Banner_Heading{
+    font-size: 32px;
+    font-weight: bolder;
+}
 .admission_text{
     margin-bottom: 20px;
 }
@@ -991,14 +1034,105 @@ background-color: rgba(255, 255, 255, 0.8);
     margin-top: 20px;
     height: 700px;
 }
+.fixed-plugin {
+    position: fixed;
+    right: 0;
+    top: 170px;
+    z-index: 1031;
+}
+.LearningExperience {
+    background-color: #f35d5d;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgb(0,0,0);
+    overflow: hidden;
+}
+.back .ant-menu-item:not(:last-child)
+{
+    margin-bottom: 0px;
+}
+.back .ant-menu-item  {
+    // border-bot: 1px solid;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+.back .ant-menu-item-selected .ant-menu-vertical {
+    border: 0px;
+}
+.back .ant-menu-item-selected {
+    background-color: #f35d5d !important;
+    color:white;
+    padding:  0%;
+    margin: 0%;
+    width: 100%;
+}
+.project_header {
+    background: #ebf1f8;
+    padding: 16px 16px 20px;
+    border-radius: 4px 4px 0 0;
+}
+.padding_card .ant-card-body {
+    padding: 0px  !important;
+}
+.blogs_header .ant-card-body {
+    padding: 0px  !important;
+}
+.card_blog .img_banner {
+    flex: 0.33;
+}
+@media screen and (max-width: 768px) {
+    #myHeader {
+        display: none;
+    }
+  }
+@media screen and(max-width:468px) {
+    .text-1000 {
+        margin-bottom: 20px;
+    }
+    .d-lg-jsjs {
+        display: none !important;
+    }
+    
+}
+
+@media  screen and (min-width : 490px) {
+    .d-sm-jsjs {
+        display:  none !important;
+    }
+    
+}
+@media screen and(min-width:768px) {
+    .contact_us {
+        top: -40px
+
+    }
+    .d-sm-jsjs {
+        display:  none !important;
+    }
+    
+}
+
+.sw-13{
+    width: 6.5rem !important
+}
+.rounded-xl {
+    border-radius : 50px !important
+}
 .fee_heading{
     font-size: 24px;
     font-weight: bolder;
     margin-bottom: 20px;
 }
+
 .fee_card_list {
     display: flex;
     justify-content: space-around;
+}
+.hover-scale-up:hover {
+    backface-visibility: hidden;
+    transition: 200ms;
+    transform: scale(1.04);
 }
 .fee_card{
     width: 25vw;

@@ -3,6 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Footer, Navbar } from "./layout";
+import FixedPlugin from "./layout/navbar/FixedPlugin";
 import { AppRoutes } from "./routes";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
             <Navbar />
             <AppRoutes />
             <Footer />
+            <FixedPlugin />
         </Router>
     );
 };

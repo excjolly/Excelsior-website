@@ -4,4 +4,4 @@ import App from "./App";
 import "./App.less";
 import "./assets/styles/_global.scss";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.hydrate(<App />, document.getElementById("root"));
