@@ -549,7 +549,7 @@
 		"Reviews": ""
 	},
 	{
-        "pathname": "machine-learning-with-python",
+        "pathname": "/programs/machine-learning-with-python",
 		"NameOfProgram": "Machine Learning with Python",
 		"DurationInWeeks": "52",
 		"Rating": 4.5,
@@ -732,7 +732,7 @@
 		"Reviews": ""
 	},
 	{
-        "pathname": "data-anlaytics",
+        "pathname": "/programs/data-anlaytics",
 		"NameOfProgram": "Data Analytics",
 		"DurationInWeeks": "52",
 		"Rating": 4.5,
@@ -915,7 +915,7 @@
 		"Reviews": ""
 	},
 	{
-        "pathname": "python-bootcamp",
+        "pathname": "/programs/python-bootcamp",
 		"NameOfProgram": "Python Bootcamp",
 		"DurationInWeeks": "52",
 		"Rating": 4.5,
