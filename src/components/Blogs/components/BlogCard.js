@@ -24,16 +24,6 @@ const BlogCard = ({title,description}) => {
         >
             <Meta title={title} />
             <p>{description}</p>
-            <div className="blogs__blog-card-footer">
-                <span>
-                    <LikeOutlined style={{ color: "#F35D5D" }} />
-                    369
-                </span>
-                <span>
-                    <ClockCircleOutlined style={{ color: "#F35D5D" }} />
-                    369
-                </span>
-            </div>
         </Card>
     );
 };

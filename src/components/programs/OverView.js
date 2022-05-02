@@ -16,6 +16,7 @@ function OverView({ OverView }) {
       <Collapse accordion expandIconPosition="right">
         {OverView.DropDownQuestion.map((e, index) => (
           <Panel header={e.Question} key={index}>
+            {console.log(e)}
             <p>{e.Answer}</p>
           </Panel>
         ))}
