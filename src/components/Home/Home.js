@@ -56,71 +56,55 @@ const Home = () => {
 
   const [statsData, setStatsData] = useState([
     {
-      title: "Earnings",
-      text: "$315.20",
+      title: "Total Students Placed",
+      text: "6600+ students",
     },
     {
-      title: "Orders",
-      text: "16",
+      title: "Average Salary Hike",
+      text: "53%",
     },
     {
-      title: "Sessions",
-      text: "463",
+      title: "Average Salary",
+      text: "10.7 LPA",
     },
     {
-      title: "Users",
-      text: "17",
+      title: "Placement %",
+      text: "96.80%",
     },
     {
-      title: "Users",
-      text: "17",
+      title: "Highest Salary",
+      text: "76.8 LPA",
     },
     {
-      title: "Users",
-      text: "17",
+      title: "Number of Clients",
+      text: "160+",
     },
   ]);
 
   const [latestNewsData, setLatestNewsData] = useState([
     {
-      title: "New user registiration",
-      time: "18 DEC",
+      title: "New Initiative: Free Counselling Session with Real Data Scientist before enrolling",
+
     },
     {
-      title: "3 Products added",
-      time: "18 DEC",
+      title: "Earn Scholarship upto 50%",
+
     },
     {
-      title: "14 products added",
-      time: "18 DEC",
+      title: "New Data Engineer Course",
+
     },
     {
-      title: "New sale: Steirer Brot",
-      time: "18 DEC",
+      title: "Average Placement increased from 10.1 to 10.7 LPA in this batch",
+
     },
     {
-      title: "Product out of stock: Breadstick",
-      time: "18 DEC",
+      title: "Tesla Added to our client list for automobile industry enthusiasts",
+
     },
     {
-      title: "New user registiration",
-      time: "18 DEC",
-    },
-    {
-      title: "3 Products added",
-      time: "18 DEC",
-    },
-    {
-      title: "14 products added",
-      time: "18 DEC",
-    },
-    {
-      title: "New sale: Steirer Brot",
-      time: "18 DEC",
-    },
-    {
-      title: "Product out of stock: Breadstick",
-      time: "18 DEC",
+      title: "98.3% placement record in the last batch",
+
     },
   ]);
 
@@ -167,7 +151,7 @@ const Home = () => {
             <Select
               style={{ width: "100%", marginTop: 20 }}
               defaultValue="lucy"
-              onChange={() => {}}
+              onChange={() => { }}
             >
               <Option value="jack">Jack</Option>
               <Option value="lucy">Lucy</Option>
@@ -181,7 +165,7 @@ const Home = () => {
             <Select
               style={{ width: "100%", marginTop: 20 }}
               defaultValue="lucy"
-              onChange={() => {}}
+              onChange={() => { }}
             >
               <Option value="jack">Jack</Option>
               <Option value="lucy">Lucy</Option>
@@ -195,7 +179,7 @@ const Home = () => {
             <Select
               style={{ width: "100%", marginTop: 20 }}
               defaultValue="lucy"
-              onChange={() => {}}
+              onChange={() => { }}
             >
               <Option value="jack">Jack</Option>
               <Option value="lucy">Lucy</Option>
@@ -209,7 +193,7 @@ const Home = () => {
             <Select
               style={{ width: "100%", marginTop: 20 }}
               defaultValue="lucy"
-              onChange={() => {}}
+              onChange={() => { }}
             >
               <Option value="jack">Jack</Option>
               <Option value="lucy">Lucy</Option>
@@ -246,11 +230,9 @@ const Home = () => {
                 <Col xs={24} sm={24} md={12} lg={8} key={index}>
                   <Card className="box-shadow">
                     <Avatar />
-                    <h4 style={{ margin: "10px 0" }}>Panayappan</h4>
+                    <h4 style={{ margin: "10px 0" }}>Hemanth Reddy (Data Scientist-Airtel)</h4>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Earum, blanditiis illum est possimus culpa architecto
-                      adipisci. Explicabo modi ullam quo!
+                      I am writing this review to thank Excelsior's Data Science for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science. I am really thankful to them for helping me build my profile and gain the head start I needed.
                     </p>
                   </Card>
                 </Col>
@@ -270,14 +252,14 @@ const Home = () => {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <div className="container mt-4">
-          <h1 className="Banner_Heading" >EXCELSIOR</h1>
-          <p className="mb-4 ">
-            Excelsior is ideal for professionals who wants to 
-          </p>
-            
-        </div>
+        <h1 className="Banner_Heading" >EXCELSIOR</h1>
+        <p className="mb-4 ">
+          Excelsior is ideal for professionals who wants to
+        </p>
+
+      </div>
       <div className="home__banner-left-content d-flex flex-column justify-content-center mb-5">
-       
+
 
         <div className="container  pt-4">
           <h2 className="text-white admission_heading">Introduction to Cloud</h2>
@@ -325,7 +307,7 @@ const Home = () => {
                   //   form={form}
                   name="horizontal_login"
                   layout="outline"
-                  //   onFinish={onFinish}
+                //   onFinish={onFinish}
                 >
                   <Form.Item
                     name="name"
@@ -354,7 +336,29 @@ const Home = () => {
                   >
                     <Input type="number" placeholder="Phone Number " />
                   </Form.Item>
-                  <Form.Item>
+                  <Form.Item
+                    name="experience"
+                    rules={[
+                      {
+                        required: true,
+                        message: "Total Experience",
+                      },
+                    ]}
+                  >
+                    <Input type="number" placeholder="Experience" />
+                  </Form.Item>
+                  <Form.Item
+                    name=" Highest Qualification"
+                    rules={[
+                      {
+                        required: true,
+                        message: " Highest Qualification",
+                      },
+                    ]}
+                  >
+                    <Input type="text" placeholder=" Highest Qualification" />
+                  </Form.Item>
+                  {/* <Form.Item>
                     <Radio.Group
                     // onChange={onChange}
                     // value={value }
@@ -362,16 +366,16 @@ const Home = () => {
                       <Radio value={"Myself"}>Myself</Radio>
                       <Radio value={"My Company"}>My Company</Radio>
                     </Radio.Group>
-                  </Form.Item>
+                  </Form.Item> */}
                   <Form.Item shouldUpdate>
                     {() => (
                       <Button
                         type="primary"
                         htmlType="submit"
-                        // disabled={
-                        // //   !form.isFieldsTouched(true) ||
-                        // //   !!form.getFieldsError().filter(({ errors }) => errors.length).length
-                        // }
+                      // disabled={
+                      // //   !form.isFieldsTouched(true) ||
+                      // //   !!form.getFieldsError().filter(({ errors }) => errors.length).length
+                      // }
                       >
                         Submit
                       </Button>
@@ -387,13 +391,13 @@ const Home = () => {
                   <Col xs={24} sm={24} md={12} key={index}>
                     <div className="home__videos-item">
                       <div className="home__videos-item-left">
-                        <h6>Database Basics</h6>
+                        <h6>Data Science for IT</h6>
                         <div className="home__videos-item-time">
                           <p> 16.05</p>
                         </div>
                       </div>
                       <div className="home__videos-item-right">
-                        <h3>Database Basics</h3>
+                        <h3>Data Science for Finance</h3>
                         <p>Lorem ipsum dolor sit amet consectetur</p>
                       </div>
                     </div>
@@ -488,9 +492,9 @@ const Home = () => {
         <h2 className="admission_heading">Mail List</h2>
         <Card>
           <h5 className="mb-3">Ready to make bread?</h5>
-          <h5 className=" mb-3 text-primary">Join our email list!</h5>
+          <h5 className=" mb-3 text-primary">Subscribe to our news letter</h5>
           <p className="mb-3">
-            Cheesecake chocolate carrot cake pie lollipop lemon drops.
+            Stay updated with the latest news from the industry.
           </p>
           <Form layout="horizontal">
             <Form.Item
