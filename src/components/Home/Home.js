@@ -254,7 +254,7 @@ const Home = () => {
       <div className="container mt-4">
         <h1 className="Banner_Heading" >EXCELSIOR</h1>
         <p className="mb-4 ">
-          Excelsior is ideal for professionals who wants to
+        We don't just train, We make careers
         </p>
 
       </div>
@@ -262,7 +262,7 @@ const Home = () => {
 
 
         <div className="container  pt-4">
-          <h2 className="text-white admission_heading">Introduction to Cloud</h2>
+          <h2 className="text-white admission_heading">Get the Edge</h2>
           <div>
             <Row>
               <Col lg={12}>
