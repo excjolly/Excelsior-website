@@ -381,7 +381,7 @@ const Home = () => {
               </Card>
             </Col>
             <Col xs={24} sm={24} md={16} lg={16}>
-              <h2 className="admission_heading">Videos</h2>
+              <h2 className="admission_heading">Programs</h2>
               <Row gutter={[20, 30]}>
                 {[1, 2, 3, 4, 5, 6].map((item, index) => (
                   <Col xs={24} sm={24} md={12} key={index}>
