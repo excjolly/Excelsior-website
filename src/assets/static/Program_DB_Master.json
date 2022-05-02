@@ -50,24 +50,125 @@
 					"Data": [
 						"Introduction To Python",
 						"Python Environment",
-						"Executing Python"
+						"Executing Python",
+						"Python Basic Syntax",
+						"Python Variable Types",
+						"Python Basic Operators",
+						"Python Design Making",
+						"Python Loops",
+						"Python Numbers",
+						"Python Strings",
+						"Python Lists",
+						"Python Tuples",
+						"Python Dictionary",
+						"Python Function",
+						"Python Modules",
+						"Python Files I/O",
+						"Python Exception",
+						"Python Classes & Objects",
+						"Collections",
+						"Debugging & Testing",
+						"Regular Expression",
+						"Essential Packages",
+						"Testing"
 					]
 				},
 				{
 					"title": "Statistical and Mathematical Fundamentals",
 					"Data": [
-						"Introduction To Python",
-						"Python Environment",
-						"Executing Python"
+						"Statistics Concepts",
+						"Linear Algebra",
+						"Matrix Operations",
+						"Calculus",
+						"Probability",
+						"Sampling Techniques",
+						"Understanding Distributions"
+					]
+				},
+				{
+					"title": "Data Wrangling",
+					"Data": [
+						"Black Box Introduction To Machine Learning",
+						"Microsoft Excel",
+						"Sql",
+						"Tableau",
+						"Essential Numpy",
+						"Pandas For Machine Learning",
+						"Understanding Visualizations",
+						"Power BI",
+						"Alteryx"
+					]
+				},
+				{
+					"title": "Machine Learning",
+					"Data": [
+						"Linear Models For Classification And Regression",
+						"Pre-Proposing Of Machine Learning",
+						"Decision Trees",
+						"Naives Bayes",
+						"Composite Estimators Using Pipelines",
+						"Model Selection & Evaluation",
+						"Feature Selection & Dimensionality Reduction",
+						"Nearest Neighbours",
+						"Clustering Techniques",
+						"Anomaly Detection",
+						"Support Vector Machines",
+						"Dealing With Imbalanced Classes",
+						"Ensemble Methods",
+						"Recommendation Engine",
+						"Time Series Modelling",
+						"Packaging & Deployment"
+					]
+				},
+				{
+					"title": "Big Data",
+					"Data": [
+						"Introduction To Big Data",
+						"Internal Details Of Spark",
+						"Foundation Of Spark Using Rdd",
+						"Data Wrangling Using Dataframes",
+						"Packaging And Deployment Of Spark Applications"
+					]
+				},
+				{
+					"title": "Deep Learning and Artificial Intelligence",
+					"Data": [
+						"Neural Network Basics",
+						"Computer Vision",
+						"Statistical Natural Language Processing",
+						"Sequential Natural Language Processing",
+						"Advanced Computer Vision",
+						"Generative Adversarial Networks",
+						"Reinforcement Learning"
+					]
+				},
+				{
+					"title": "Specialization in IT Product Lifecycle",
+					"Data": [
+						"Market Research For A 0-1 Product For A B2C Product",
+						"User Research For A 0-1 Product",
+						"Create Product Artefacts For 0-1 Product",
+						"User Design For A 1-N Product",
+						"Prototyping",
+						"Mvp + Usability Testing",
+						"Product Analytics",
+						"Growth, Engagement & Monetisation",
+						"Product Marketing And Gtm Strategy",
+						"Product Planning And Development",
+						"Tech 101 For Pms",
+						"Data Science For Product Management",
+						"Growth Product Management",
+						"Data Science For Product Management",
+						"Digital Transformation"
 					]
 				}
 			]
 		},
 		"AdmissionProcedure": {
-			"Description": "Speak directly with a data scientist",
+			"Description": "Your steps to success",
 			"AdmissionStepForm": [
 				{
-					"title": "Expolre",
+					"title": "Explore",
 					"content": "Speak directly with a data scientist mentor and a career counselor to find the right path."
 				},
 				{
@@ -233,24 +334,123 @@
 					"Data": [
 						"Introduction To Python",
 						"Python Environment",
-						"Executing Python"
+						"Executing Python",
+						"Python Basic Syntax",
+						"Python Variable Types",
+						"Python Basic Operators",
+						"Python Design Making",
+						"Python Loops",
+						"Python Numbers",
+						"Python Strings",
+						"Python Lists",
+						"Python Tuples",
+						"Python Dictionary",
+						"Python Function",
+						"Python Modules",
+						"Python Files I/O",
+						"Python Exception",
+						"Python Classes & Objects",
+						"Collections",
+						"Debugging & Testing",
+						"Regular Expression",
+						"Essential Packages",
+						"Testing"
 					]
 				},
 				{
 					"title": "Statistical and Mathematical Fundamentals",
 					"Data": [
-						"Introduction To Python",
-						"Python Environment",
-						"Executing Python"
+						"Statistics Concepts",
+						"Linear Algebra",
+						"Matrix Operations",
+						"Calculus",
+						"Probability",
+						"Sampling Techniques",
+						"Understanding Distributions"
+					]
+				},
+				{
+					"title": "Data Wrangling",
+					"Data": [
+						"Black Box Introduction To Machine Learning",
+						"Microsoft Excel",
+						"Sql",
+						"Tableau",
+						"Essential Numpy",
+						"Pandas For Machine Learning",
+						"Understanding Visualizations",
+						"Power BI",
+						"Alteryx"
+					]
+				},
+				{
+					"title": "Machine Learning",
+					"Data": [
+						"Linear Models For Classification And Regression",
+						"Pre-Proposing Of Machine Learning",
+						"Decision Trees",
+						"Naives Bayes",
+						"Composite Estimators Using Pipelines",
+						"Model Selection & Evaluation",
+						"Feature Selection & Dimensionality Reduction",
+						"Nearest Neighbours",
+						"Clustering Techniques",
+						"Anomaly Detection",
+						"Support Vector Machines",
+						"Dealing With Imbalanced Classes",
+						"Ensemble Methods",
+						"Recommendation Engine",
+						"Time Series Modelling",
+						"Packaging & Deployment"
+					]
+				},
+				{
+					"title": "Big Data",
+					"Data": [
+						"Introduction To Big Data",
+						"Internal Details Of Spark",
+						"Foundation Of Spark Using Rdd",
+						"Data Wrangling Using Dataframes",
+						"Packaging And Deployment Of Spark Applications"
+					]
+				},
+				{
+					"title": "Deep Learning and Artificial Intelligence",
+					"Data": [
+						"Neural Network Basics",
+						"Computer Vision",
+						"Statistical Natural Language Processing",
+						"Sequential Natural Language Processing",
+						"Advanced Computer Vision",
+						"Generative Adversarial Networks",
+						"Reinforcement Learning"
+					]
+				},
+				{
+					"title": "Specialization in Finance",
+					"Data": [
+						"Introduction To Investment Banking",
+						"Cash Equities And Fixed Income",
+						"Foreign Exchange And Money Markets",
+						"Derivatives Markets",
+						"Reference Data Management",
+						"Corporate Actions",
+						"Asset Management",
+						"Reconciliation And Introduction To Isda",
+						"Stock Borrow Lending",
+						"Collateral Management",
+						"Trade Life Cycle",
+						"Risk Management And Regulatory Environment",
+						"Anti-Money Laundering And Know Your Customers"
 					]
 				}
 			]
 		},
 		"AdmissionProcedure": {
-			"Description": "Speak directly with a data scientist",
+			"Description": "Your Steps to success",
 			"AdmissionStepForm": [
 				{
-					"title": "Expolre",
+					"title": "Explore",
 					"content": "Speak directly with a data scientist mentor and a career counselor to find the right path."
 				},
 				{
@@ -416,24 +616,105 @@
 					"Data": [
 						"Introduction To Python",
 						"Python Environment",
-						"Executing Python"
+						"Executing Python",
+						"Python Basic Syntax",
+						"Python Variable Types",
+						"Python Basic Operators",
+						"Python Design Making",
+						"Python Loops",
+						"Python Numbers",
+						"Python Strings",
+						"Python Lists",
+						"Python Tuples",
+						"Python Dictionary",
+						"Python Function",
+						"Python Modules",
+						"Python Files I/O",
+						"Python Exception",
+						"Python Classes & Objects",
+						"Collections",
+						"Debugging & Testing",
+						"Regular Expression",
+						"Essential Packages",
+						"Testing"
 					]
 				},
 				{
 					"title": "Statistical and Mathematical Fundamentals",
 					"Data": [
-						"Introduction To Python",
-						"Python Environment",
-						"Executing Python"
+						"Statistics Concepts",
+						"Linear Algebra",
+						"Matrix Operations",
+						"Calculus",
+						"Probability",
+						"Sampling Techniques",
+						"Understanding Distributions"
+					]
+				},
+				{
+					"title": "Data Wrangling",
+					"Data": [
+						"Black Box Introduction To Machine Learning",
+						"Microsoft Excel",
+						"Sql",
+						"Tableau",
+						"Essential Numpy",
+						"Pandas For Machine Learning",
+						"Understanding Visualizations",
+						"Power BI",
+						"Alteryx"
+					]
+				},
+				{
+					"title": "Machine Learning",
+					"Data": [
+						"Linear Models For Classification And Regression",
+						"Pre-Proposing Of Machine Learning",
+						"Decision Trees",
+						"Naives Bayes",
+						"Composite Estimators Using Pipelines",
+						"Model Selection & Evaluation",
+						"Feature Selection & Dimensionality Reduction",
+						"Nearest Neighbours",
+						"Clustering Techniques",
+						"Anomaly Detection",
+						"Support Vector Machines",
+						"Dealing With Imbalanced Classes",
+						"Ensemble Methods",
+						"Recommendation Engine",
+						"Time Series Modelling",
+						"Packaging & Deployment"
+					]
+				},
+				{
+					"title": "Big Data",
+					"Data": [
+						"Introduction To Big Data",
+						"Internal Details Of Spark",
+						"Foundation Of Spark Using Rdd",
+						"Data Wrangling Using Dataframes",
+						"Packaging And Deployment Of Spark Applications"
+					]
+				},
+				{
+					"title": "Deep Learning and Artificial Intelligence",
+					"Data": [
+						"Neural Network Basics",
+						"Computer Vision",
+						"Statistical Natural Language Processing",
+						"Sequential Natural Language Processing",
+						"Advanced Computer Vision",
+						"Generative Adversarial Networks",
+						"Reinforcement Learning"
 					]
 				}
 			]
 		},
 		"AdmissionProcedure": {
-			"Description": "Speak directly with a data scientist",
+			"Description": "Your steps to success",
 			"AdmissionStepForm": [
 				{
-					"title": "Expolre",
+					"title": "Explore",
 					"content": "Speak directly with a data scientist mentor and a career counselor to find the right path."
 				},
 				{
@@ -599,24 +880,93 @@
 					"Data": [
 						"Introduction To Python",
 						"Python Environment",
-						"Executing Python"
+						"Executing Python",
+						"Python Basic Syntax",
+						"Python Variable Types",
+						"Python Basic Operators",
+						"Python Design Making",
+						"Python Loops",
+						"Python Numbers",
+						"Python Strings",
+						"Python Lists",
+						"Python Tuples",
+						"Python Dictionary",
+						"Python Function",
+						"Python Modules",
+						"Python Files I/O",
+						"Python Exception",
+						"Python Classes & Objects",
+						"Collections",
+						"Debugging & Testing",
+						"Regular Expression",
+						"Essential Packages",
+						"Testing"
 					]
 				},
 				{
 					"title": "Statistical and Mathematical Fundamentals",
 					"Data": [
-						"Introduction To Python",
-						"Python Environment",
-						"Executing Python"
+						"Statistics Concepts",
+						"Linear Algebra",
+						"Matrix Operations",
+						"Calculus",
+						"Probability",
+						"Sampling Techniques",
+						"Understanding Distributions"
+					]
+				},
+				{
+					"title": "Data Wrangling",
+					"Data": [
+						"Black Box Introduction To Machine Learning",
+						"Microsoft Excel",
+						"Sql",
+						"Tableau",
+						"Essential Numpy",
+						"Pandas For Machine Learning",
+						"Understanding Visualizations",
+						"Power BI",
+						"Alteryx"
+					]
+				},
+				{
+					"title": "Machine Learning",
+					"Data": [
+						"Linear Models For Classification And Regression",
+						"Pre-Proposing Of Machine Learning",
+						"Decision Trees",
+						"Naives Bayes",
+						"Composite Estimators Using Pipelines",
+						"Model Selection & Evaluation",
+						"Feature Selection & Dimensionality Reduction",
+						"Nearest Neighbours",
+						"Clustering Techniques",
+						"Anomaly Detection",
+						"Support Vector Machines",
+						"Dealing With Imbalanced Classes",
+						"Ensemble Methods",
+						"Recommendation Engine",
+						"Time Series Modelling",
+						"Packaging & Deployment"
+					]
+				},
+				{
+					"title": "Big Data",
+					"Data": [
+						"Introduction To Big Data",
+						"Internal Details Of Spark",
+						"Foundation Of Spark Using Rdd",
+						"Data Wrangling Using Dataframes",
+						"Packaging And Deployment Of Spark Applications"
 					]
 				}
 			]
 		},
 		"AdmissionProcedure": {
-			"Description": "Speak directly with a data scientist",
+			"Description": "Your steps to success",
 			"AdmissionStepForm": [
 				{
-					"title": "Expolre",
+					"title": "Explore",
 					"content": "Speak directly with a data scientist mentor and a career counselor to find the right path."
 				},
 				{
@@ -782,24 +1132,64 @@
 					"Data": [
 						"Introduction To Python",
 						"Python Environment",
-						"Executing Python"
+						"Executing Python",
+						"Python Basic Syntax",
+						"Python Variable Types",
+						"Python Basic Operators",
+						"Python Design Making",
+						"Python Loops",
+						"Python Numbers",
+						"Python Strings",
+						"Python Lists",
+						"Python Tuples",
+						"Python Dictionary",
+						"Python Function",
+						"Python Modules",
+						"Python Files I/O",
+						"Python Exception",
+						"Python Classes & Objects",
+						"Collections",
+						"Debugging & Testing",
+						"Regular Expression",
+						"Essential Packages",
+						"Testing"
 					]
 				},
 				{
 					"title": "Statistical and Mathematical Fundamentals",
 					"Data": [
-						"Introduction To Python",
-						"Python Environment",
-						"Executing Python"
+						"Statistics Concepts",
+						"Linear Algebra",
+						"Matrix Operations",
+						"Calculus",
+						"Probability",
+						"Sampling Techniques",
+						"Understanding Distributions"
+					]
+				},
+				{
+					"title": "Data Wrangling",
+					"Data": [
+						"Black Box Introduction To Machine Learning",
+						"Microsoft Excel",
+						"Sql",
+						"Tableau",
+						"Essential Numpy",
+						"Pandas For Machine Learning",
+						"Understanding Visualizations",
+						"Power BI",
+						"Alteryx"
 					]
 				}
-			]
+					]
+				
+			
 		},
 		"AdmissionProcedure": {
-			"Description": "Speak directly with a data scientist",
+			"Description": "Your steps to success",
 			"AdmissionStepForm": [
 				{
-					"title": "Expolre",
+					"title": "Explore",
 					"content": "Speak directly with a data scientist mentor and a career counselor to find the right path."
 				},
 				{
@@ -965,24 +1355,36 @@
 					"Data": [
 						"Introduction To Python",
 						"Python Environment",
-						"Executing Python"
-					]
-				},
-				{
-					"title": "Statistical and Mathematical Fundamentals",
-					"Data": [
-						"Introduction To Python",
-						"Python Environment",
-						"Executing Python"
+						"Executing Python",
+						"Python Basic Syntax",
+						"Python Variable Types",
+						"Python Basic Operators",
+						"Python Design Making",
+						"Python Loops",
+						"Python Numbers",
+						"Python Strings",
+						"Python Lists",
+						"Python Tuples",
+						"Python Dictionary",
+						"Python Function",
+						"Python Modules",
+						"Python Files I/O",
+						"Python Exception",
+						"Python Classes & Objects",
+						"Collections",
+						"Debugging & Testing",
+						"Regular Expression",
+						"Essential Packages",
+						"Testing"
 					]
 				}
 			]
 		},
 		"AdmissionProcedure": {
-			"Description": "Speak directly with a data scientist",
+			"Description": "Your steps to success",
 			"AdmissionStepForm": [
 				{
-					"title": "Expolre",
+					"title": "Explore",
 					"content": "Speak directly with a data scientist mentor and a career counselor to find the right path."
 				},
 				{
