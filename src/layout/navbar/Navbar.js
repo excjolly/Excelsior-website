@@ -17,6 +17,8 @@ import { useMediaQuery } from 'react-responsive';
 import images from '../../assets/images/logonew.png';
 import SidebarMenu from './SidebarMenu';
 
+
+
 const Navbar = () => {
 	const isSmallerDevice = useMediaQuery({ query: '(max-width: 940px)' });
 	const [isSidebarMenuVisible, setIsSidebarMenuVisible] = useState(false);

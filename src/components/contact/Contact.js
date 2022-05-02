@@ -36,11 +36,10 @@ function Contact() {
 									orientation='left'
 									orientationMargin={0}
 								>
-									See our platform in action
+									Are you getting enough practical learning?
 								</Divider>
 								<p className='text-muted pl-3'>
-									Request a personalized demo, or request a trial of TUNE’s
-									partner marketing platform.
+								Ask us about the projects
 								</p>
 							</div>
 							<div className='mb-4'>
@@ -49,11 +48,10 @@ function Contact() {
 									orientation='left'
 									orientationMargin={0}
 								>
-									See our platform in action
+									Are you stuck in your career?
 								</Divider>
 								<p className='text-muted pl-3'>
-									Request a personalized demo, or request a trial of TUNE’s
-									partner marketing platform.
+								Ask us how our course can help you with career growth
 								</p>
 							</div>
 							<div className='mb-4'>
@@ -62,11 +60,10 @@ function Contact() {
 									orientation='left'
 									orientationMargin={0}
 								>
-									See our platform in action
+									Are you able to learn in big batches?
 								</Divider>
 								<p className='text-muted pl-3'>
-									Request a personalized demo, or request a trial of TUNE’s
-									partner marketing platform.
+								Ask us how we give you personalized learning experience
 								</p>
 							</div>
 							<div className='mt-5'>
@@ -76,39 +73,38 @@ function Contact() {
 									</h3>
 									<div className='mb-4'>
 										<div className='d-flex mb-3'>
-											<h6> US </h6>
-											<Divider type='vertical'></Divider>
-											<h6>UK</h6>
+											<h6> D612, 7th Cross Road, 3rd Block, Koramangala, Bengaluru 560034 </h6>
+
 										</div>
-										<div className='mb-3'>
+										{/* <div className='mb-3'>
 											<p className='text-muted'>
 												11350 McCormick Rd, EP III, Suite 200, Hunt Valley, MD
 												21031
 											</p>
+										</div> */}
+									</div>
+									<div className='mb-4'>
+										<div className='mb-3'>
+											<h6>Know about the course</h6>
+										</div>
+										<div className='mb-3'>
+											<a href='#'>contact@getexcelsior.com</a>
 										</div>
 									</div>
 									<div className='mb-4'>
 										<div className='mb-3'>
-											<h6>Information and Sales</h6>
+											<h6>Speak to a Career Counselor</h6>
 										</div>
 										<div className='mb-3'>
-											<a href='#'>partnermarketing@tune.com</a>
-										</div>
-									</div>
-									<div className='mb-4'>
-										<div className='mb-3'>
-											<h6>Information and Sales</h6>
-										</div>
-										<div className='mb-3'>
-											<a href='#'>partnermarketing@tune.com</a>
+											<a href='#'>info@getexcelsior.com</a>
 										</div>
 									</div>
 									<div className='mb-4'>
 										<div className='mb-3'>
-											<h6>Information and Sales</h6>
+											<h6>Speak to a Data Scientist</h6>
 										</div>
 										<div className='mb-3'>
-											<a href='#'>partnermarketing@tune.com</a>
+											<a href='#'>dscounselling@getexcelsior.com</a>
 										</div>
 									</div>
 								</div>
@@ -123,8 +119,7 @@ function Contact() {
 									</div>
 									<div className='mb-3'>
 										<p className='text-muted'>
-											11350 McCormick Rd, EP III, Suite 200, Hunt Valley, MD
-											21031
+											C2 Sector 1, Noida, 201301
 										</p>
 									</div>
 								</div>
@@ -133,9 +128,7 @@ function Contact() {
 						<Col xs={24} sm={24} md={12} lg={12}>
 							<div>
 								<Form title='Enquire Detials' layout='vertical'>
-									<Form.Item name='Firstname'>First Name</Form.Item>
-									<Input className='p-2 mb-3' />
-									<Form.Item name='Lastname'>Last Name</Form.Item>
+									<Form.Item name='Firstname'>Name</Form.Item>
 									<Input className='p-2 mb-3' />
 									<Form.Item name='CompanyName'>Company Name</Form.Item>
 									<Input className='p-2 mb-3' />
@@ -143,12 +136,12 @@ function Contact() {
 									<Input className='p-2 mb-3' />
 									<Form.Item name='Email'>PhoneNumber</Form.Item>
 									<Input className='p-2 mb-3' />
-									<Form.Item name='Email'>Interested In</Form.Item>
+									<Form.Item name='Email'>Choose your programs</Form.Item>
 									<Input className='p-2 mb-3' />
-									<Form.Item name='Email'>Commant</Form.Item>
+									<Form.Item name='Email'>Comments</Form.Item>
 									<Input className='p-2 mb-3' />
 								</Form>
-								<Button className='text-center'>Submit</Button>
+								<Button className='text-center' text color='default'>Submit</Button>
 							</div>
 						</Col>
 					</Row>

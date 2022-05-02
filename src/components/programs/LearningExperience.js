@@ -12,10 +12,10 @@ function LearningExperience({LearningExperience}) {
     <div className="mb-5">
       <h3 className="admission_heading "> Career Support </h3>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book
+      Excelsior’s industry experts are the ultimate resource for anyone looking to build their profile
+Resume Building
+LinkedIn Profile Building
+Github Building
       </p>
       <div className="LearningExperience mt-3">
         <div className="row">
