@@ -583,7 +583,7 @@ h6 {
 	background-image: url('../images/banner.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 65vh;
+	height: 60vh;
 	background-position: 50% 50%;
 	padding-top: 9em !important;
 	padding-bottom: 9em !important;
@@ -1014,6 +1014,7 @@ h6 {
 	font-size: 24px;
 	font-weight: bolder;
 	margin-bottom: 20px;
+	color: #fff;
 }
 .Banner_Heading {
 	font-size: 32px;
@@ -1042,7 +1043,7 @@ h6 {
 	z-index: 1031;
 }
 .LearningExperience {
-	background-color: #f35d5d;
+	// background-color: #f35d5d;
 	border-radius: 8px;
 	box-shadow: 0 2px 16px rgb(0, 0, 0);
 	overflow: hidden;
@@ -1133,4 +1134,8 @@ h6 {
 .fee_card {
 	width: 25vw;
 	height: 350px;
+}
+
+.ant-menu-item-active.ant-menu-item-selected {
+	color: #fff !important;
 }

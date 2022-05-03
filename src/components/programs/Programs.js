@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, Col, Form, Input, Radio, Row, Button } from 'antd';
 import ProgramsCards from './ProgramsCards';
-import { useLocation } from 'react-router-dom';
+import { DatePicker, TimePicker } from 'antd';
+import moment from 'moment';
 import Program_DB_Master from '../../assets/static/Program_DB_Master';
 const { Meta } = Card;
 
@@ -103,7 +104,8 @@ const Program = () => {
 								name='horizontal_login'
 								layout='outline'
 								className='form'
-								//   onFinish={onFinish}
+								autoComplete='off'
+								// onFinish={(values) => console.log(values)}
 							>
 								<Form.Item
 									name='name'
@@ -141,7 +143,7 @@ const Program = () => {
 										},
 									]}
 								>
-									<Input type='date' />
+									<DatePicker />
 								</Form.Item>
 								<Form.Item
 									name='time'
@@ -152,7 +154,7 @@ const Program = () => {
 										},
 									]}
 								>
-									<Input type='time' />
+									<TimePicker format={'HH:mm'} />
 								</Form.Item>
 								<Form.Item shouldUpdate>
 									{() => (

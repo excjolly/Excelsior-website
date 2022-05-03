@@ -2,7 +2,6 @@ import React from 'react';
 import { Col, Rate, Row } from 'antd';
 
 function ProgramHeader({ programData }) {
-	console.log(programData.banner);
 	return (
 		<div className='banner' style={{ backgroundImage: `url('${programData.banner}')` }}>
 			<div className='container'>
@@ -13,7 +12,7 @@ function ProgramHeader({ programData }) {
 					</div>
 					<Row>
 						<Col lg={12}>
-							<p>{programData.description}</p>
+							<p style={{ color: '#fff' }}>{programData.description}</p>
 						</Col>
 					</Row>
 					<button className='enroll_button' onClick={() => console.log('enroll')}>

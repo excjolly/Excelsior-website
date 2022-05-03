@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import { Avatar } from 'antd';
 import {
 	FileOutlined,
 	StockOutlined,
 	MessageOutlined,
-	SearchOutlined,
-	LockOutlined,
-	BulbOutlined,
-	BellOutlined,
 	MenuUnfoldOutlined,
 	UserOutlined,
 	HomeOutlined,
@@ -16,8 +11,6 @@ import { Link, NavLink } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import images from '../../assets/images/logonew.png';
 import SidebarMenu from './SidebarMenu';
-
-
 
 const Navbar = () => {
 	const isSmallerDevice = useMediaQuery({ query: '(max-width: 940px)' });

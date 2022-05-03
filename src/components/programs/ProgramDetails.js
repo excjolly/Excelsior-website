@@ -165,7 +165,7 @@ const ProgramDetails = ({ programData }) => {
 								<Mentors mentorsData={programData.mentor} />
 							</div>
 							<div className='mt-5' id='Review' name='Review'>
-								<Review />
+								<Review reviews={programData.reviews} />
 							</div>
 							<div className='mt-5' id='Blogs' name='Blogs'>
 								<Blogs />
