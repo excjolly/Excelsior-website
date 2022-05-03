@@ -1,8 +1,10 @@
 import { Card } from 'antd'
 import React from 'react'
 
-function Question() {
+function Question({props}) {
   return (
+    <div>
+      
     <Card className="mb-3">
     <div className="d-flex flex-row align-content-center align-items-center mb-5">
       <div className="sw-5 me-4">
@@ -82,6 +84,7 @@ function Question() {
         </div>
     </div>
   </Card>
+  </div>
   )
 }
 
