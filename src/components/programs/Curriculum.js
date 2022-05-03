@@ -2,27 +2,24 @@ import { PhoneFilled } from '@ant-design/icons';
 import { Card } from 'antd';
 import React from 'react';
 import { Form, Input, Button } from 'antd';
-import { Radio } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
 import { Collapse } from 'antd';
 
-// import { LockOutlined, UserOutlined } from "@ant-design/icons";
-
-function Curriculum({ Curriculum }) {
+function Curriculum({ curriculum }) {
 	const { Panel } = Collapse;
-	console.log(Curriculum);
+
 	return (
 		<div className='mt-5'>
 			<h2 className='curriculum_heading'>Curriculum</h2>
 
 			<div className='row mt-3'>
 				<div className='col col-lg-8 col-sm-12'>
-					<p>{Curriculum.Description}</p>
+					<p>{curriculum.description}</p>
 					<Collapse accordion expandIconPosition='right'>
-						{Curriculum.CurriculumData.map((e, i) => (
+						{curriculum.curriculumData.map((e, i) => (
 							<Panel header={e.title} key={i}>
 								<ul className='px-4 mb-0'>
-									{e.Data.map((a) => (
+									{e.data.map((a) => (
 										<li>{a}</li>
 									))}
 								</ul>
@@ -73,17 +70,9 @@ function Curriculum({ Curriculum }) {
 							>
 								<Input type='number' placeholder='Phone Number ' />
 							</Form.Item>
+
 							<Form.Item>
-								<Radio.Group
-								// onChange={onChange}
-								// value={value }
-								>
-									<Radio value={'Myself'}>Myself</Radio>
-									<Radio value={'My Company'}>My Company</Radio>
-								</Radio.Group>
-							</Form.Item>
-							<Form.Item>
-								<TextArea placeholder='textarea with clear icon' allowClear />
+								<TextArea placeholder='Enter your message here...' allowClear />
 							</Form.Item>
 
 							<Form.Item shouldUpdate>

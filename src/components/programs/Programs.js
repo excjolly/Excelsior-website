@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import { Card, Col, Form, Input, Radio, Row, Button } from 'antd';
 import ProgramsCards from './ProgramsCards';
 import { useLocation } from 'react-router-dom';
-import Program_DB_Master from '../../assets/static/Program_DB_Master.json';
+import Program_DB_Master from '../../assets/static/Program_DB_Master';
 const { Meta } = Card;
 
 const Program = () => {
-	console.log(Program_DB_Master);
 	return (
 		<div className='container mt-3'>
 			<div className='mb-5'>
@@ -49,10 +48,10 @@ const Program = () => {
 									key={index}
 								>
 									<li className='programs_list'>
-										<ul>{e.NameOfProgram}</ul>
-										<ul className='programs_listdark'>{e.DurationInWeeks}</ul>
-										<ul className='programs_listdark'>{e.Rating}</ul>
-										<ul className='programs_listdark'>{e.CompletedBy}</ul>
+										<ul>{e.nameOfProgram}</ul>
+										<ul className='programs_listdark'>{e.durationInWeeks}</ul>
+										<ul className='programs_listdark'>{e.rating}</ul>
+										<ul className='programs_listdark'>{e.completedBy}</ul>
 									</li>
 								</Link>
 							))}
