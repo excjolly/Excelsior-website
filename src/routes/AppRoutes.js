@@ -10,7 +10,7 @@ import Quiz from '../components/Scholarship/Quiz';
 import Contact from '../components/contact/Contact';
 import Aboutus from '../components/About/Aboutus';
 import Data from '../components/About/Data';
-import Program_DB_Master from '../assets/static/Program_DB_Master.json';
+import Program_DB_Master from '../assets/static/Program_DB_Master';
 
 const AppRoutes = () => {
 	return (
@@ -24,7 +24,11 @@ const AppRoutes = () => {
 			<Route path='/scholarship/quiz' element={<Quiz />} />
 			<Route path='/contact' element={<Contact />} />
 			{Program_DB_Master.map((e, i) => (
-				<Route path={e.pathname} element={<ProgramsDetails programData={e} />} />
+				<Route
+					path={e.pathname}
+					element={<ProgramsDetails programData={e} />}
+					key={i}
+				/>
 			))}
 			<Route path='/aboutus' element={<Aboutus />} />
 			<Route path='/data' element={<Data />} />

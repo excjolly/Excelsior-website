@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Helmet from 'react-helmet';
 import { Link as ScrollLink } from 'react-scroll';
-import { Menu } from 'antd';
-import { useLocation } from 'react-router-dom';
-import { Card } from 'antd';
 import ProgramHeader from './ProgramHeader';
 import KeyHighlights from './KeyHighlights';
 import Curriculum from './Curriculum';
@@ -15,11 +12,9 @@ import Projects from './Projects';
 import Mentors from './Mentors';
 import Review from './Review';
 import Blogs from './Blogs';
-import FAQ from './FAQ';
 import SpeakWithExpert from './SpeakWithExpert';
 
-const ProgramDetails = ({programData}) => {
-
+const ProgramDetails = ({ programData }) => {
 	useEffect(() => {
 		const header = document.getElementById('myHeader');
 		const sticky = header.offsetTop;
@@ -50,7 +45,7 @@ const ProgramDetails = ({programData}) => {
 				{programData.length != 0 ? (
 					<>
 						<ProgramHeader programData={programData} />
-						<KeyHighlights highlight={programData.Highlight} />
+						<KeyHighlights highlight={programData.highlight} />
 						<div className='program_details'>
 							<div className='program_details_navbar ' id='myHeader'>
 								<ScrollLink
@@ -130,15 +125,6 @@ const ProgramDetails = ({programData}) => {
 								>
 									<div className='program_details_navlink_text'>Reviews</div>
 								</ScrollLink>
-								{/* <ScrollLink
-            className="program_details_navbar_link"
-            to="Blogs"
-            smooth={true}
-            offset={-180}
-            spy={true}
-          >
-            <div className="program_details_navlink_text">Blogs</div>
-          </ScrollLink> */}
 								<ScrollLink
 									className='program_details_navbar_link'
 									to='FAQ'
@@ -152,31 +138,31 @@ const ProgramDetails = ({programData}) => {
 						</div>
 						<div className='container'>
 							<div name='overview' id='overview'>
-								<OverView OverView={programData.OverView} />
+								<OverView overview={programData.overview} />
 							</div>
 							<div name='curriculum' id='curriculum'>
-								<Curriculum Curriculum={programData.Curriculum} />
+								<Curriculum curriculum={programData.curriculum} />
 							</div>
 
 							<div name='admission' id='admission'>
-								<Admission AdmissionProcedure={programData.AdmissionProcedure} />
+								<Admission admissionProcedure={programData.admissionProcedure} />
 							</div>
 							<div name='SpeakWithExpert' id='SpeakWithExpert'>
 								<SpeakWithExpert />
 							</div>
 							<div id='fee' name='fee'>
-								<Pricing Pricing={programData.Fee} />
+								<Pricing pricing={programData.fee} />
 							</div>
 							<div id='LearningExperience' name='LearningExperience'>
 								<LearningExperience
-									LearningExperience={programData.LearningExperience}
+									learningExperience={programData.learningExperience}
 								/>
 							</div>
 							<div id='Projects' name='Projects'>
-								<Projects ProjectsData={programData.Projects} />
+								<Projects projectsData={programData.projects} />
 							</div>
 							<div id='Mentors' name='Mentors'>
-								<Mentors MentorsData={programData.Mentor} />
+								<Mentors mentorsData={programData.mentor} />
 							</div>
 							<div className='mt-5' id='Review' name='Review'>
 								<Review />

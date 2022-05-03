@@ -1,18 +1,19 @@
-import { Col, Rate, Row } from 'antd';
 import React from 'react';
+import { Col, Rate, Row } from 'antd';
 
 function ProgramHeader({ programData }) {
+	console.log(programData.banner);
 	return (
-		<div className='banner'>
+		<div className='banner' style={{ backgroundImage: `url('${programData.banner}')` }}>
 			<div className='container'>
 				<div className='left'>
-					<h1 className='admission_heading'>{programData.NameOfProgram}</h1>
+					<h1 className='admission_heading'>{programData.nameOfProgram}</h1>
 					<div className='rating'>
-						{programData.Rating} <Rate disabled defaultValue={programData.Rating} />
+						{programData.rating} <Rate disabled defaultValue={programData.rating} />
 					</div>
 					<Row>
 						<Col lg={12}>
-							<p>{programData.Description}</p>
+							<p>{programData.description}</p>
 						</Col>
 					</Row>
 					<button className='enroll_button' onClick={() => console.log('enroll')}>
