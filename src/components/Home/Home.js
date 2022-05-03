@@ -25,11 +25,17 @@ import images from "../../assets/images";
 import Admission from "../programs/Admission";
 import Helmet from "react-helmet";
 import { ScrollElement } from "react-scroll/modules";
+import axios from "axios";
 
 const { Option } = Select;
 
 const Home = () => {
   const navigate = useNavigate();
+  const [name,setName]=useState();
+  const [email,setEmail]=useState();
+  const [phone,setPhone]=useState();
+  const [experience,setExperience]=useState();
+  const [HighestQualification,setHighestQualification]=useState()
   const [registerFormCurrentStep, setRegisterFormCurrentStep] = useState(0);
   const [apData, setApData] = useState([
     {
@@ -244,6 +250,19 @@ const Home = () => {
     );
   };
 
+
+  const homeSubmitApi=async()=>{
+   let body= {
+      "name":name,
+      "email":email,
+      "phone_number":phone,
+      "experience":experience,
+      "qualification":HighestQualification
+      }
+      console.log("home body is..",body)
+      let response=await axios.post('http://3.111.207.167:8000/api/help',body);
+      console.log("home api is...",response.data);
+  }
   return (
     <div className="mb-5">
       <Helmet>
@@ -315,7 +334,7 @@ const Home = () => {
                       { required: true, message: "Please input your Name!" },
                     ]}
                   >
-                    <Input placeholder="Name" />
+                    <Input placeholder="Name" onChange={(text)=>setName(text.target.value)}/>
                   </Form.Item>
                   <Form.Item
                     name="email"
@@ -323,7 +342,7 @@ const Home = () => {
                       { required: true, message: "Please input your email!" },
                     ]}
                   >
-                    <Input type="text" placeholder="Email Address " />
+                    <Input type="text" placeholder="Email Address "  onChange={(text)=>setEmail(text.target.value)} />
                   </Form.Item>
                   <Form.Item
                     name="phonenumber"
@@ -334,7 +353,7 @@ const Home = () => {
                       },
                     ]}
                   >
-                    <Input type="number" placeholder="Phone Number " />
+                    <Input type="number" placeholder="Phone Number "  onChange={(text)=>setPhone(text.target.value)} />
                   </Form.Item>
                   <Form.Item
                     name="experience"
@@ -345,7 +364,7 @@ const Home = () => {
                       },
                     ]}
                   >
-                    <Input type="number" placeholder="Experience" />
+                    <Input type="number" placeholder="Experience"  onChange={(text)=>setExperience(text.target.value)} />
                   </Form.Item>
                   <Form.Item
                     name=" Highest Qualification"
@@ -356,7 +375,7 @@ const Home = () => {
                       },
                     ]}
                   >
-                    <Input type="text" placeholder=" Highest Qualification" />
+                    <Input type="text" placeholder=" Highest Qualification"   onChange={(text)=>setHighestQualification(text.target.value)}/>
                   </Form.Item>
                   {/* <Form.Item>
                     <Radio.Group
@@ -372,6 +391,7 @@ const Home = () => {
                       <Button
                         type="primary"
                         htmlType="submit"
+                        onClick={()=>homeSubmitApi()}
                       // disabled={
                       // //   !form.isFieldsTouched(true) ||
                       // //   !!form.getFieldsError().filter(({ errors }) => errors.length).length

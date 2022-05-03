@@ -2,10 +2,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { HomeOutlined } from "@ant-design/icons";
 import { Button, Card, Col, Row } from "antd";
-import React from "react";
+import axios from "axios";
+import React, { useEffect,useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Scholarship() {
+  const [quiz,setQuiz]=useState([]);
   const navigate = useNavigate();
   const Navigation = (e) => {
     e.preventDefault();
@@ -13,6 +15,17 @@ function Scholarship() {
   };
   
 
+  useEffect(()=>{
+getAllQuiz()
+  },[])
+
+  const getAllQuiz=async()=>{
+    let response= await axios.get('http://3.111.207.167:8000/api/quiz')
+    console.log(response.data);
+    if(response.data.length){
+      setQuiz(response.data);
+    }
+  }
   return (
     <div className="container mt-3 mb-5">
       <h3 className="admission_heading"> Quiz </h3>
