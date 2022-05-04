@@ -42,10 +42,11 @@ const Program = () => {
 							</li>
 							{Program_DB_Master.map((e, index) => (
 								<Link
-									to={{
-										pathname: e.pathname,
-									}}
-									state={e}
+									// to={{
+									// 	pathname: e.pathname,
+									// }}
+									to={e.pathname}
+									// state={e}
 									key={index}
 								>
 									<li className='programs_list'>

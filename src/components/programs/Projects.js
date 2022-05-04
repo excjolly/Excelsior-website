@@ -1,5 +1,17 @@
 import { Card, Carousel, Col, Image, Row } from 'antd';
 import React, { Fragment } from 'react';
+import { FiChevronLeft } from 'react-icons/fi';
+import { FiChevronRight } from 'react-icons/fi';
+
+function PrevArrow(props) {
+	const { className, style, onClick } = props;
+	return <FiChevronLeft className={className} style={{ ...style }} onClick={onClick} />;
+}
+
+function NextArrow(props) {
+	const { className, style, onClick } = props;
+	return <FiChevronRight className={className} style={{ ...style }} onClick={onClick} />;
+}
 
 function Projects({ projectsData }) {
 	let firstRow = projectsData.map((e) => e.firstRow);
@@ -8,7 +20,14 @@ function Projects({ projectsData }) {
 	return (
 		<div className='container mb-5'>
 			<h3 className='admission_heading'> Projects </h3>
-			<Carousel className='d-lg-jsjs' dots={false} autoplay={false}>
+			<Carousel
+				className='d-lg-jsjs'
+				dots={false}
+				autoplay={false}
+				arrows={true}
+				prevArrow={<PrevArrow />}
+				nextArrow={<NextArrow />}
+			>
 				{projectsData.map((e, i) => (
 					<div className='mb-4' key={i}>
 						<Row gutter={[20, 30]}>

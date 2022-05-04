@@ -6,8 +6,8 @@ function ProgramHeader({ programData }) {
 		<div className='banner' style={{ backgroundImage: `url('${programData.banner}')` }}>
 			<div className='container'>
 				<div className='left'>
-					<h1 className='admission_heading'>{programData.nameOfProgram}</h1>
-					<div className='rating'>
+					<h1 className='admission_heading' style={{color: '#fff'}}>{programData.nameOfProgram}</h1>
+					<div className='rating' style={{color: '#fff'}}>
 						{programData.rating} <Rate disabled defaultValue={programData.rating} />
 					</div>
 					<Row>

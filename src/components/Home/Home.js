@@ -413,7 +413,7 @@ const Home = () => {
                       <div className="home__videos-item-left">
                         <h6>Data Science for IT</h6>
                         <div className="home__videos-item-time">
-                          <p> 16.05</p>
+                          <p>16.05</p>
                         </div>
                       </div>
                       <div className="home__videos-item-right">
