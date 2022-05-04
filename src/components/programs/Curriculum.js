@@ -19,8 +19,8 @@ function Curriculum({ curriculum }) {
 						{curriculum.curriculumData.map((e, i) => (
 							<Panel header={e.title} key={i}>
 								<ul className='px-4 mb-0'>
-									{e.data.map((a) => (
-										<li>{a}</li>
+									{e.data.map((a, index) => (
+										<li key={index}>{a}</li>
 									))}
 								</ul>
 							</Panel>
@@ -31,10 +31,9 @@ function Curriculum({ curriculum }) {
 					<Card className='p-2'>
 						<div className='row'>
 							<div className='col col-lg-8'>
-								<small> Contact us</small>
+								<small>Contact us</small>
 								<h6>
-									{' '}
-									<strong>+91 7070707070</strong>{' '}
+									<strong>+91 7070707070</strong>
 								</h6>
 							</div>
 							<PhoneFilled style={{ fontSize: '30px' }} />

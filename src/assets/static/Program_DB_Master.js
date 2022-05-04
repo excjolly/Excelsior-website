@@ -28,7 +28,7 @@ const Program_DB_Master = [
 		overview: {
 			description:
 				'A complete program that caters to learning complete Data Science along with the complete domain knowledge of IT industry including product management and complete product life cycle. This is an end-to-end IT training program that gives you all the knowledge required to start and grow your career in Data Science. It covers everything from basic statistics and modelling techniques up to advanced machine learning, deep learning, artificial intelligence, NLP (Natural Language Processing), computer vision and other areas of AI.',
-			dropDownQuestion: [
+			dropdownQuestion: [
 				{
 					question: 'What does a Data Scientist do in an Finance product companies?',
 					answer: (
@@ -210,9 +210,9 @@ const Program_DB_Master = [
 						'Speak directly with a data scientist mentor and a career counselor to find the right path.',
 				},
 				{
-					title: 'Enrol',
+					title: 'Enroll',
 					content:
-						"Enrol now to start your Data Science journey with the best online data science course, and take the first step towards a successful career. It's the number one skill companies need.",
+						"Enroll now to start your Data Science journey with the best online data science course, and take the first step towards a successful career. It's the number one skill companies need.",
 				},
 				{
 					title: 'Enhance',
@@ -272,10 +272,24 @@ const Program_DB_Master = [
 				],
 			},
 		],
-		learningExperience: {
-			description:
-				'We provide you with the necessary guidance to make your career choices.',
-		},
+		learningExperience: [
+			{
+				title: 'Class Notifications',
+				body: 'Class Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus consequuntur ex mollitia pariatur enim non at, aliquid itaque quis repellat repellendus nulla qui sint et ut. Nisi, dolorem animi.',
+			},
+			{
+				title: 'Hackathons',
+				body: 'Hackathons Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus consequuntur ex mollitia pariatur enim non at, aliquid itaque quis repellat repellendus nulla qui sint et ut. Nisi, dolorem animi.',
+			},
+			{
+				title: 'Career Services',
+				body: 'Career Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus consequuntur ex mollitia pariatur enim non at, aliquid itaque quis repellat repellendus nulla qui sint et ut. Nisi, dolorem animi.',
+			},
+			{
+				title: 'Major Announcements',
+				body: 'Major Announcements Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus consequuntur ex mollitia pariatur enim non at, aliquid itaque quis repellat repellendus nulla qui sint et ut. Nisi, dolorem animi.',
+			},
+		],
 		projects: [
 			{
 				firstRow: {
@@ -291,14 +305,14 @@ const Program_DB_Master = [
 			},
 			{
 				firstRow: {
-					title: 'Fake news detection',
+					title: 'Segmentation of customer groups',
 					description:
-						'Fake news can be dangerous. Your challenge is to build a Fake News classifier by applying ML algorithms such as Passive Aggressive Classifier and determine the accuracy of our model. You will be using various Python packages such as pandas, NumPy, and scikit-learn to determine the legitimacy of the information. With the help of this, you will be able to predict on the fly whether the information you acquired is authentic or not.',
+						'Customer segmentation helps companies to market the products in each segment more fitting to each individual customer. Build your clustering model using k-means clustering algorithms learned in machine learning. In this project, you will cluster the customers based on the features and their buying behaviour. Use the Elbow method, Silhouette Analysis method and DBSCAN. Once you have created various segments among customers, this model could be used by businesses to advertise their products to each segment in a way which will grab their attention.',
 				},
 				secondRow: {
-					title: 'Influence of global warming on food chain supply',
+					title: 'Diabetic Retinopathy',
 					description:
-						'Global warming is influencing the climate pattern and leads to the change in food production. Unusual weather conditions and adaptation of technologies used in agriculture have a significant effect on the pattern of food production globally. In this project you will analyze the factors that are causing these changes, study the data visualization techniques to explain the patterns across different geographical locations, and predict the future trends.',
+						'Early treatment of pathological changes in the blood vessels of the eye can help prevent eye disease from progressing to blindness. In this project, you will use Keras with TensorFlow backend to build a deep learning model for automatic diabetic retinopathy screening. We will be using data that has been pre-processed to extract In this project, you will use Keras with TensorFlow backend to build a deep learning model for automatic diabetic retinopathy screening. We will be using data that has been pre-processed to extract the most important features from retina images.',
 				},
 			},
 		],
@@ -340,7 +354,62 @@ const Program_DB_Master = [
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 			},
 		],
-		reviews: '',
+		reviews: [
+			{
+				firstRow: {
+					name: 'A',
+					imageURL:
+						'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
+					rating: 4.5,
+					description:
+						'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
+				},
+				secondRow: {
+					name: 'B',
+					imageURL:
+						'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
+					rating: 4.5,
+					description:
+						'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
+				},
+			},
+			{
+				firstRow: {
+					name: 'C',
+					imageURL:
+						'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
+					rating: 4.5,
+					description:
+						'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
+				},
+				secondRow: {
+					name: 'D',
+					imageURL:
+						'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
+					rating: 4.5,
+					description:
+						'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
+				},
+			},
+			{
+				firstRow: {
+					name: 'E',
+					imageURL:
+						'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
+					rating: 4.5,
+					description:
+						'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
+				},
+				secondRow: {
+					name: 'F',
+					imageURL:
+						'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
+					rating: 4.5,
+					description:
+						'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
+				},
+			},
+		],
 	},
 	{
 		pathname: '/programs/specialization-in-data-science-for-finance',

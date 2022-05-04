@@ -1,18 +1,18 @@
 import { RightCircleOutlined } from '@ant-design/icons';
 import { Button, Card } from 'antd';
-import React from 'react';
+import React, { Fragment } from 'react';
 
 function Mentors({ mentorsData }) {
 	return (
 		<div>
 			<h3 className='admission_heading'>Mentors</h3>
 			<div className='row'>
-				{mentorsData.map((e) => (
-					<>
+				{mentorsData.map((e, i) => (
+					<Fragment key={i}>
 						<div className='col col-lg-3 col-md-3 col-sm-12'>
-							<Card hoverable>
+							<Card hoverable className='h-100'>
 								<div className='mb-n5 card-body'>
-									<div className='d-flex align-items-center flex-column mb-5'>
+									<div className='d-flex align-items-center flex-column'>
 										<div className='mb-3 d-flex align-items-center flex-column'>
 											<div className='sw-13 position-relative mb-3'>
 												<img
@@ -36,7 +36,7 @@ function Mentors({ mentorsData }) {
 								</div>
 							</Card>
 						</div>
-					</>
+					</Fragment>
 				))}
 			</div>
 		</div>

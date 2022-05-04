@@ -13,7 +13,7 @@ function OverView({ overview }) {
 				</b>
 			</p>
 			<Collapse accordion expandIconPosition='right'>
-				{overview.dropDownQuestion.map((e, index) => (
+				{overview.dropdownQuestion.map((e, index) => (
 					<Panel header={e.question} key={index}>
 						<p>{e.answer}</p>
 					</Panel>
