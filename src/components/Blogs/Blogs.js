@@ -3,6 +3,7 @@ import { Row, Col, Card, Form, Input, Button, Upload } from "antd";
 import { RightOutlined, UploadOutlined } from "@ant-design/icons";
 import BlogCard from "./components/BlogCard";
 import BlogMiniCard from "./components/BlogMiniCard";
+import axios from "axios";
 
 const { Meta } = Card;
 
@@ -15,12 +16,19 @@ const Blogs = () => {
         "Hello Yugesh\nWelcome and thank you for installing Strapi, the leading open-source Headless CMS to easily manage content and quickly generate a well-structured API",
     },
   ]);
-  // useEffect(() => {
-  //     fetch(
-  //         "http://localhost:1337/api/blogs/")
-  //         .then((response) => response.json())
-  //         .then((data) => {setData(data);})
-  // },[])
+  useEffect(() => {
+    getBlogs()
+    //  let response=
+  },[])
+  const getBlogs=async()=>{
+    let response=await axios.get('http://3.111.207.167:8000/api/bloglist');
+    // console.log(response.data.data.length>0);
+    if(response.data.data.length>0){
+      setData(response.data.data)
+    }
+  }
+
+  // const 
 
   // data: Array(1)
   // 0:
@@ -47,7 +55,7 @@ const Blogs = () => {
             {data &&
               data.map((item, index) => (
                 <Col xs={24} sm={24} md={12} lg={8} key={index}>
-                  <BlogCard title={item.Title} description={item.Description} />
+                  <BlogCard title={item.title} description={item.description} />
                 </Col>
               ))}
           </Row>
