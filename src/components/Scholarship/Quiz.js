@@ -6,6 +6,7 @@ import validator from 'validator'
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
+import HtmlHead from "../HtmlHead";
 var array1 = [];
 function Quiz() {
 	const navigate = useNavigate();
@@ -177,6 +178,11 @@ function Quiz() {
 	return (
 		<div className='container mt-5 mb-5'>
 			<ToastContainer />
+			<HtmlHead
+				title='Excelsior | Online Education Platform | Test your Skills'
+				desc='Show what you are made of by testing your skills'
+				kw='scholarship, data science, specialization in data science for finance, discount for online courses'
+			/>
 			<div className='d-lg-flex d-sm-block  justify-content-between'>
 				<h3 className='admission_heading'> Quiz Details </h3>
 				{

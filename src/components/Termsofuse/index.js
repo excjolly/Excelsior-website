@@ -1,9 +1,15 @@
 import React from 'react'
+import HtmlHead from '../HtmlHead'
 
 const Termofuse = () => {
   return (
     <div>
         <div className='container mt-4'>
+        <HtmlHead
+		title='Excelsior | Online Education Platform | Terms'
+		desc='Best online training in Delhi NCR and Bengaluru for Data Science '
+        kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+			/>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
 				<h3 className='mb-4 '>We don't just train, We make careers</h3>
         <h2 className='custom-text-primary mb-3'>Terms and Conditions related to our Learning Division of Excelsior.</h2>
