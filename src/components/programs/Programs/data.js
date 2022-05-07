@@ -18,7 +18,7 @@ export const programData = {
 			content: ['Practical internship on our product for the whole duration of the program.'],
 		},
 		{
-			title: <b>Unlimited Live Projects</b>,
+			title: <b>Unlimited Projects</b>,
 			content: ['Enrol and get unlimited live projects compete with thousands of other students.'],
 		},
 		{
