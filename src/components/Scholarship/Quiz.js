@@ -2,6 +2,7 @@ import { HomeOutlined } from '@ant-design/icons';
 import { Row, Col, Card, Form, Input, Upload, Button, Modal } from 'antd';
 import React, { useEffect, useLayoutEffect, useState, useRef } from 'react';
 import Question from './Question';
+import validator from 'validator'
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
@@ -62,6 +63,8 @@ function Quiz() {
 		if (!quizPlayerUserName && !email && !phone) {
 			toast.error('All Fileds are required');
 		} else {
+			if (validator.isEmail(email)) {
+				if(validator.isMobilePhone(phone)){
 			let body = {
 				name: quizPlayerUserName,
 				email: email,
@@ -77,7 +80,13 @@ function Quiz() {
 				toast.success('Your Form Sucesssfully Submited');
 				setUserForm(false);
 			}
+		}else{
+			toast.error("Mobile number is not valid")
 		}
+	}else{
+			toast.error("EMail is not valid")
+		}
+	}
 	};
 	const getParticularQuizData = async () => {
 		var ele = document.getElementsByClassName('unchecek');
@@ -249,7 +258,7 @@ function Quiz() {
 								<div>Your Result:-</div>
 								{totalWrong ? (
 									<>
-										<div>Correct Ansqer:- {totalcorrect}/{qes.length} </div>
+										<div>Correct Answer:- {totalcorrect}/{qes.length} </div>
 										<div>Wrong Answer:- {totalWrong}/{qes.length}</div>
 									</>
 								) : (
@@ -364,6 +373,8 @@ function Quiz() {
 								<Input
 									placeholder='Phone'
 									type='number'
+									minLength={10}
+		  							maxLength={12}
 									onChange={(e) => setPhone(e.target.value)}
 								/>
 							</Form.Item>

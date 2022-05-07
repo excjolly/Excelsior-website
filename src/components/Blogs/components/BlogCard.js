@@ -6,18 +6,18 @@ import images from "../../../assets/images";
 
 const { Meta } = Card;
 
-const BlogCard = (item,allArray) => {    
-    console.log("Blog array  sheet..",allArray)
+const BlogCard = (item) => {    
+    // console.log("Blog array  sheet..",allArray)
     const navigate = useNavigate();
     const detailPage=(item,allArray)=>{
         console.log("Blog Data.2..",item);
-        console.log("blog card array..",allArray);
-        navigate("/blog-details/"+item.slug,{ state:{ blogId: item,allArray:allArray}})
+        // console.log("blog card array..",allArray);
+        navigate("/blog-details/"+item.slug,{ state:{ blogId: item}})
     }
 
     return (
         <Card
-            onClick={() => detailPage(item.item,allArray)}
+            onClick={() => detailPage(item.item)}
             className="blogs__blog-card"
             hoverable
             cover={

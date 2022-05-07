@@ -1,34 +1,37 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="footer__container">
             <p>Copyright © {new Date().getFullYear()} All Rights Reserved</p>
             <div className="footer__options">
-                <a
+                {/* <a
                     href="https://getexcelsior.com/terms-of-use"
                     target="_blank"
                     rel="noreferrer"
-                >
-                    Terms of use
-                </a>
+                > */}
+                <Link to='/terms-of-use'> Terms of use</Link>
+                   
+                {/* </a> */}
 
                 <div className="footer-option-divider" />
-                <a
+                {/* <a
                     href="https://getexcelsior.com/disclaimer"
                     target="_blank"
                     rel="noreferrer"
-                >
-                    Disclaimer
-                </a>
+                > */}
+                  <Link to='/disclaimer'>  Disclaimer</Link>
+                   
+                {/* </a> */}
                 <div className="footer-option-divider" />
-                <a
+                {/* <a
                     href="https://getexcelsior.com/privacy-policy"
                     target="_blank"
                     rel="noreferrer"
-                >
-                    Privacy Policy
-                </a>
+                > */}
+                 <Link to='/privacy-policy'> Privacy Policy</Link>
+                    
+                {/* </a> */}
             </div>
         </div>
     );

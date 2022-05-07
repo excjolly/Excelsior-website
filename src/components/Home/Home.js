@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
 	Row,
 	Col,
@@ -20,6 +20,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import images from '../../assets/images';
 import Admission from '../programs/Admission';
+import validator from 'validator'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import Program_DB_Master from '../../assets/static/Program_DB_Master';
@@ -33,10 +34,13 @@ const Home = () => {
 	const [name, setName] = useState();
 	const [realted, setRelatedBlog] = useState([]);
 	const [email, setEmail] = useState();
+	const [currentFruit,setcurrentFruit]=useState();
 	const [subscribeEmail, setSubscribeEmail] = useState();
 	const [subscribeName, setSubscribeName] = useState();
 	const [phone, setPhone] = useState();
 	const [experience, setExperience] = useState();
+	const [emailName,setEmailName]=useState();
+	// const 
 	const [HighestQualification, setHighestQualification] = useState();
 	const [registerFormCurrentStep, setRegisterFormCurrentStep] = useState(0);
 	const [statsData, setStatsData] = useState([
@@ -218,11 +222,17 @@ const Home = () => {
 		if (!name && !email && !phone && !experience && !HighestQualification) {
 			toast.error('Some Parameter is missing..');
 		} else {
+
+			if (validator.isEmail(email)) {
+				if(phone.length<9){
+					toast.error("Phone Number Not Valid")
+				}else{
+				// setEmailError('Valid Email :)')
 			let body = {
 				name: name,
 				email: email,
 				phone_number: phone,
-				experience: experience,
+				experience:currentFruit,
 				qualification: HighestQualification,
 			};
 			console.log('home body is..', body);
@@ -237,8 +247,14 @@ const Home = () => {
 			} else {
 				toast.error('Your Form is not succefully submit');
 			}
+		
 			console.log('home api is...///...', response.data);
 		}
+	}else{
+			toast.error("Enter Valid Email")
+		}
+	
+	}
 	};
 	const menu = (
 		<Menu
@@ -262,10 +278,13 @@ const Home = () => {
 		/>
 	);
 	const subScribeApi = async () => {
-		if (!subscribeEmail) {
+		if (!subscribeEmail && !emailName) {
 			toast.error('Some parameter is missing');
 		} else {
+			if (validator.isEmail(subscribeEmail)) {
+				// setEmailError('Valid Email :)')
 			let body = {
+				name:subscribeName,
 				email: subscribeEmail,
 			};
 			console.log('body..', body);
@@ -276,10 +295,35 @@ const Home = () => {
 				toast('Your Email is successfully subscribe');
 				setSubscribeEmail('');
 			} else {
-				toast.error('Your Email not subscribe');
+				toast.error('Issue from server side');
 			}
+		}else{
+			toast.error("Your EMail is not Valid")
 		}
+	}
 	};
+	useEffect(()=>{
+		getBlogList()
+		// let response=await
+	},[])
+	const getBlogList=async()=>{
+		let response=await axios.get('http://3.111.207.167:8000/api/bloglist');
+    console.log(response.data.data);
+    if(response.data.data.length>0){
+      setRelatedBlog(response.data.data)
+    }
+	}
+	const gotoBlogPage=()=>{
+		navigate("/blogs")
+	}
+	const changeFruit = (newFruit) => {
+		console.log("selected value is..",newFruit)
+		setcurrentFruit(newFruit)
+	  }
+	  const changeHighestQulaification=(newFruit)=>{
+		console.log("selected value is..",newFruit)
+		setHighestQualification(newFruit)
+	  }
 	return (
 		<div className='mb-5'>
 			<ToastContainer />
@@ -382,6 +426,7 @@ const Home = () => {
 										className='mb-3'
 									>
 										<Input
+										min={9}
 											value={phone}
 											type='number'
 											placeholder='Phone Number '
@@ -390,33 +435,37 @@ const Home = () => {
 									</Form.Item>
 
 									<Form.Item>
-										<Select
+										<select
 											defaultValue='experience'
 											name='experience'
 											id='experience'
+											value={currentFruit}
+											onChange={(event) => changeFruit(event.target.value)}
 										>
-											<Option value='experience'>Experience</Option>
-											<Option value='fresher'>Fresher</Option>
-											<Option value='0-2yrs'>0-2 Years</Option>
-											<Option value='2-5yrs'>2-5 Years</Option>
-											<Option value='5-8yrs'>5-8 Years</Option>
-											<Option value='8+yrs'>8+ Years</Option>
-										</Select>
+											<option value='experience'>Experience</option>
+											<option value='fresher' >Fresher</option>
+											<option value='0-2yrs'>0-2 Years</option>
+											<option value='2-5yrs'>2-5 Years</option>
+											<option value='5-8yrs'>5-8 Years</option>
+											<option value='8+yrs'>8+ Years</option>
+										</select>
 									</Form.Item>
 									<Form.Item>
-										<Select
+										<select
 											defaultValue='highest-qualification'
 											name='highest-qualification'
 											id='highest-qualification'
+											value={HighestQualification}
+											onChange={(event) => changeHighestQulaification(event.target.value)}
 										>
-											<Option value='highest-qualification'>
+											<option value='highest-qualification'>
 												Highest Qualification
-											</Option>
-											<Option value='UG'>Undergraduate</Option>
-											<Option value='Graduate'>Graduate</Option>
-											<Option value='PG'>Post Graduate</Option>
-											<Option value='PhD'>Ph.D</Option>
-										</Select>
+											</option>
+											<option value='UG'>Undergraduate</option>
+											<option value='Graduate'>Graduate</option>
+											<option value='PG'>Post Graduate</option>
+											<option value='PhD'>Ph.D</option>
+										</select>
 									</Form.Item>
 									<Form.Item shouldUpdate>
 										{() => (
@@ -512,7 +561,7 @@ const Home = () => {
 									<BlogMiniCard key={index} item={item} />
 								))}
 								<Row align='middle' justify='center'>
-									<Button type='primary'>See More</Button>
+									<Button type='primary' onClick={()=>gotoBlogPage()}>See More</Button>
 								</Row>
 							</Card>
 						</Col>

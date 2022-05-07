@@ -3,28 +3,53 @@ import { Link } from 'react-router-dom';
 import { Card, Col, Form, Input, Row, Button, DatePicker, TimePicker } from 'antd';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
+import validator from 'validator'
 import ProgramsCards from '../ProgramsCards';
 import Program_DB_Master from '../../../assets/static/Program_DB_Master';
 import { programData } from './data';
 import Mentors from '../Mentors';
+import moment from 'moment';
 
 const Program = () => {
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
 	const [phone, setPhone] = useState();
+	const [chooseDate,setChooseDate]=useState();
+	const [chooseTime,setChooseTime]=useState(moment());
 	const ProgramFormSubmit = async () => {
-		if (!name && !email) {
-			toast.error('Some parameter is missing');
+		if (!name && !email && !phone && !chooseDate && !chooseTime) {
+			toast.error('All Fileds is required');
 		} else {
-			let body = {};
-			let response = await axios.post('', body);
+			if (validator.isEmail(email) && validator.isMobilePhone(phone)) {
+			let body = {
+				"name": name,
+				"email": email,
+				"phone_number": phone,
+				"date": chooseDate,
+				"time": chooseTime
+				}
+				console.log("event body is...",body)
+			let response = await axios.post('http://3.111.207.167:8000/api/events', body);
 			if (response.data.Success === 1) {
 				toast.success('Form succesfully submitted');
 			} else {
 				toast.error('Something went wrong into the server side');
 			}
+		}else{
+			toast.error("Email is not valid")
 		}
+	}
 	};
+	const handleChange=(e,value)=>{
+		console.log("e",e);
+		console.log("vaule",value)
+		setChooseDate(value);
+	}
+	const handleValueChange = value => {
+		setChooseTime(value && value.format('HH:mm:ss'));
+		// this.setState({ value });
+		// console.log("Time is..",value);
+	  };
 
 	return (
 		<div className='container mt-3'>
@@ -176,7 +201,8 @@ const Program = () => {
 										},
 									]}
 								>
-									<DatePicker />
+									<DatePicker   onChange={(value, e) => handleChange(value, e)}
+   selected={chooseDate} />
 								</Form.Item>
 								<Form.Item
 									name='time'
@@ -187,7 +213,7 @@ const Program = () => {
 										},
 									]}
 								>
-									<TimePicker format={'HH:mm'} />
+									<TimePicker format={'HH:mm'} value={chooseTime} onChange={handleValueChange} />
 								</Form.Item>
 								<Form.Item shouldUpdate>
 									{() => (
