@@ -282,7 +282,7 @@ const Program = () => {
 						<li className='notifications_list scrollContent test_admission'>
 							{programData.notifications.map((item, index) => (
 								<div className='d-flex flex-column' key={index}>
-									<div className='d-flex mb-2'>
+									<div className='d-flex mb-3'>
 										<span className='mr-2'>&#10146;</span>
 										<h4 style={{ lineHeight: '1.3' }}>{item.title}</h4>
 									</div>

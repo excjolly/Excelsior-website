@@ -171,7 +171,7 @@ const ProgramDetails = ({ programData }) => {
 								<Review reviews={programData.reviews} />
 							</div>
 							<div className='mt-5' id='Blogs' name='Blogs'>
-								<Carousel className='videoSlide'><Blogs/></Carousel>						
+								<Blogs/>						
 								
 							</div>
 							<div className='mt-5' id='FAQ' name='FAQ'>
