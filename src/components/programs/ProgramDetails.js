@@ -40,7 +40,7 @@ const ProgramDetails = ({ programData }) => {
 			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
-				<p className='mb-4 '>Excelsior is ideal for professionals who wants to</p>
+				<p className='mb-4 '>We don't just train, We make careers</p>
 			</div>
 			<div className='programDetails'>
 				{programData.length != 0 ? (

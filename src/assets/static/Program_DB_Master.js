@@ -51,7 +51,7 @@ const Program_DB_Master = [
 		},
 		overview: {
 			description:
-				'A complete program that caters to learning complete Data Science along with the complete domain knowledge of IT industry including product management and complete product life cycle. This is an end-to-end IT training program that gives you all the knowledge required to start and grow your career in Data Science. It covers everything from basic statistics and modelling techniques up to advanced machine learning, deep learning, artificial intelligence, NLP (Natural Language Processing), computer vision and other areas of AI.',
+				'A program that caters to learning complete Data Science along with the extensive domain knowledge of IT industry including product management and product life cycle. This is an end-to-end IT training program that gives you all the knowledge required to start and grow your career in Data Science. It covers everything from basic statistics and modelling techniques up to advanced machine learning, deep learning, artificial intelligence, NLP (Natural Language Processing), computer vision and other areas of AI.',
 			dropdownQuestion: [
 				{
 					question: 'What does a Data Scientist do in an IT product companies?',
@@ -707,7 +707,7 @@ const Program_DB_Master = [
 		banner: DSforFinance,
 		icon: i2,
 		description:
-			'A unique program, an innovative course that will give you a holistic understanding of how Data Science is used in the Finance & Banking industry. It iss not just limited to Bankers or Bankers-to-be, but it can help anyone who aspires to work in this field.',
+			'A unique program, an innovative course that will give you a holistic understanding of how Data Science is used in the Finance & Banking industry. It is not just limited to Bankers or Bankers-to-be, but it can help anyone who aspires to work in this field.',
 		shortDescription:
 			'A holistic understanding of how Data Science is used in the Finance & Banking industry.',
 		highlight: {
