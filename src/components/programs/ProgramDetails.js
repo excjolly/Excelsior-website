@@ -15,6 +15,7 @@ import Blogs from './Blogs';
 import SpeakWithExpert from './SpeakWithExpert';
 import FAQ from './FAQ';
 import HtmlHead from '../HtmlHead';
+import { Carousel } from 'antd';
 
 const ProgramDetails = ({ programData }) => {
 	useEffect(() => {
@@ -170,7 +171,8 @@ const ProgramDetails = ({ programData }) => {
 								<Review reviews={programData.reviews} />
 							</div>
 							<div className='mt-5' id='Blogs' name='Blogs'>
-								<Blogs />
+								<Carousel className='videoSlide'><Blogs/></Carousel>						
+								
 							</div>
 							<div className='mt-5' id='FAQ' name='FAQ'>
 								<FAQ faqData={programData.faq} />

@@ -124,7 +124,7 @@ const Program = () => {
 						</div>
 					</Col>
 					<Col className='mb-5' lg={24}>
-						<h2 className='admission_heading'>Homework</h2>
+						<h2 className='admission_heading'>Live Sessions</h2>
 						<Carousel className='videoSlide' responsive={responsive}
 						autoPlay={false}
 						infinite={true}
