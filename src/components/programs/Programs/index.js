@@ -12,6 +12,7 @@ import moment from 'moment';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import HtmlHead from '../../HtmlHead';
 
 
 const responsive = {
@@ -78,6 +79,11 @@ const Program = () => {
 	return (
 		<div className='container mt-3'>
 			<ToastContainer />
+			<HtmlHead
+				title='Excelsior | Online Data Science Programs'
+				desc='Learn more about the programs from the best Data science institute in Delhi NCR and Bengaluru'
+				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+			/>
 			<div className='mb-5'>
 				<h2 className='admission_heading'>Features</h2>
 				<Row gutter={[20, 30]}>

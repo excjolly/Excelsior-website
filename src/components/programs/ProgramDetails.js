@@ -35,8 +35,9 @@ const ProgramDetails = ({ programData }) => {
 	return (
 		<>
 			<HtmlHead
-				title='About Excelsior |Best Online Education Platform for Data Science'
-				desc='Students can enrol in online courses on topics such as Data Analytics, Marketing Analytics, and Artificial Intelligence. Get in touch with us at +91-9289470444, or email us at info@getexcelsior.com.'
+				title='Excelsior | Aim Higher'
+				desc='Learn Specialization in Data Science for Finance and IT in Best Data Science course in Delhi NCR and Bangalore'
+				kw='Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
 			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>

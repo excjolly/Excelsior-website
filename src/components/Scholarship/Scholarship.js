@@ -31,6 +31,7 @@ getAllQuiz()
       <HtmlHead
 				title='Excelsior | Online Education Platform | Scholarship Offers Available'
 				desc='A transparent and easy merit based scholarship option for students to showcase their skills '
+        kw='spacialization in data science for IT, Discounts, free courses, Data Science, Machine Learning'
 			/>
       			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
