@@ -34,7 +34,7 @@ const Program_DB_Master = [
 		description:
 			'Prepare Yourself For Product-based IT Companies. A program that combines the two fields of Data Science and Product Management. The knowledge provided in this course will help you take your career to next level.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe illum, consectetur',
+			'A program that combines the two fields of Data Science and Product Management.',
 		highlight: {
 			firstRow: [
 				'200+ hours of live sessions',
@@ -467,7 +467,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I have been to many well-known Data Science / Machine Learning courses in Bangalore. But I could not find the right course which could help me to land my first job in this field. Then, I found Excelsior. Our mentor Mr. Sachin was so helpful and so knowledgeable in this field that he could guide me throughout the course and they helped me to get placed in a Top MNC through his their extensive placement program.',
-			},
+				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/',	
+				},
 			{
 				name: 'Suresh Goel (Data Scientist - Amazon)',
 				imageURL:
@@ -475,7 +476,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I took Excelsior’s course to learn how to do Data Science from a theoretical perspective, and I was not disappointed. The course is accessible to a wide range of students, and the materials are top notch. The professor is a real Data Scientist who knows his stuff and explains it well. The assignments are varied and thought provoking. The placement process was excellent and very transparent.',
-			},
+				linkedin: 'https://www.linkedin.com/in/suresh-goel-092014227/'
+				},
 			{
 				name: 'Hemanth Reddy (Data Scientist - Airtel)',
 				imageURL:
@@ -483,7 +485,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science.',
-			},
+				linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
+				},
 			{
 				name: 'T Pavan Kumar (Data Scientist - IBM)',
 				imageURL:
@@ -491,15 +494,17 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It was a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
-			},
+				linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
+				},
 			{
-				name: 'Rahul Yadav (Data Scientist - Adobe)',
+				name: 'Neelam Singhal (Data Scientist - Goldman Sachs)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 5,
 				description:
-					'Being a non-programmer, it was very hard for me to decide which course to take for Data Science. After doing some research, I found Excelsior course on data science and that was the best decision I could have taken! The course is really good, and their placement team helped me get a job right after the course.',
-			},
+					'I highly recommend Excelsior Data Science Courses. The best part is that they have a placement team that will help you get a job after the course which absolutely rocks! I loved their 1-on-1 classes where I learnt from someone who has been in the field for quite a while!',
+				linkedin: 'https://www.linkedin.com/in/neelam-singhal-6347bb223/'
+				},
 			{
 				name: 'Neelam Gupta (Data Scientist - AWS)',
 				imageURL:
@@ -507,7 +512,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I just wanted to thank you all. I finished Excelsior Data Science for IT program recently and it was great. The materials were clear and simple, so it didn’t take me much time to finish the program. And now I have got a job at my dream Company',
-			},
+				linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/'
+				},
 		],
 		faq: [
 			{
@@ -703,7 +709,7 @@ const Program_DB_Master = [
 		description:
 			'A unique program, an innovative course that will give you a holistic understanding of how Data Science is used in the Finance & Banking industry. It iss not just limited to Bankers or Bankers-to-be, but it can help anyone who aspires to work in this field.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe illum, consectetur',
+			'A holistic understanding of how Data Science is used in the Finance & Banking industry.',
 		highlight: {
 			firstRow: [
 				'200+ hours of live sessions',
@@ -1349,7 +1355,7 @@ const Program_DB_Master = [
 		description:
 			'A deep dive into the most interesting branch of artificial intelligence. In this specialization, you will learn how to build and train neural networks using the latest techniques in modern AI research.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe illum, consectetur',
+			'A deep dive into the most interesting branch of artificial intelligence.',
 		highlight: {
 			firstRow: [
 				'150+ hours of live sessions',
@@ -1727,7 +1733,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I have always been interested in Learning Data Science, but never had the time to study for it. When I found out about Excelsior and their online, accelerated course, I was instantly intrigued. The course is well organized with a good mix of Live Classes, reading material and videos. It also provides a great way to learn through hands on experiences while working on real world projects and learning what we have to use.',
-			},
+				linkedin: 'https://www.linkedin.com/in/suresh-gupta-2b962622a/'
+				},
 			{
 				name: 'Neelam Singhal (Data Scientist - Goldman Sachs)',
 				imageURL:
@@ -1735,7 +1742,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I highly recommend Excelsior Data Science Courses. The best part is that they have a placement team that will help you get a job after the course which absolutely rocks! I loved their 1-on-1 classes where I learnt from someone who has been in the field for quite a while!',
-			},
+				linkedin: 'https://www.linkedin.com/in/neelam-singhal-6347bb223/'
+				},
 			{
 				name: 'Suresh Goel (Data Scientist - Amazon)',
 				imageURL:
@@ -1743,7 +1751,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I took Excelsior’s course to learn how to do Data Science from a theoretical perspective, and I was not disappointed. The course is accessible to a wide range of students, and the materials are top notch. The professor is a real Data Scientist who knows his stuff and explains it well. The assignments are varied and thought provoking. The placement process was excellent and very transparent.',
-			},
+				linkedin: 'https://www.linkedin.com/in/suresh-goel-092014227/'
+				},
 			{
 				name: 'Shashank Sinha (Data Scientist - Paytm)',
 				imageURL:
@@ -1751,7 +1760,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I have been to many well-known Data Science / Machine Learning courses in Bangalore. But I could not find the right course which could help me to land my first job in this field. Then, I found Excelsior. Excelsior mentor Mr. Sachin was so helpful and so knowledgeable in this field that he could guide me throughout the course and they helped me to get placed in a Top MNC through his their extensive placement program.',
-			},
+				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/'
+				},
 			{
 				name: 'Harshita (Data Scientist - Mondelez International)',
 				imageURL:
@@ -1759,7 +1769,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I was a fresher in Analytics industry, and I wanted to start my career in Data Science. I needed guidance from an expert for this. Excelsior’s Team is very supportive and helped me a lot to get started with in this field. They provided me with in-depth curriculum and detailed teaching which helped me in achieving my goals in the right direction.',
-			},
+				linkedin: 'https://www.linkedin.com/in/harshita-rampal-06a971224/'
+				},
 			{
 				name: 'Hemanth Reddy (Data Scientist - Airtel)',
 				imageURL:
@@ -1767,7 +1778,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science. I am really thankful to them for helping me build my profile and gain the head start I needed.',
-			},
+				linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
+				},
 		],
 		faq: [
 			{
@@ -1954,20 +1966,20 @@ const Program_DB_Master = [
 	{
 		pathname: '/programs/machine-learning-with-python',
 		nameOfProgram: 'Machine Learning with Python',
-		durationInWeeks: '52',
-		rating: 4.5,
-		completedBy: 907,
+		durationInWeeks: '26',
+		rating: 4.7,
+		completedBy: 1257,
 		demoVideoURL: 'https://youtu.be/Y_wXF1Pe4AA',
 		banner: ML,
 		icon: i4,
 		description:
-			'Prepare Yourself For Product-based IT Companies. A program that combines the two fields of Data Science and Product Management. The knowledge provided in this course will help you take your career to next level.',
+			'A Machine Learning program covering all the algorithms and python so that you can have a successful career in machine learning. You will also be exposed to Big Data, SQL and Hadoop for a complete understanding of the entire Machine Learning Ecosystem .',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe illum, consectetur',
+			'A Machine Learning program covering all the algorithms and python programming',
 		highlight: {
 			firstRow: [
-				'200+ hours of live sessions',
-				'100+ Projects & Exercises',
+				'100+ hours of live sessions',
+				'60+ Projects & Exercises',
 				'Personalized Project feedback from Expert Professionals',
 				'Flexible learning Schedule',
 			],
@@ -1980,55 +1992,27 @@ const Program_DB_Master = [
 		},
 		overview: {
 			description:
-				'A complete program that caters to learning complete Data Science along with the complete domain knowledge of IT industry including product management and complete product life cycle. This is an end-to-end IT training program that gives you all the knowledge required to start and grow your career in Data Science. It covers everything from basic statistics and modelling techniques up to advanced machine learning, deep learning, artificial intelligence, NLP (Natural Language Processing), computer vision and other areas of AI.',
+				'The course starts with an introduction to Data Science and Machine Learning. You will be taught Python and its various libraries such as Numpy, Scipy, Pandas etc. This is followed by all the major machine learning algorithms along with their implementation in Python. Basic Intro to advanced Deep Learning is also covered in the program. Towards the end we cover concepts of Data Engineering for Big Data and all the modules are covered with reference to real world big data sets.',
 			dropdownQuestion: [
 				{
-					question: 'What does a Data Scientist do in an Finance product companies?',
-					answer: (
-						<>
-							There are lots of exciting career prospects for Data Science in IT
-							product companies. As a data scientist, you're often expected to
-							effectively analyze problems, predict behavior, and develop
-							solutions. Since IT products are often used for a variety of
-							purposes, there's always a need for innovators in the field. While
-							you'll be able to use your Data Science skills to benefit the
-							company, you'll also have the opportunity to contribute to solving a
-							lot of problems in the world. Data scientists in IT companies perform
-							a range of different tasks that involve collecting, analyzing and
-							interpreting large amounts of data.
-							<br />
-							These tasks include:
-							<ul className='px-4'>
-								<li>Self-Service Data Analysis</li>
-								<li>Data Visualization</li>
-								<li>Data integration</li>
-								<li>Reporting</li>
-								<li>Modeling</li>
-								<li>Predictive Analytics</li>
-								<li>Big data management</li>
-								<li>Data Quality</li>
-								<li>Business Intelligence</li>
-								<li>Data warehousing</li>
-								<li>Data Integration</li>
-								<li>Data Mining</li>
-							</ul>
-						</>
-					),
+					question: 'What does a Machine Learning Professional do?',
+					answer:
+						'A Machine Learning (ML) Engineer is a programmer who develops algorithms that allow computers to operate and handle data automatically, with minimal or no human intervention. These algorithms are in charge of performing the particular task that the computer has been programmed to do. Thus, ML engineers are the programmers who specifically handle the algorithms and codes that allow computers to make decisions on their own, just like humans can. Sometimes, ML engineers may have to collaborate with Data Scientists, who have a role very similar to that of ML engineers—to analyze data and develop machine learning models based on their findings.',
 				},
 				{
 					question: 'Who can enroll for this course and what are the prerequisites?',
 					answer:
-						'This course is ideal for anyone looking to make a career in the IT industry. We at Excelsior have designed the course as beginner friendly and also for the professionals who want to narrow the data Science into the IT Sector. Every class you take with Excelsior will be taught by an instructor who has been a great asset in this field. Our experienced instructors have decades of experience helping clients around the world accelerate their business and careers, and will share first-hand knowledge to ensure your success.',
+						'Machine learning is one of the most exciting and in-demand fields in tech today. If you’re looking for a course that will dive deep into this field, look no further than Excelsior ML Training with Python. With a wide range of courses to choose from, learn the basics of Machine Learning or take the training to become an expert. All courses are taught by our highly qualified instructors who are subject matter experts and have years of experience in the industry. Maths is very important in ML as most systems are just mathematical in nature. Such as numerical optimization is very much related to ML thus knowledge in engineering maths is very helpful but not necessary. Thus knowledge in Linear Algebra and Calculus makes your learning smooth and easy. Also if you should have some knowledge on Programming in Python and Probability. This Course is suitable for Students and professionals who want to Enter into the Data Science Field. ',
 				},
 				{
 					question: 'What will you learn from this course?',
 					answer:
-						'This course is Designed by the GetExcelsior to equip yourself with the Industry Demanded Skills in 2022. This program will give you practical data analytics and data science knowledge needed to succeed in the IT sector. Learn the concepts of data science and IT. Gain transferable skills in user research, user design, prototyping, building artefacts, product analytics, digital transformation, fundamental procedures and structures. You will also learn Reconciliation And Introduction To Isda, Product Marketing And Gtm Strategy, Product Planning And Development, Tech 101 For Pms, Data Science For Product Management and Growth Product Management. This program is designed by Excelsior covers the latest analytics, Visualization and machine learning concepts. These include topics like data science essentials, big data ecosystem, where data has its origins, the role of databases in storing and retrieving data at scale, statistical analysis basics, and designing experiments. Upon completion of this program you will be prepared to take the roles of Business Analyst and Data Scientist. Tools covered: Python Programming R Programming Tableau Kera Spark Microsoft Power BI (Business Intelligence), Machine Learning, Deep Learning, NLP, Computer Vision and Other Areas of AI',
+						'Our Machine Learning with Python course at Excelsior will teach you everything you need to know about becoming a proficient ML engineer. You’ll learn how to build and fine-tune learning algorithms to solve real-life problems and improve your skills in big data processing, data visualization, machine learning, data mining, and natural language processing. The instructors are subject matter experts who are developers themselves and integrally involved in the development of the field. Whether you are just starting out or are looking to take your skills to the next level, this course will solidify and expand your knowledge, not only on machine learning with python, but on critical programming principles as well. We tackle complex topics and use realistic datasets that will prepare you to solve real-world problems using machine learning. This course introduces you to Machine Learning, Artificial Intelligence and its applications. You will learn about various Machine Learning algorithms by coding them in Python. We start with the basics and then quickly jump into TensorFlow, Keras and Scikit-Learn. This course helps you sort through the options, offering detailed descriptions of some of the most popular Python-based libraries and showing how each can be used to solve real-world problems. All in all, you will learn the tools such as TensorFlow, Python, Keras, Scikit-Learn, Pattern, Theano, NLTK, Gensim, SciPy,HPAT, NumPy, Pandas.',
 				},
 				{
 					question: 'What’s the scope after this course?',
 					answer:
-						'The scope of Data Science professionals in the IT product based companies in India in 2022 will only increase. This is because top companies like Google, Amazon, Microsoft are all hiring Data Science professionals. India has exploded on the global data science landscape. Data Science is a new but vibrant field in the market. The number of people employed in this field cannot even be estimated. The data science market is growing rapidly as the more data is used in business and other fields, the more data scientists will be needed. The average salary after this course ranges from ₹14,50,000 to ₹16,00,000 for freshers',
+						'The future prospects of Machine Learning professionals in India appears to be very good. India is predicted to be the second fastest growing economy in the world this year and is expected to grow from $2.3 trillion GDP to $6 trillion GDP by 2025. Since Machine Learning is emerging as a crucial technology for the Indian economy, it is expected to gain more prominence in coming years. In fact, India is on the cusp of a data revolution and the demand for data scientists and machine learning professionals is only going to increase. If a person has a good knowledge, then one can expect a starting salary of $50000 per year. Salaries rise rapidly with the experience, and an experienced data scientist can earn over $1 million per year. Many ML professionals choose to work on self-motivated projects and can earn more.',
 				},
 			],
 		},
@@ -2154,7 +2138,7 @@ const Program_DB_Master = [
 				question: [
 					{
 						name: 'Fee of the program',
-						answer: 'The fee for this program is ₹129999 inclusive of taxes',
+						answer: 'The fee for this program is ₹59,999 inclusive of taxes',
 					},
 					{
 						name: 'Scholarship Options/Discounts',
@@ -2184,7 +2168,7 @@ const Program_DB_Master = [
 					{
 						name: 'EMI Options',
 						answer:
-							'This is a 0% interest option. You can also pay in 6 EMI(s) of  ₹21666.50. The amount may vary for learners eligible for scholarships',
+							'This is a 0% interest option. You can also pay in 3 EMI(s) of  ₹16666.50. The amount may vary for learners eligible for scholarships',
 					},
 					{
 						name: 'Can you get a finanical AD',
@@ -2266,24 +2250,23 @@ const Program_DB_Master = [
 		],
 		projects: [
 			{
-				title: 'Fake news detection',
+				title: 'Loan eligibility prediction',
 				description:
-					'Fake news can be dangerous. Your challenge is to build a Fake News classifier by applying ML algorithms such as Passive Aggressive Classifier and determine the accuracy of our model. You will be using various Python packages such as pandas, NumPy, and scikit-learn to determine the legitimacy of the information. With the help of this, you will be able to predict on the fly whether the information you acquired is authentic or not.',
+					'Building a machine learning model to accurately predict if a loan applicant is going to pay off or default the loan would help banks avoid financial loss. In this data science project, you will use historical data from past loans and build predictive models using machine learning algorithms. You will be learning data procurement and pre-processing before applying machine learning algorithms such as Gradient boosting and XGBoost to calculate various metrics to identify the best model that predicts whether a customer is eligible for loan or not. The implications of accurate prediction would be impacted on different groups of people across all sorts of businesses.',			},
+			{
+				title: 'Cafe’s Retail Selling Price',
+				description:
+					'No one buys coffee without a good deal. That is why we are here to tell you that - Cafes retail price optimization algorithm is going to be an awesome project. The retail price optimization attempts to determine the best price point at which to sell a product.  In this data science project, you will analyse sales data of Cafe and predict prices of their items using ML algorithms. The key question is how much the customer is willing to pay, and how much they think it should cost whilst taking account of the competitors prices.',
 			},
 			{
-				title: 'Influence of global warming on food chain supply',
+				title: 'Driver availability prediction',
 				description:
-					'Global warming is influencing the climate pattern and leads to the change in food production. Unusual weather conditions and adaptation of technologies used in agriculture have a significant effect on the pattern of food production globally. In this project you will analyze the factors that are causing these changes, study the data visualization techniques to explain the patterns across different geographical locations, and predict the future trends.',
+					'Due to the surge in orders at peak time, it is not easy for delivery app companies to deliver food timely. It also makes calculating delivery charges a complicated task. How about allocating the drivers with the orders for delivery using machine learning techniques! In this supervised machine learning project, you will predict the availability of a driver in a specific area and allocate drivers the orders for delivery by using multi step time series forecasting analysis. You will also use algorithms such as Random forest and techniques such as XGBoost for predicting online hours of a driver.',
 			},
 			{
-				title: 'Segmentation of customer groups',
+				title: 'Lookalike model building',
 				description:
-					'Customer segmentation helps companies to market the products in each segment more fitting to each individual customer. Build your clustering model using k-means clustering algorithms learned in machine learning. In this project, you will cluster the customers based on the features and their buying behaviour. Use the Elbow method, Silhouette Analysis method and DBSCAN. Once you have created various segments among customers, this model could be used by businesses to advertise their products to each segment in a way which will grab their attention.',
-			},
-			{
-				title: 'Diabetic Retinopathy',
-				description:
-					'Early treatment of pathological changes in the blood vessels of the eye can help prevent eye disease from progressing to blindness. In this project, you will use Keras with TensorFlow backend to build a deep learning model for automatic diabetic retinopathy screening. We will be using data that has been pre-processed to extract In this project, you will use Keras with TensorFlow backend to build a deep learning model for automatic diabetic retinopathy screening. We will be using data that has been pre-processed to extract the most important features from retina images.',
+					'Build your machine learning skills. In this course, you will use a popular and effective machine learning algorithm—Locality Sensitive Hashing—to find similar users who clicked on the same ads. You will learn how to build lookalike models for online ad targeting, then create an audience to reach potential customers that are like your current customers. With these skills, you can boost your advertising efforts, drive more sales and improve click-through rates on your websites.',
 			},
 		],
 		mentors: [
@@ -2322,53 +2305,59 @@ const Program_DB_Master = [
 		],
 		reviews: [
 			{
-				name: 'A',
+				name: 'Nishant Gupta(Data Scientist-HDFC)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'Excelsior is the best Data Science institute in Bangalore. They offer a wide range of courses to learn Data Science. Moreover, they have one of the best placement program which helps the students to get placed in top companies. Big thanks to Mr. Sandeep and the entire Excelsior team for helping me to get my dream job in Data Science field.',
+				linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/'
+				},
 			{
-				name: 'B',
+				name: 'Vikram (Data Scientist-Axis)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'I liked the class, it was easy to follow and understand. I have a good understanding of Python and Data Science now. Overall I really liked the class and feel like I learned a lot.',
+				linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/'
+				},
 			{
-				name: 'C',
+				name: 'T Pavan Kumar(Data Scientist-IBM)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It is a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
+					linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
+				},
 			{
-				name: 'D',
+				name: 'Rahul Goswami (Marketing Analyst-Chegg)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'Being from Civil Engineering Background, I was afraid of coding. . I have been really anxious about learning Data Science, Excelsior has given me that confidence. Support is excellent and very empathetic. I was able to easily follow my passion for numbers in the Marketing Analytics course.',
+					linkedin: 'https://www.linkedin.com/in/torahulgoswami/'
+				},
 			{
-				name: 'E',
+				name: 'Neelam Gupta(Data Scientist-AWS)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'I just wanted to thank you all. I finished Excelsior Data Science for IT program recently and it was great. The materials were clear and simple, so it didn’t take me much time to finish the program. And now I have got a job at my dream Company',
+					linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/'
+				},
 			{
-				name: 'F',
+				name: 'Deepak(Data Scientist-Reliance Jio)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'Excelsior has a well-designed course that is broken down into easily manageable sections. The Excelsior team is responsive to questions and requests, and they do an excellent job of keeping the community engaged. I will recommend this course to anyone who wants to learn how to use Data in a practical way but does not have time for a degree program.',
+					linkedin: 'https://www.linkedin.com/in/deepak-kumar-909812229/'
+				},
 		],
 		faq: [
 			{
@@ -2377,7 +2366,7 @@ const Program_DB_Master = [
 					{
 						question: 'Who is the program intended for?',
 						answer:
-							'If you want to master Data Science in the IT industry, this program is for you. Whether you are a recent graduate or want to change your domain, you can join the program. We believe that you have the right to choose your career path.',
+							'This programme is for you if you wish to work as a Machine Learning developer. You can participate in the programme whether you are a recent graduate or want to change your domain. We think you have the freedom to select your own route in life.',
 					},
 					{
 						question: 'Does Excelsior help me to get a job?',
@@ -2555,20 +2544,20 @@ const Program_DB_Master = [
 	{
 		pathname: '/programs/data-analytics',
 		nameOfProgram: 'Data Analytics',
-		durationInWeeks: '52',
-		rating: 4.5,
-		completedBy: 907,
+		durationInWeeks: '16',
+		rating: 4.3 ,
+		completedBy: 577,
 		demoVideoURL: 'https://youtu.be/Y_wXF1Pe4AA',
 		banner: DataAnalytics,
 		icon: i5,
 		description:
-			'Prepare Yourself For Product-based IT Companies. A program that combines the two fields of Data Science and Product Management. The knowledge provided in this course will help you take your career to next level.',
+			'The program exposes you to the nuances of data science and analysis, as well as equips you with the skills required to solve real-world problems.This program is designed to help you learn Python and different libraries in Python.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe illum, consectetur',
+			'The program exposes you to the nuances of data science and analysis',
 		highlight: {
 			firstRow: [
-				'200+ hours of live sessions',
-				'100+ Projects & Exercises',
+				'60+ hours of live sessions',
+				'35+ Projects & Exercises',
 				'Personalized Project feedback from Expert Professionals',
 				'Flexible learning Schedule',
 			],
@@ -2581,55 +2570,28 @@ const Program_DB_Master = [
 		},
 		overview: {
 			description:
-				'A complete program that caters to learning complete Data Science along with the complete domain knowledge of IT industry including product management and complete product life cycle. This is an end-to-end IT training program that gives you all the knowledge required to start and grow your career in Data Science. It covers everything from basic statistics and modelling techniques up to advanced machine learning, deep learning, artificial intelligence, NLP (Natural Language Processing), computer vision and other areas of AI.',
+				'Data Analyst program includes python and python libraries like Numpy, Pandas, Matplotlib, Scipy, etc.  A 4 months program that will help you become a real data-analyst. The course is divided into 20 modules where each module includes live lectures followed by the exercise to solve on your own and live projects to get the feel of real world.',
 			dropdownQuestion: [
 				{
-					question: 'What does a Data Scientist do in an Finance product companies?',
-					answer: (
-						<>
-							There are lots of exciting career prospects for Data Science in IT
-							product companies. As a data scientist, you're often expected to
-							effectively analyze problems, predict behavior, and develop
-							solutions. Since IT products are often used for a variety of
-							purposes, there's always a need for innovators in the field. While
-							you'll be able to use your Data Science skills to benefit the
-							company, you'll also have the opportunity to contribute to solving a
-							lot of problems in the world. Data scientists in IT companies perform
-							a range of different tasks that involve collecting, analyzing and
-							interpreting large amounts of data.
-							<br />
-							These tasks include:
-							<ul className='px-4'>
-								<li>Self-Service Data Analysis</li>
-								<li>Data Visualization</li>
-								<li>Data integration</li>
-								<li>Reporting</li>
-								<li>Modeling</li>
-								<li>Predictive Analytics</li>
-								<li>Big data management</li>
-								<li>Data Quality</li>
-								<li>Business Intelligence</li>
-								<li>Data warehousing</li>
-								<li>Data Integration</li>
-								<li>Data Mining</li>
-							</ul>
-						</>
-					),
-				},
+					question: 'What does a Data Analyst do?',
+					answer:
+					'A data analyst is responsible for performing the data analysis and reporting in a company. The focus of a data analyst is on collecting the data, information and statistics that are essential to the functioning of a company. They usually carry out the analytical procedures on the basis of the research data or the past data that is available in the company. It is the responsibility of a data analyst to prepare reports about the functioning of a company for senior members and CEOs of the organization. Data analysts are responsible for ensuring that the data related to the performance of the company is correctly interpreted and communicated to the target audience. They work closely with the marketing and sales teams in a company to provide them with the data that they require.',
+			},
+				
 				{
 					question: 'Who can enroll for this course and what are the prerequisites?',
 					answer:
-						'This course is ideal for anyone looking to make a career in the IT industry. We at Excelsior have designed the course as beginner friendly and also for the professionals who want to narrow the data Science into the IT Sector. Every class you take with Excelsior will be taught by an instructor who has been a great asset in this field. Our experienced instructors have decades of experience helping clients around the world accelerate their business and careers, and will share first-hand knowledge to ensure your success.',
+						'The Data Analyst program at Excelsior prepares you to begin a career in data analytics with business acumen. You will gain the skills required to join the data-driven workforce and help businesses make better decisions using their data. Mid-level and entry level professionals in the IT industry and Banking, Finance, Marketing, Sales, Supply chain network can benefit by learning data analytics skills. The curriculum is suitable for candidates with any background as long as they are passionate about building a career in Data Analytics. The curriculum was developed with leading industry partners to ensure students master the most cutting-edge skills.',
 				},
 				{
 					question: 'What will you learn from this course?',
 					answer:
-						'This course is Designed by the GetExcelsior to equip yourself with the Industry Demanded Skills in 2022. This program will give you practical data analytics and data science knowledge needed to succeed in the IT sector. Learn the concepts of data science and IT. Gain transferable skills in user research, user design, prototyping, building artefacts, product analytics, digital transformation, fundamental procedures and structures. You will also learn Reconciliation And Introduction To Isda, Product Marketing And Gtm Strategy, Product Planning And Development, Tech 101 For Pms, Data Science For Product Management and Growth Product Management. This program is designed by Excelsior covers the latest analytics, Visualization and machine learning concepts. These include topics like data science essentials, big data ecosystem, where data has its origins, the role of databases in storing and retrieving data at scale, statistical analysis basics, and designing experiments. Upon completion of this program you will be prepared to take the roles of Business Analyst and Data Scientist. Tools covered: Python Programming R Programming Tableau Kera Spark Microsoft Power BI (Business Intelligence), Machine Learning, Deep Learning, NLP, Computer Vision and Other Areas of AI',
+						'This data analyst certification helps you learn analytics tools and techniques, how to work with SQL databases and Python, how to create data visualizations, and apply statistics and predictive analytics in a business environment. This Data Analyst course teaches you how to analyse data using Python. You will learn how to go through the entire data analysis process, which includes acquiring data, analysing data and visualizing insights. The program also equips you with Python essentials required for data science. Completing this Data Analyst certification course will be stepping stone for a successful career in the field of Data Science and Artificial Intelligence. Tools covered in this course includes Tableau, Power BI, Alteryx etc.',
 				},
 				{
 					question: 'What’s the scope after this course?',
 					answer:
-						'The scope of Data Science professionals in the IT product based companies in India in 2022 will only increase. This is because top companies like Google, Amazon, Microsoft are all hiring Data Science professionals. India has exploded on the global data science landscape. Data Science is a new but vibrant field in the market. The number of people employed in this field cannot even be estimated. The data science market is growing rapidly as the more data is used in business and other fields, the more data scientists will be needed. The average salary after this course ranges from ₹14,50,000 to ₹16,00,000 for freshers',
+						'The data analyst career path is a lucrative one with the average data analyst salary in India being 4.5 lakhs as of January 2022. This can be attributed to the increase in demand for data analysis. Many businesses are now aware that they can make use of their collected data to come up with better strategies. According to Glassdoor average entry level salary for a Data Analyst is ₹5,00,000 in India after gaining some years of Experience you may get around 8LPA to 12 LPA. Data analyst salary in India is expected to grow substantially over the coming years guided by increasing demand for data analytics skills. It has been estimated that data analytics is one of the highest in-demand job roles amongst employers and is anticipated to continue its dominance for some time. Join Excelsior to get a brighter Future in the stream of data analytics.',
 				},
 			],
 		},
@@ -2724,7 +2686,7 @@ const Program_DB_Master = [
 				question: [
 					{
 						name: 'Fee of the program',
-						answer: 'The fee for this program is ₹129999 inclusive of taxes',
+						answer: 'The fee for this program is ₹24,999 inclusive of taxes',
 					},
 					{
 						name: 'Scholarship Options/Discounts',
@@ -2754,7 +2716,7 @@ const Program_DB_Master = [
 					{
 						name: 'EMI Options',
 						answer:
-							'This is a 0% interest option. You can also pay in 6 EMI(s) of  ₹21666.50. The amount may vary for learners eligible for scholarships',
+							'This is a 0% interest option. You can also pay in 2 EMI(s) of  ₹12499.50. The amount may vary for learners eligible for scholarships',
 					},
 					{
 						name: 'Can you get a finanical AD',
@@ -2836,30 +2798,30 @@ const Program_DB_Master = [
 		],
 		projects: [
 			{
-				title: 'Fake news detection',
+				title: 'American universities',
 				description:
-					'Fake news can be dangerous. Your challenge is to build a Fake News classifier by applying ML algorithms such as Passive Aggressive Classifier and determine the accuracy of our model. You will be using various Python packages such as pandas, NumPy, and scikit-learn to determine the legitimacy of the information. With the help of this, you will be able to predict on the fly whether the information you acquired is authentic or not.',
+					'It can be difficult to choose the best university to attend. We have a dataset that allows you to investigate a variety of elements that can assist you in making a decision among several possibilities. You will analyse data for American colleges in this assignment; the data contains relevant information on the top 100 universities in the United States, as well as features such as student-to-faculty ratios, SAT scores, and acceptance rates, among other things. Examine the data for patterns, trends, and abnormalities. Validate assumptions based on the facts and test hypotheses. Consider what challenges the data might be able to help you solve.',
 			},
 			{
-				title: 'Influence of global warming on food chain supply',
+				title: 'COVID19 dataset analysis',
 				description:
-					'Global warming is influencing the climate pattern and leads to the change in food production. Unusual weather conditions and adaptation of technologies used in agriculture have a significant effect on the pattern of food production globally. In this project you will analyze the factors that are causing these changes, study the data visualization techniques to explain the patterns across different geographical locations, and predict the future trends.',
+					' This project aims to analyse the most recent COVID19 (Coronavirus disease) dataset provided by WHO in order to visualise the virus has spread across various countries, and see ee if there is any correlation between various factors such as economic growth, poverty rate, healthcare index, and other factors, and draw important conclusions from the analysis. Follow the most recent coronavirus statistics by country or WHO area. Examine the data for trends, patterns, and abnormalities. Validate assumptions regarding the data and test hypotheses. Consider and examine what problems you might be able to solve with the data.',
 			},
 			{
-				title: 'Segmentation of customer groups',
+				title: 'Exoplanet detection and confirmation',
 				description:
-					'Customer segmentation helps companies to market the products in each segment more fitting to each individual customer. Build your clustering model using k-means clustering algorithms learned in machine learning. In this project, you will cluster the customers based on the features and their buying behaviour. Use the Elbow method, Silhouette Analysis method and DBSCAN. Once you have created various segments among customers, this model could be used by businesses to advertise their products to each segment in a way which will grab their attention.',
+					'This data exploratory project could be very well-suited for our science enthusiasts. This large and rich dataset is a cumulative record of all observed Kepler "objects of interest" — basically, all of the approximately 10,000 exoplanet candidates Kepler space observatory has taken observations on. In this project, you will draw some relationships between the features, such as discovery time, size, transit duration and orbit parameters to find correlations amongst the various parameters. Find out the features which are most essential for a planet to be categorised as a confirmed planetary candidate and not as a false-positive. Furthermore, this project inspires you to have an idea of designing an instrument to detect the planet with regards to these features.',
 			},
 			{
-				title: 'Diabetic Retinopathy',
+				title: 'US Census 2020',
 				description:
-					'Early treatment of pathological changes in the blood vessels of the eye can help prevent eye disease from progressing to blindness. In this project, you will use Keras with TensorFlow backend to build a deep learning model for automatic diabetic retinopathy screening. We will be using data that has been pre-processed to extract In this project, you will use Keras with TensorFlow backend to build a deep learning model for automatic diabetic retinopathy screening. We will be using data that has been pre-processed to extract the most important features from retina images.',
+					'Population and demographics of every state are managed by the United States Census Bureau. Analyze this whole census dataset of the 50 states to find out how dense they are, how diverse they are, and what other demographic factors influence them. Learn about the demographics and trends in each of the 50 states. This information can be used to create mapping charts and visualisations.',
 			},
 		],
 		mentors: [
 			{
 				name: 'Shobhit Gupta',
-				areaOfExpert: 'Data Science',
+				areaOfExpert: 'DS&A',
 				location: 'Chennai ,India',
 				description:
 					'So, here is the question. If there was a person who worked with Microsoft, Facebook, Amazon, Uber and Yahoo just to name a few and then he started working in Fampay as an Engineering Manager. What kind of guidance would you expect from such a person? Would you be interested in asking him how to crack the interviews for these companies? Would this be an opportunity that would be difficult to miss on?? We believe it is definitely worth your effort.If you are someone aspiring to work in any of the large tech companies, or aspire to work in the startup world, his guidance would be invaluable.',
@@ -2867,7 +2829,7 @@ const Program_DB_Master = [
 			},
 			{
 				name: 'Rohini Jain',
-				areaOfExpert: 'Data Science',
+				areaOfExpert: 'DS&A',
 				location: 'Chennai ,India',
 				description:
 					'In a world where its hard to hold on to a job due to high pressure and fast pace. Rohini has been excelling at one of the biggest companies of the world, CISCO for over 10 years.Rohini Jain is a technology enthusiast, an experienced Software Architect and a mother of a school-going kid and a baby daughter.  She has a wealth of experience to share with the students : ranging from her college days at MNNIT Allahabad, to her 4 years in industry at ST Ericsson, her MS degree from University of Texas and almost 11 years of work experience at world’s largest networking company Cisco.  Rohini leads a team of software developers and software test engineers who are responsible for implementing automation solutions to make the process of testing software more efficient.She can guide you through every step of your journey and help you land your dream job as well as excel in it.',
@@ -2892,53 +2854,59 @@ const Program_DB_Master = [
 		],
 		reviews: [
 			{
-				name: 'A',
+				name: 'Vikram (Data Scientist-Axis)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'I liked the class, it was easy to follow and understand. I have a good understanding of Python and Data Science now. Overall I really liked the class and feel like I learned a lot.',
+				linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/'
+				},
 			{
-				name: 'B',
+				name: 'Nishant Gupta(Data Scientist-HDFC)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'Excelsior is the best Data Science institute in Bangalore. They offer a wide range of courses to learn Data Science. Moreover, they have one of the best placement program which helps the students to get placed in top companies. Big thanks to Mr. Sandeep and the entire Excelsior team for helping me to get my dream job in Data Science field.',
+					linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/'
+				},
 			{
-				name: 'C',
+				name: 'T Pavan Kumar(Data Scientist-IBM)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It is a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
+					linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
+				},
 			{
-				name: 'D',
+				name: 'Neelam Gupta(Data Scientist-AWS)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'I just wanted to thank you all. I finished Excelsior Data Science for IT program recently and it was great. The materials were clear and simple, so it didn’t take me much time to finish the program. And now I have got a job at my dream Company',
+					linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/'
+				},
 			{
-				name: 'E',
+				name: 'Deepak(Data Scientist-Reliance Jio)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'Excelsior has a well-designed course that is broken down into easily manageable sections. The Excelsior team is responsive to questions and requests, and they do an excellent job of keeping the community engaged. I will recommend this course to anyone who wants to learn how to use Data in a practical way but does not have time for a degree program.',
+					linkedin: 'https://www.linkedin.com/in/deepak-kumar-909812229/'
+				},
 			{
-				name: 'F',
+				name: 'Nishant Singh (Data Scientist- RBS)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'Excelsior is a very good institute to learn Business Intelligence & Analytics because they have a very good team of faculties who are experts in their field. They really helped me a lot when I was stuck and guided me towards the right direction. I recommend Excelsior to anyone who wants to learn Business Intelligence or Analytics.',
+					linkedin: 'https://www.linkedin.com/in/nishant-singh-15b745223/'
+				},
 		],
 		faq: [
 			{
@@ -2947,7 +2915,7 @@ const Program_DB_Master = [
 					{
 						question: 'Who is the program intended for?',
 						answer:
-							'If you want to master Data Science in the IT industry, this program is for you. Whether you are a recent graduate or want to change your domain, you can join the program. We believe that you have the right to choose your career path.',
+							'This programme is for you if you want to be a Data Analyst. You can participate in the programme whether you are a recent graduate or want to change your domain. We think you have the freedom to select your own route in life.',
 					},
 					{
 						question: 'Does Excelsior help me to get a job?',
@@ -3125,20 +3093,20 @@ const Program_DB_Master = [
 	{
 		pathname: '/programs/python-bootcamp',
 		nameOfProgram: 'Python Bootcamp',
-		durationInWeeks: '52',
-		rating: 4.5,
-		completedBy: 907,
+		durationInWeeks: '6',
+		rating: 4.8,
+		completedBy: 1281,
 		demoVideoURL: 'https://youtu.be/Y_wXF1Pe4AA',
 		banner: PythonBootcamp,
 		icon: i6,
 		description:
-			'Prepare Yourself For Product-based IT Companies. A program that combines the two fields of Data Science and Product Management. The knowledge provided in this course will help you take your career to next level.',
+			'Learn the basics of programming for Data Science. Python is an ideal language for beginners because it is simple to use and allows you to write code quickly. This course also helps learners willing to make their career in Web Development.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe illum, consectetur',
+			'Learn the basics of programming for Data Science and web development.',
 		highlight: {
 			firstRow: [
-				'200+ hours of live sessions',
-				'100+ Projects & Exercises',
+				'42 hours of live sessions',
+				'20 Projects & Exercises',
 				'Personalized Project feedback from Expert Professionals',
 				'Flexible learning Schedule',
 			],
@@ -3154,52 +3122,24 @@ const Program_DB_Master = [
 				'A complete program that caters to learning complete Data Science along with the complete domain knowledge of IT industry including product management and complete product life cycle. This is an end-to-end IT training program that gives you all the knowledge required to start and grow your career in Data Science. It covers everything from basic statistics and modelling techniques up to advanced machine learning, deep learning, artificial intelligence, NLP (Natural Language Processing), computer vision and other areas of AI.',
 			dropdownQuestion: [
 				{
-					question: 'What does a Data Scientist do in an Finance product companies?',
-					answer: (
-						<>
-							There are lots of exciting career prospects for Data Science in IT
-							product companies. As a data scientist, you're often expected to
-							effectively analyze problems, predict behavior, and develop
-							solutions. Since IT products are often used for a variety of
-							purposes, there's always a need for innovators in the field. While
-							you'll be able to use your Data Science skills to benefit the
-							company, you'll also have the opportunity to contribute to solving a
-							lot of problems in the world. Data scientists in IT companies perform
-							a range of different tasks that involve collecting, analyzing and
-							interpreting large amounts of data.
-							<br />
-							These tasks include:
-							<ul className='px-4'>
-								<li>Self-Service Data Analysis</li>
-								<li>Data Visualization</li>
-								<li>Data integration</li>
-								<li>Reporting</li>
-								<li>Modeling</li>
-								<li>Predictive Analytics</li>
-								<li>Big data management</li>
-								<li>Data Quality</li>
-								<li>Business Intelligence</li>
-								<li>Data warehousing</li>
-								<li>Data Integration</li>
-								<li>Data Mining</li>
-							</ul>
-						</>
-					),
+					question: 'What can you do after learning Python?',
+					answer:
+						'The options are limitless. Python can handle a lot of different things. For example, not only is it used in data science, it’s also used in web development, machine learning, game development, and even to build and design computer graphics. It is hard to get a better deal than that. After you learn Python, you can use it to build applications, websites and other great things.',
 				},
 				{
 					question: 'Who can enroll for this course and what are the prerequisites?',
 					answer:
-						'This course is ideal for anyone looking to make a career in the IT industry. We at Excelsior have designed the course as beginner friendly and also for the professionals who want to narrow the data Science into the IT Sector. Every class you take with Excelsior will be taught by an instructor who has been a great asset in this field. Our experienced instructors have decades of experience helping clients around the world accelerate their business and careers, and will share first-hand knowledge to ensure your success.',
+						'"If you have a basic computer knowledge and  want to learn Python Programming or are a newbie to programming, this course is appropriate for you! You will develop a strong understanding of the fundamentals of object-oriented programming and fluency in coding . Focusing on developing coding skills with Python and learning by actually writing complete programs - that is the real training you are going to get. The training is practical; all instructions are step-by-step, task-based until you are comfortable and competent.',
 				},
 				{
 					question: 'What will you learn from this course?',
 					answer:
-						'This course is Designed by the GetExcelsior to equip yourself with the Industry Demanded Skills in 2022. This program will give you practical data analytics and data science knowledge needed to succeed in the IT sector. Learn the concepts of data science and IT. Gain transferable skills in user research, user design, prototyping, building artefacts, product analytics, digital transformation, fundamental procedures and structures. You will also learn Reconciliation And Introduction To Isda, Product Marketing And Gtm Strategy, Product Planning And Development, Tech 101 For Pms, Data Science For Product Management and Growth Product Management. This program is designed by Excelsior covers the latest analytics, Visualization and machine learning concepts. These include topics like data science essentials, big data ecosystem, where data has its origins, the role of databases in storing and retrieving data at scale, statistical analysis basics, and designing experiments. Upon completion of this program you will be prepared to take the roles of Business Analyst and Data Scientist. Tools covered: Python Programming R Programming Tableau Kera Spark Microsoft Power BI (Business Intelligence), Machine Learning, Deep Learning, NLP, Computer Vision and Other Areas of AI',
+						'This course is designed to set you on a solid path towards being a successful Python Developer. The material you will cover in this course has been carefully chosen, validated with Python Experts, and designed to be immediately applied in the workplace. Our goal is for students to complete this program and feel able to build production-ready projects Armed with a strong understanding of modern Python, you are ready to unleash the power of Python. The best way to do this is using libraries that can be used from Python or from within your Python program. This course will teach you the necessary libraries etc to use.',
 				},
 				{
 					question: 'What’s the scope after this course?',
 					answer:
-						'The scope of Data Science professionals in the IT product based companies in India in 2022 will only increase. This is because top companies like Google, Amazon, Microsoft are all hiring Data Science professionals. India has exploded on the global data science landscape. Data Science is a new but vibrant field in the market. The number of people employed in this field cannot even be estimated. The data science market is growing rapidly as the more data is used in business and other fields, the more data scientists will be needed. The average salary after this course ranges from ₹14,50,000 to ₹16,00,000 for freshers',
+						'Python is an in-demand language that can help you to increase your Career Growth Abruptly. So Whether you are a newbie or an experienced one you should Consider learning Python. Python is top level language to learn for 2022 according to the Survey of Stack Overflow. All the Product Companies Including FAANG use python and Hire Python Developers massively. The average salary of entry-level Python Developers is Approximately ₹427,283. So it’s Worth learning Python!',
 				},
 			],
 		},
@@ -3268,7 +3208,7 @@ const Program_DB_Master = [
 				question: [
 					{
 						name: 'Fee of the program',
-						answer: 'The fee for this program is ₹129999 inclusive of taxes',
+						answer: 'The fee for this program is ₹14,999 inclusive of taxes',
 					},
 					{
 						name: 'Scholarship Options/Discounts',
@@ -3283,14 +3223,9 @@ const Program_DB_Master = [
 					{
 						name: 'What does ISA mean?',
 						answer:
-							'It means that you will not be paying the complete upfront fee and will share some part of your income after placement.',
-					},
-					{
-						name: 'What are the terms of Excelsior’s ISA plan?',
-						answer:
-							'You will be paying 30% of the fees as registration and then 15% of your monthly fixed CTC for 12 months',
-					},
-				],
+						'ISA plan is not available for this program.'
+			}
+		],
 			},
 			{
 				typeOfPayment: 'EMI and Finanical AD',
@@ -3298,60 +3233,107 @@ const Program_DB_Master = [
 					{
 						name: 'EMI Options',
 						answer:
-							'This is a 0% interest option. You can also pay in 6 EMI(s) of  ₹21666.50. The amount may vary for learners eligible for scholarships',
-					},
-					{
-						name: 'Can you get a finanical AD',
-						answer:
-							'Yes, we have tie ups with various NBFC which provide education loan subject to you matching their eligibility criteria.',
+						'EMI Option is not available for this program.'
 					},
 				],
 			},
 		],
 		learningExperience: [
 			{
-				title: 'Class Notifications',
-				body: 'Class Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus consequuntur ex mollitia pariatur enim non at, aliquid itaque quis repellat repellendus nulla qui sint et ut. Nisi, dolorem animi.',
+				title: 'Profile Building',
+				body: (
+					<>
+						Excelsior’s industry experts are the ultimate resource for anyone
+						looking to build their profile
+						<ul className='pl-4 mt-2'>
+							<li style={{ width: 'max-content' }}>Resume Building</li>
+							<li style={{ width: 'max-content' }}>LinkedIn Profile Building</li>
+							<li style={{ width: 'max-content' }}>Github Building</li>
+						</ul>
+					</>
+				),
 			},
 			{
-				title: 'Hackathons',
-				body: 'Hackathons Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus consequuntur ex mollitia pariatur enim non at, aliquid itaque quis repellat repellendus nulla qui sint et ut. Nisi, dolorem animi.',
+				title: 'Expert Sessions',
+				body: (
+					<>
+						Excelsior offer expert advice on softskills and HR topics
+						<ul className='pl-4 mt-2'>
+							<li style={{ width: 'max-content' }}>
+								Counselling Sessions with Real Data Science experts
+							</li>
+							<li style={{ width: 'max-content' }}>Prepare for HR Interviews</li>
+							<li style={{ width: 'max-content' }}>
+								Learn Interviewers Psychology
+							</li>
+							<li style={{ width: 'max-content' }}>Develop Soft-Skills</li>
+						</ul>
+					</>
+				),
 			},
 			{
-				title: 'Career Services',
-				body: 'Career Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus consequuntur ex mollitia pariatur enim non at, aliquid itaque quis repellat repellendus nulla qui sint et ut. Nisi, dolorem animi.',
+				title: 'Mock Interviews',
+				body: (
+					<>
+						Get an upper hand in a data science job interview? Prepare for high
+						pressure interview scenarios
+						<ul className='pl-4 mt-2'>
+							<li style={{ width: 'max-content' }}>Live Interview Simulations</li>
+							<li style={{ width: 'max-content' }}>Expert Feedbacks</li>
+							<li style={{ width: 'max-content' }}>
+								Prepare for real high pressure scenarios
+							</li>
+						</ul>
+					</>
+				),
 			},
 			{
-				title: 'Major Announcements',
-				body: 'Major Announcements Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus consequuntur ex mollitia pariatur enim non at, aliquid itaque quis repellat repellendus nulla qui sint et ut. Nisi, dolorem animi.',
+				title: 'Project Guidance',
+				body: (
+					<>
+						Work on unlimited live projects with the help of industry experts
+						<ul className='pl-4 mt-2'>
+							<li style={{ width: 'max-content' }}>
+								Work on Live Projects from your dream company
+							</li>
+							<li style={{ width: 'max-content' }}>
+								Practice the core skills by applying on real Life scenarios
+							</li>
+							<li style={{ width: 'max-content' }}>
+								Get feedback from experts to improve your knowledge and build your
+								portfolio
+							</li>
+						</ul>
+					</>
+				),
 			},
 		],
 		projects: [
 			{
-				title: 'Fake news detection',
+				title: 'Website blocker',
 				description:
-					'Fake news can be dangerous. Your challenge is to build a Fake News classifier by applying ML algorithms such as Passive Aggressive Classifier and determine the accuracy of our model. You will be using various Python packages such as pandas, NumPy, and scikit-learn to determine the legitimacy of the information. With the help of this, you will be able to predict on the fly whether the information you acquired is authentic or not.',
+					'Aren’t we all tired of random pop-ups during site surfing? So, we can create website blockers for restraining pushy ads by creating this Python project. Remember, in order to code this, you can add the sites you need to block by editing sites to block, change the host, or edit the time when you need to block the sites.',
 			},
 			{
-				title: 'Influence of global warming on food chain supply',
+				title: 'Video to GIF convertor',
 				description:
-					'Global warming is influencing the climate pattern and leads to the change in food production. Unusual weather conditions and adaptation of technologies used in agriculture have a significant effect on the pattern of food production globally. In this project you will analyze the factors that are causing these changes, study the data visualization techniques to explain the patterns across different geographical locations, and predict the future trends.',
+					'As the GIF market is getting bigger nowadays, it is important to catch up with the quality of the gif. In this project, you will be using python programming to convert any good quality video into gif.',
 			},
 			{
-				title: 'Segmentation of customer groups',
+				title: 'Quiz game',
 				description:
-					'Customer segmentation helps companies to market the products in each segment more fitting to each individual customer. Build your clustering model using k-means clustering algorithms learned in machine learning. In this project, you will cluster the customers based on the features and their buying behaviour. Use the Elbow method, Silhouette Analysis method and DBSCAN. Once you have created various segments among customers, this model could be used by businesses to advertise their products to each segment in a way which will grab their attention.',
+					'Prepare a questionnaire for students and add 1 to their score for each correct answer. Print the final score at the end of the quiz. This could be a fun project for shortlisting candidates for an interview or college admission or preparing a short questionnaire.',
 			},
 			{
-				title: 'Diabetic Retinopathy',
+				title: 'Rock, paper, scissors game',
 				description:
-					'Early treatment of pathological changes in the blood vessels of the eye can help prevent eye disease from progressing to blindness. In this project, you will use Keras with TensorFlow backend to build a deep learning model for automatic diabetic retinopathy screening. We will be using data that has been pre-processed to extract In this project, you will use Keras with TensorFlow backend to build a deep learning model for automatic diabetic retinopathy screening. We will be using data that has been pre-processed to extract the most important features from retina images.',
+					'Ever played games with a computer that you developed on your own? You can develop the famous game of rock, paper, scissors using python programming at beginner level. This game is to be played between the user and the computer. Keep a track of who wins by giving a final score to each of the players in the end!',
 			},
 		],
 		mentors: [
 			{
 				name: 'Shobhit Gupta',
-				areaOfExpert: 'Data Science',
+				areaOfExpert: 'DS&A',
 				location: 'Chennai ,India',
 				description:
 					'So, here is the question. If there was a person who worked with Microsoft, Facebook, Amazon, Uber and Yahoo just to name a few and then he started working in Fampay as an Engineering Manager. What kind of guidance would you expect from such a person? Would you be interested in asking him how to crack the interviews for these companies? Would this be an opportunity that would be difficult to miss on?? We believe it is definitely worth your effort.If you are someone aspiring to work in any of the large tech companies, or aspire to work in the startup world, his guidance would be invaluable.',
@@ -3359,7 +3341,7 @@ const Program_DB_Master = [
 			},
 			{
 				name: 'Rohini Jain',
-				areaOfExpert: 'Data Science',
+				areaOfExpert: 'DS&A',
 				location: 'Chennai ,India',
 				description:
 					'In a world where its hard to hold on to a job due to high pressure and fast pace. Rohini has been excelling at one of the biggest companies of the world, CISCO for over 10 years.Rohini Jain is a technology enthusiast, an experienced Software Architect and a mother of a school-going kid and a baby daughter.  She has a wealth of experience to share with the students : ranging from her college days at MNNIT Allahabad, to her 4 years in industry at ST Ericsson, her MS degree from University of Texas and almost 11 years of work experience at world’s largest networking company Cisco.  Rohini leads a team of software developers and software test engineers who are responsible for implementing automation solutions to make the process of testing software more efficient.She can guide you through every step of your journey and help you land your dream job as well as excel in it.',
@@ -3384,53 +3366,59 @@ const Program_DB_Master = [
 		],
 		reviews: [
 			{
-				name: 'A',
+				name: 'Shashank Sinha(Data Scientist- Paytm)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'I have been to many well-known Data Science / Machine Learning courses in Bangalore. But I could not find the right course which could help me to land my first job in this field. Then, I found Excelsior. Excelsior mentor Mr. Sachin was so helpful and so knowledgeable in this field that he could guide me throughout the course and they helped me to get placed in a Top MNC through his their extensive placement program.',
+				Linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/'
+				},
 			{
-				name: 'B',
+				name: 'Nishant Gupta(Data Scientist-HDFC)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'Excelsior is the best Data Science institute in Bangalore. They offer a wide range of courses to learn Data Science. Moreover, they have one of the best placement program which helps the students to get placed in top companies. Big thanks to Mr. Sandeep and the entire Excelsior team for helping me to get my dream job in Data Science field.',
+					Linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/'
+				},
 			{
-				name: 'C',
+				name: 'Hemanth Reddy(Data Scientist-Airtel)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science. I am really thankful to them for helping me build my profile and gain the head start I needed.',
+					Linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
+				},
 			{
-				name: 'D',
+				name: 'Rahul Goswami (Marketing Analyst-Chegg)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'Being from Civil Engineering Background, I was afraid of coding. . I have been really anxious about learning Data Science, Excelsior has given me that confidence. Support is excellent and very empathetic. I was able to easily follow my passion for numbers in the Marketing Analytics course.',
+					Linkedin: 'https://www.linkedin.com/in/torahulgoswami/'
+				},
 			{
-				name: 'E',
+				name: 'T Pavan Kumar(Data Scientist-IBM)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It is a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
+					Linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
+				},
 			{
-				name: 'F',
+				name: 'Vikram (Data Scientist-Axis)',
 				imageURL:
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi quas quos necessitatibus earum veniam, voluptatem voluptatibus, cum magnam amet eos dignissimos non reprehenderit minus dolor officiis ea quibusdam fugit!',
-			},
+					'I liked the class, it was easy to follow and understand. I have a good understanding of Python and Data Science now. Overall I really liked the class and feel like I learned a lot.',
+					Linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/'
+				},
 		],
 		faq: [
 			{
@@ -3439,7 +3427,7 @@ const Program_DB_Master = [
 					{
 						question: 'Who is the program intended for?',
 						answer:
-							'If you want to master Data Science in the IT industry, this program is for you. Whether you are a recent graduate or want to change your domain, you can join the program. We believe that you have the right to choose your career path.',
+							'If you want to be a Python developer or a Data scientist, this program is for you. Here at the academy, we believe in offering you the chance to choose your career path so that you can be sure of making an informed decision without being pushed down one road or another. Whether you are looking to take your first step into the field and need some hand-holding along the way, or whether you have years of experience and simply aren’t happy with where your career currently finds itself, we have options to suit everyone!',
 					},
 					{
 						question: 'Does Excelsior help me to get a job?',
