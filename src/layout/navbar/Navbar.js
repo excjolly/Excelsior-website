@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import {
-	FileOutlined,
-	StockOutlined,
+	MailOutlined,
 	MessageOutlined,
 	MenuUnfoldOutlined,
 	DownOutlined,
 	UserOutlined,
 	HomeOutlined,
+	BankOutlined,
+	BookOutlined,
 } from '@ant-design/icons';
 import { Link, NavLink } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
@@ -102,7 +103,7 @@ const Navbar = () => {
 					to='/scholarship'
 				>
 					<div>
-						<FileOutlined />
+						<BookOutlined />
 						Scholarship
 					</div>
 				</NavLink>
@@ -113,7 +114,7 @@ const Navbar = () => {
 					to='/contact'
 				>
 					<div>
-						<StockOutlined />
+						<MailOutlined />
 						Contact
 					</div>
 				</NavLink>
@@ -124,7 +125,7 @@ const Navbar = () => {
 					to='/aboutus'
 				>
 					<div>
-						<StockOutlined />
+						<BankOutlined />
 						About Us
 					</div>
 				</NavLink>
