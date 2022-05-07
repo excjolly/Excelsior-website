@@ -22,9 +22,9 @@ function ProgramHeader({ programData }) {
 							<p style={{ color: '#fff' }}>{programData.description}</p>
 						</Col>
 					</Row>
-					<button className='enroll_button' onClick={() => clickToScroll()}>
+					{/* <button className='enroll_button' onClick={() => clickToScroll()}>
 						Enroll Now
-					</button>
+					</button> */}
 				</div>
 				<div className='right'></div>
 			</div>

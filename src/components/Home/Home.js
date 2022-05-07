@@ -370,9 +370,9 @@ const Home = () => {
 								</h3>
 							</Col>
 						</Row>
-						<button className='enroll_button' onClick={() => clickToScroll()}>
+						{/* <button className='enroll_button' onClick={() => clickToScroll()}>
 							Get Started
-						</button>
+						</button> */}
 					</div>
 				</div>
 			</div>
