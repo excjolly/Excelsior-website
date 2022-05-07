@@ -117,6 +117,9 @@ const Home = () => {
 			),
 		},
 	]);
+	function clickToScroll(){
+		document.getElementById('helpSection').scrollIntoView({top:"-100px", behavior: "smooth"})
+	}
 	function handleButtonClick(e) {
 		message.info('Click on left button.');
 		console.log('click left button', e);
@@ -353,7 +356,7 @@ const Home = () => {
 								</h3>
 							</Col>
 						</Row>
-						<button className='enroll_button' onClick={() => console.log('enroll')}>
+						<button className='enroll_button' onClick={() => clickToScroll()}>
 							Get Started
 						</button>
 					</div>
@@ -383,7 +386,7 @@ const Home = () => {
 				<div className='mb-5'>
 					<Row gutter={[10, 30]}>
 						<Col xs={24} sm={24} md={8} lg={8}>
-							<h2 className='admission_heading' style={{ color: '#f35d5d' }}>
+							<h2 className='admission_heading' id='helpSection' style={{ color: '#f35d5d' }}>
 								Take your first step
 							</h2>
 							<Card>

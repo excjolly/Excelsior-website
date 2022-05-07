@@ -9,6 +9,30 @@ import Program_DB_Master from '../../../assets/static/Program_DB_Master';
 import { programData } from './data';
 import Mentors from '../Mentors';
 import moment from 'moment';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 2
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 2
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
 const Program = () => {
 	const [name, setName] = useState();
@@ -95,6 +119,17 @@ const Program = () => {
 					</Col>
 					<Col className='mb-5' lg={24}>
 						<h2 className='admission_heading'>Homework</h2>
+						<Carousel className='videoSlide' responsive={responsive}
+						autoPlay={false}
+						infinite={true}
+						>
+							<iframe src="https://www.youtube.com/embed/Y_wXF1Pe4AA"></iframe>
+							<iframe src="https://www.youtube.com/embed/Y_wXF1Pe4AA"></iframe>
+							<iframe src="https://www.youtube.com/embed/43GDcx1RuTk"></iframe>
+							<iframe src="https://www.youtube.com/embed/xneV8HU4ZyE"></iframe>
+							<iframe src="https://www.youtube.com/embed/suNHrZWVzE8"></iframe>
+							<iframe src="https://www.youtube.com/embed/bnmooThvUno"></iframe>
+						</Carousel>;
 					</Col>
 				</Row>
 			</div>
@@ -201,7 +236,7 @@ const Program = () => {
 										},
 									]}
 								>
-									<DatePicker   onChange={(value, e) => handleChange(value, e)}
+									<DatePicker className='antDate'  onChange={(value, e) => handleChange(value, e)}
    selected={chooseDate} />
 								</Form.Item>
 								<Form.Item
@@ -213,7 +248,7 @@ const Program = () => {
 										},
 									]}
 								>
-									<TimePicker format={'HH:mm'} value={chooseTime} onChange={handleValueChange} />
+									<TimePicker className='antDate' format={'HH:mm'} value={chooseTime} onChange={handleValueChange} />
 								</Form.Item>
 								<Form.Item shouldUpdate>
 									{() => (
@@ -238,7 +273,7 @@ const Program = () => {
 						style={{ display: 'flex', flexDirection: 'column' }}
 					>
 						<h2 className='admission_heading'>Notifications</h2>
-						<li className='notifications_list'>
+						<li className='notifications_list scrollContent test_admission'>
 							{programData.notifications.map((item, index) => (
 								<div className='d-flex flex-column' key={index}>
 									<div className='d-flex mb-2'>

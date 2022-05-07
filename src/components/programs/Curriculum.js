@@ -67,7 +67,7 @@ function Curriculum({ curriculum }) {
 			<h2 className='curriculum_heading custom-text-primary'>Curriculum</h2>
 
 			<div className='row mt-3'>
-				<div className='col col-lg-8 col-sm-12'>
+				<div className='col-lg-8'>
 					<p>{curriculum.description}</p>
 					<Collapse accordion expandIconPosition='right'>
 						{curriculum.curriculumData.map((e, i) => (
@@ -81,7 +81,7 @@ function Curriculum({ curriculum }) {
 						))}
 					</Collapse>
 				</div>
-				<div className='contact_us col col-lg-4 col-sm-12'>
+				<div className='contact_us col-lg-4' id='helpSection'>
 					<Card className='p-2'>
 						<div className='row'>
 							<div className='col col-lg-8'>

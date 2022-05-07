@@ -28,7 +28,7 @@ getAllQuiz()
     <div className="container mt-3 mb-5">
       <h1 className="admission_heading"> Scholarship Test </h1>
       <Row gutter={[20, 30]}>
-      {quiz.map((item,inde)=>(
+      {quiz.slice(0, 2).map((item,inde)=>(
         <Col className="hover-scale-up" xs={24} sm={24} md={12} lg={8} onClick={()=>onButtonClick(item)}>
           <Card
             hoverable
@@ -41,7 +41,7 @@ getAllQuiz()
             }
           >
             <div>
-                {item.name}
+                <h2>{item.name}</h2>
               <span className="clamp mb-3 text-muted sh-8 quizz-eww">
                {item.descritpion}
               </span>
@@ -73,7 +73,59 @@ getAllQuiz()
         </Col>
        ))}
       </Row>
+      <h1 className="admission_heading mt-20"> Practice Test </h1>
+      <Row gutter={[20, 30]}>
+      {quiz.slice(-2).map((item,inde)=>(
+        <Col className="hover-scale-up" xs={24} sm={24} md={12} lg={8} onClick={()=>onButtonClick(item)}>
+          <Card
+            hoverable
+            cover={
+              <img
+                className="blogs__blog-card-image"
+                src={item.fullimage}
+                alt="card-image"
+              />
+            }
+          >
+            <div>
+                <h2>{item.name}</h2>
+              <span className="clamp mb-3 text-muted sh-8 quizz-eww">
+               {item.descritpion}
+              </span>
+              <div className="g-0 align-items-center mb-1 row">
+                <div className="col-auto">
+                  <div className="sw-3 sh-4 d-flex justify-content-center align-items-center">
+                    <FieldTimeOutlined />
+                  </div>
+                </div>
+                <div className="ps-3 col">
+                  <div className="g-0 row">
+                    <div className="col">
+                      <div className="text-alternate sh-4 d-flex align-items-center lh-1-25">
+                        Time
+                      </div>
+                    </div>
+                    <div className="col-auto">
+                      <div className="sh-4 d-flex align-items-center text-alternate">
+                      {item.time} mint
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex flex-row justify-content-between w-100 w-sm-50 w-xl-100 mt-4">
+              </div>
+            </div>
+          </Card>
+        </Col>
+       ))}
+      </Row>
+
+
     </div>
+    
+     
+    
   );
 }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Col, Rate, Row } from 'antd';
-
+function clickToScroll(){
+	document.getElementById('helpSection').scrollIntoView({behavior: "smooth"})
+}
 function ProgramHeader({ programData }) {
 	return (
 		<div
@@ -20,7 +22,7 @@ function ProgramHeader({ programData }) {
 							<p style={{ color: '#fff' }}>{programData.description}</p>
 						</Col>
 					</Row>
-					<button className='enroll_button' onClick={() => console.log('enroll')}>
+					<button className='enroll_button' onClick={() => clickToScroll()}>
 						Enroll Now
 					</button>
 				</div>
