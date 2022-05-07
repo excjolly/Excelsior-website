@@ -15,6 +15,8 @@ import Blogs from './Blogs';
 import SpeakWithExpert from './SpeakWithExpert';
 import FAQ from './FAQ';
 import HtmlHead from '../HtmlHead';
+import Program_DB_Master from '../../assets/static/Program_DB_Master';
+import { Pathname } from 'react-router-dom';
 import { Carousel } from 'antd';
 
 const ProgramDetails = ({ programData }) => {
@@ -35,10 +37,12 @@ const ProgramDetails = ({ programData }) => {
 
 	return (
 		<>
+
 			<HtmlHead
 				title='Excelsior | Aim Higher'
 				desc='Learn Specialization in Data Science for Finance and IT in Best Data Science course in Delhi NCR and Bangalore'
 				kw='Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+				pathname='https://getexcelsior.com/programs/'
 			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>

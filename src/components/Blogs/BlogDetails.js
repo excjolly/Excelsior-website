@@ -45,6 +45,7 @@ const BlogDetail = () => {
 				title='About Excelsior | Knowledge Center | Best Online Education Platform for Data Science'
 				desc='Enhance your knowledge about Data Science by reading carefully curated Blogs'
 				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+				pathname='{pathname}'
 			/>
 				<h2>Blog Detail</h2>
 				<Row gutter={[20, 30]} className='mt-20'>

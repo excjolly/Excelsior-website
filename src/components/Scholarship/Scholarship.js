@@ -32,7 +32,8 @@ getAllQuiz()
 				title='Excelsior | Online Education Platform | Scholarship Offers Available'
 				desc='A transparent and easy merit based scholarship option for students to showcase their skills '
         kw='spacialization in data science for IT, Discounts, free courses, Data Science, Machine Learning'
-			/>
+        pathname='https://getexcelsior.com/scholarship'
+        />
       			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
 				<h3 className='mb-4 '>We don't just train, We make careers</h3>
