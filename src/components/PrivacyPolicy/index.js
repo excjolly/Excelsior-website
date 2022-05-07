@@ -53,7 +53,7 @@ To the extent any Personally Identifiable Information collected by us contains i
 <p>Please note that any Personally Identifiable Information that is voluntarily displayed by you on the Platform may be used by third parties for unsolicited purposes. Excelsior shall not be liable for such unsolicited use by third parties of your Personally Identifiable Information.</p>
 <h3 className='mt-3'><b>AGGREGATED DATA</b></h3>
 <p>Aggregated Data means records that have been stripped of Personally Identifying Information and that have been manipulated or combined to provide generalised, anonymous information. Your identity and personal information are not available in Aggregated Data. We may combine your personal information on an anonymous basis with other information to generate Aggregated Data for internal and commercial use, and for sharing with affiliates, subsidiaries and business partners for planning and marketing purposes.</p>
-<h3 className='mt-3'><b>PROTECTION OF INFORMATION</b></h3>
+<h3 className='mt-3 mb-2'><b>PROTECTION OF INFORMATION</b></h3>
 <p><b>CONFIDENTIALITY AND SECURITY</b>
 <br/>Excelsior is committed to protecting online privacy. In addition, we participate in cooperative database services. These services help us direct marketing efforts to appropriate purchasers and website visitors. Names and mailing addresses may be shared between participating parties in the co-operative database services.</p>
 <p><b>NOTIFICATION OF CHANGES</b>
@@ -72,16 +72,16 @@ To the extent any Personally Identifiable Information collected by us contains i
 <br/>We also use cookies and/or web beacons to help us determine the type of content and sites our users are linking to, their length of time visiting our platform, and their specific activity on our site. Cookies and web beacons help us serve you better and more efficiently, and personalise your experience on our site. By using these technologies, we do not collect personally identifiable information.
 <br/>We may allow third-party companies, including advertising companies (such as Facebook, Google, Twitter, Quora and Bing) to place cookies on our website. These cookies enable such companies to track your activity across various sites where they display Ads and record your activities, so they can show Ads that they consider relevant to you as you browse the Internet. These cookies store information about the content you are browsing, together with an identifier linked to your device or IP address.
 <br/>To protect your privacy, you should be able to control how and whether cookies are accepted by your web browser. Please visit the “Help” section of your toolbar for more information about the cookies that we use and how you can prevent them from being placed. If you do not want to receive cookies, you can reject our cookies by blocking them in your Internet browser's settings or options menus. However, if you reject our cookies, you may not be able to fully experience our Platform and some of its features may not work properly. </p>
-<h2 className='custom-text-primary mt-3'>UPDATING PERSONAL INFORMATION</h2>
+<h3 className='custom-text-primary mt-3'>UPDATING PERSONAL INFORMATION</h3>
 <p>Please send an email to info@theExcelsior.in to update or modify your contact information and user preferences.</p>
-<h2 className='custom-text-primary mt-3'>SECURITY STATEMENT</h2>
+<h3 className='custom-text-primary mt-3'>SECURITY STATEMENT</h3>
  <p>Excelsior has put in place various physical, electronic and managerial procedures to try to safeguard and secure the information we collect. For example, we provide strong encryptions to store certain information and have stringent managerial checks and password change policies in place. The information we collect is stored with third-party data centres that have a holistic security model with seven levels of security. Please note that the Company shall not be liable for any misuse or loss of information carried out by such third-party data centres. Furthermore, we also rely on your cell phones’ strong security model to ensure that there is no information or security leak unless intentionally processed for authentication.
 <br/>We ensure that many security measures are in place to protect your online transactions, but we cannot guarantee absolute safety.</p>
-<h2 className='custom-text-primary mt-3'>ADDRESS FOR PRIVACY QUESTIONS</h2>
+<h3 className='custom-text-primary mt-3'>ADDRESS FOR PRIVACY QUESTIONS</h3>
 <p>If you have questions about this policy or Excelsior’s information collection, use and disclosure practices, please contact info@theExcelsior.in. We will respond to your question or concern promptly. Please be aware that we cannot guarantee a response to questions or comments regarding topics unrelated to this policy or our privacy practices.</p>
-<h2 className='custom-text-primary mt-3'>CHANGING OUR PRIVACY POLICY</h2>
+<h3 className='custom-text-primary mt-3'>CHANGING OUR PRIVACY POLICY</h3>
 <p>We may modify this Privacy Policy from time to time. Any changes to this Privacy Policy will be effective immediately upon being posted on this page. By accessing the Platform, you indicate your agreement to the modified Privacy Policy and all the changes. Please visit frequently to ensure familiarity with the most current version of this Privacy Policy.</p>
-<h2 className='custom-text-primary mt-3'>MISCELLANEOUS PROVISIONS</h2>
+<h3 className='custom-text-primary mt-3'>MISCELLANEOUS PROVISIONS</h3>
 <p>The provisions concerning our Terms of Use and the policies related to them will apply to this policy as well. </p>
 </div>
 
