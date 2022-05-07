@@ -436,6 +436,7 @@ const Home = () => {
 
 									<Form.Item>
 										<select
+											className='ant-input'
 											defaultValue='experience'
 											name='experience'
 											id='experience'
@@ -452,6 +453,7 @@ const Home = () => {
 									</Form.Item>
 									<Form.Item>
 										<select
+											className='ant-input'
 											defaultValue='highest-qualification'
 											name='highest-qualification'
 											id='highest-qualification'

@@ -144,6 +144,7 @@ function Curriculum({ curriculum }) {
 
 									<Form.Item>
 										<select
+											className='ant-input'
 											defaultValue='experience'
 											name='experience'
 											id='experience'
@@ -160,6 +161,7 @@ function Curriculum({ curriculum }) {
 									</Form.Item>
 									<Form.Item>
 										<select
+											className='ant-input'
 											defaultValue='highest-qualification'
 											name='highest-qualification'
 											id='highest-qualification'

@@ -578,7 +578,7 @@ button {
 }
 
 .blogs__must-read-card {
-	max-width: 400px;
+	// max-width: 400px;
 	margin-top: 10px;
 	height: 80px;
 	display: flex;
@@ -592,6 +592,9 @@ button {
 		border-bottom-left-radius: $borderRadius;
 	}
 
+	&:nth-last-child(2){
+		margin-bottom: 15px;
+	}
 	.blogs__must-read-card_content {
 		flex: 1;
 		display: flex;
@@ -599,7 +602,9 @@ button {
 			font-size: 13px;
 			color: $black;
 			margin: auto;
-			text-align: center;
+			text-align: left;
+			padding: 0 15px;
+			width: 100%;
 		}
 	}
 }
@@ -1378,3 +1383,4 @@ button {
 		}
 	}
 }
+// .blog__details-content cite{font-style: normal !important;}.blog__details-content cite article *{font-family: "Montserrat", sans-serif !important;}
