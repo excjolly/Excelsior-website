@@ -26,7 +26,20 @@ const Navbar = () => {
 					onClose={() => setIsSidebarMenuVisible(false)}
 				/>
 			)}
+{/* !-- Global site tag (gtag.js) - Google Analytics -- */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2NFZCB02TG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag()dataLayer.push(arguments);
+  gtag('js', new Date());
 
+  gtag('config', 'G-2NFZCB02TG');
+</script>
+<script type="text/javascript">
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    )(window, document, "clarity", "script", "a0my3jch7e");
+</script>
 			<Link to='/home' className='navbar__brand'>
 				<img className='sidebarmenu__brand-logo' src={images} alt='logo' />
 			</Link>
