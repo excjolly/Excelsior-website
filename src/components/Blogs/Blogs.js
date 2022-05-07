@@ -66,7 +66,7 @@ const Blogs = () => {
   return (
     <div className="blogs__container mt-3 container">
        <ToastContainer/>
-      <h2 className="admission_heading">Blogs</h2>
+      <h1 className="admission_heading">Blogs</h1>
       <Row
         gutter={[20, 30]}
         style={{

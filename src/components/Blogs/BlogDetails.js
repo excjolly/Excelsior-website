@@ -90,24 +90,12 @@ const BlogDetail = () => {
 						))}
 						<div className='blogs__details-advertise-blogs'>
 							<Card className='blogs__details-advertise-blog'>
-								<h3>Introduction to Bread Making</h3>
-								<Button
-									type='primary'
-									icon={<RightOutlined />}
-									style={{ marginTop: 20 }}
-								>
-									View
-								</Button>
+								<h3 className='mb-3 custom-primary-text'>Specialization in Data Science for IT</h3>
+								<Button><a href="/programs/specialization-in-data-science-for-it" target="_blank" rel="noreferrer">Learn More</a></Button>
 							</Card>
 							<Card className='blogs__details-advertise-blog'>
-								<h3>Introduction to Bread Making</h3>
-								<Button
-									type='primary'
-									icon={<RightOutlined />}
-									style={{ marginTop: 20 }}
-								>
-									View
-								</Button>
+								<h3 className='mb-3 custom-primary-text'>Specialization in Data Science for Finance</h3>
+								<Button><a href="/programs/specialization-in-data-science-for-finance" target="_blank" rel="noreferrer">Learn More</a></Button>
 							</Card>
 						</div>
 					</Col>
