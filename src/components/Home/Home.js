@@ -13,20 +13,20 @@ import {
 	message,
 } from 'antd';
 import BlogMiniCard from '../Blogs/components/BlogMiniCard';
-import Blogs from '../programs/Blogs';
+import Blogs from '../PrivacyPolicy/programs/Blogs';
 
 import { RightOutlined } from '@ant-design/icons';
 import { Link, useNavigate } from 'react-router-dom';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import images from '../../assets/images';
-import Admission from '../programs/Admission';
+import Admission from '../PrivacyPolicy/programs/Admission';
 import validator from 'validator';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import Program_DB_Master from '../../assets/static/Program_DB_Master';
 import HtmlHead from '../HtmlHead';
-import Review from '../programs/Review';
+import Review from '../PrivacyPolicy/programs/Review';
 import { CheckSquare, ChartUp, Star, Wizard, StartUp, Suitcase } from '../Icons';
 import {BiRupee} from 'react-icons/bi'
 
