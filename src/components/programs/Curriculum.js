@@ -82,7 +82,7 @@ function Curriculum({ curriculum }) {
 					</Collapse>
 				</div>
 				<div className='contact_us col-lg-4' id='helpSection'>
-					<Card className='p-2'>
+					<Card className='p-2 mt-20'>
 						<div className='row'>
 							<div className='col col-lg-8'>
 								<h2 className='custom-text-primary mb-2'>Contact us</h2>

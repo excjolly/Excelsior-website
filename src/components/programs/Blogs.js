@@ -23,7 +23,7 @@ function Blogs() {
 		<div className='mb-4'>
 			<h2 className='admission_heading'>Blogs</h2>
 			<div className='row'>
-				{Data.map((item,index)=>(
+				{Data.slice(0,4).map((item,index)=>(
 	<div className='col col-lg-3 col-md-3 col-sm-12'>
 		
 	<Card className='blogs_header' onClick={()=>BlogdetailPage(item)}>
