@@ -15,10 +15,7 @@ function SpeakWithExpert() {
 						Talk to a real data scientist before you even think of joining the field:  We've built this platform for those who already have an understanding of the various terminologies and are looking to gain more insights through personalised interviews with real data scientists from top companies.
 						</h3>
 						<Row className='text-white'>
-							<Col lg={20}></Col>
-							<Col lg={4}>
 							<Button><a href="https://calendly.com/datasciencecounselling-excelsior" target="_blank" rel="noreferrer">Schedule Now</a></Button>
-							</Col>
 						</Row>
 					</Card>
 				</Col>
@@ -31,10 +28,7 @@ function SpeakWithExpert() {
 						Get Career Advice From Industry Professionals! Take the next step and speak to an expert counselor before making a career choice . At Excelsior, we understand that students want flexibility when it comes to their education and career.
 						</h3>
 						<Row className='text-white'>
-							<Col lg={20}></Col>
-							<Col lg={4}>
 								<Button><a href="https://calendly.com/akash-excelsior" target="_blank" rel="noreferrer">Schedule Now</a></Button>
-							</Col>
 						</Row>
 					</Card>
 				</Col>

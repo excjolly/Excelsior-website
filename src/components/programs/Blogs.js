@@ -33,7 +33,7 @@ function Blogs() {
 				alt='akk'
 				src={item.fullimage}
 			/>
-			<div className='p-3'>
+			<div className='p-3 text-center'>
 				<b>{item.title}</b>
 			</div>
 			<div className='d-flex justify-content-between p-3'>

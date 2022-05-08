@@ -37,12 +37,11 @@ const ProgramDetails = ({ programData }) => {
 
 	return (
 		<>
-
 			<HtmlHead
 				title='Excelsior | Aim Higher'
 				desc='Learn Specialization in Data Science for Finance and IT in Best Data Science course in Delhi NCR and Bangalore'
 				kw='Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
-				pathname='https://getexcelsior.com/programs/'
+				pathname={`https://getexcelsior.com/programs${programData.pathname}`}
 			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
@@ -175,8 +174,7 @@ const ProgramDetails = ({ programData }) => {
 								<Review reviews={programData.reviews} />
 							</div>
 							<div className='mt-5' id='Blogs' name='Blogs'>
-								<Blogs/>						
-								
+								<Blogs />
 							</div>
 							<div className='mt-5' id='FAQ' name='FAQ'>
 								<FAQ faqData={programData.faq} />

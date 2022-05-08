@@ -21,13 +21,14 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import images from '../../assets/images';
 import Admission from '../programs/Admission';
-import validator from 'validator'
+import validator from 'validator';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import Program_DB_Master from '../../assets/static/Program_DB_Master';
 import HtmlHead from '../HtmlHead';
 import Review from '../programs/Review';
 import { CheckSquare, ChartUp, Star, Wizard, StartUp, Suitcase } from '../Icons';
+import {BiRupee} from 'react-icons/bi'
 
 const { Option } = Select;
 const Home = () => {
@@ -35,13 +36,13 @@ const Home = () => {
 	const [name, setName] = useState();
 	const [realted, setRelatedBlog] = useState([]);
 	const [email, setEmail] = useState();
-	const [currentFruit,setcurrentFruit]=useState();
+	const [currentFruit, setcurrentFruit] = useState();
 	const [subscribeEmail, setSubscribeEmail] = useState();
 	const [subscribeName, setSubscribeName] = useState();
 	const [phone, setPhone] = useState();
 	const [experience, setExperience] = useState();
-	const [emailName,setEmailName]=useState();
-	// const 
+	const [emailName, setEmailName] = useState();
+	// const
 	const [HighestQualification, setHighestQualification] = useState();
 	const [registerFormCurrentStep, setRegisterFormCurrentStep] = useState(0);
 	const [statsData, setStatsData] = useState([
@@ -73,11 +74,10 @@ const Home = () => {
 			title: 'Average Salary',
 			text: '10.7 LPA',
 			icon: (
-				<Star
-					strokeWidth='1.2'
+				<BiRupee
+					// strokeWidth='1.2'
 					className='custom-text-primary'
-					width='28px'
-					height='28px'
+					size='32px'
 				/>
 			),
 		},
@@ -118,8 +118,10 @@ const Home = () => {
 			),
 		},
 	]);
-	function clickToScroll(){
-		document.getElementById('helpSection').scrollIntoView({top:"-100px", behavior: "smooth"})
+	function clickToScroll() {
+		document
+			.getElementById('helpSection')
+			.scrollIntoView({ top: '-100px', behavior: 'smooth' });
 	}
 	function handleButtonClick(e) {
 		message.info('Click on left button.');
@@ -238,39 +240,40 @@ const Home = () => {
 		if (!name && !email && !phone && !experience && !HighestQualification) {
 			toast.error('Some Parameter is missing..');
 		} else {
-
 			if (validator.isEmail(email)) {
-				if(phone.length<9){
-					toast.error("Phone Number Not Valid")
-				}else{
-				// setEmailError('Valid Email :)')
-			let body = {
-				name: name,
-				email: email,
-				phone_number: phone,
-				experience:currentFruit,
-				qualification: HighestQualification,
-			};
-			console.log('home body is..', body);
-			let response = await axios.post('http://3.111.207.167:8000/api/help', body);
-			if (response.data.Success === 1) {
-				setName('');
-				setEmail('');
-				setPhone('');
-				setExperience('');
-				setHighestQualification('');
-				toast.success('Your Form is succefully submit');
+				if (phone.length < 9) {
+					toast.error('Phone Number Not Valid');
+				} else {
+					// setEmailError('Valid Email :)')
+					let body = {
+						name: name,
+						email: email,
+						phone_number: phone,
+						experience: currentFruit,
+						qualification: HighestQualification,
+					};
+					console.log('home body is..', body);
+					let response = await axios.post(
+						'http://3.111.207.167:8000/api/help',
+						body
+					);
+					if (response.data.Success === 1) {
+						setName('');
+						setEmail('');
+						setPhone('');
+						setExperience('');
+						setHighestQualification('');
+						toast.success('Your Form is succefully submit');
+					} else {
+						toast.error('Your Form is not succefully submit');
+					}
+
+					console.log('home api is...///...', response.data);
+				}
 			} else {
-				toast.error('Your Form is not succefully submit');
+				toast.error('Enter Valid Email');
 			}
-		
-			console.log('home api is...///...', response.data);
 		}
-	}else{
-			toast.error("Enter Valid Email")
-		}
-	
-	}
 	};
 	const menu = (
 		<Menu
@@ -299,55 +302,58 @@ const Home = () => {
 		} else {
 			if (validator.isEmail(subscribeEmail)) {
 				// setEmailError('Valid Email :)')
-			let body = {
-				name:subscribeName,
-				email: subscribeEmail,
-			};
-			console.log('body..', body);
-			let response = await axios.post('http://3.111.207.167:8000/api/Subscribe', body);
-			console.log('res', response.data);
-			console.log(response.data.Success);
-			if (response.data.Success === 1) {
-				toast('Your Email is successfully subscribe');
-				setSubscribeEmail('');
+				let body = {
+					name: subscribeName,
+					email: subscribeEmail,
+				};
+				console.log('body..', body);
+				let response = await axios.post(
+					'http://3.111.207.167:8000/api/Subscribe',
+					body
+				);
+				console.log('res', response.data);
+				console.log(response.data.Success);
+				if (response.data.Success === 1) {
+					toast('Your Email is successfully subscribe');
+					setSubscribeEmail('');
+				} else {
+					toast.error('Issue from server side');
+				}
 			} else {
-				toast.error('Issue from server side');
+				toast.error('Your EMail is not Valid');
 			}
-		}else{
-			toast.error("Your EMail is not Valid")
 		}
-	}
 	};
-	useEffect(()=>{
-		getBlogList()
+	useEffect(() => {
+		getBlogList();
 		// let response=await
-	},[])
-	const getBlogList=async()=>{
-		let response=await axios.get('http://3.111.207.167:8000/api/bloglist');
-    console.log(response.data.data);
-    if(response.data.data.length>0){
-      setRelatedBlog(response.data.data)
-    }
-	}
-	const gotoBlogPage=()=>{
-		navigate("/blogs")
-	}
+	}, []);
+	const getBlogList = async () => {
+		let response = await axios.get('http://3.111.207.167:8000/api/bloglist');
+		console.log(response.data.data);
+		if (response.data.data.length > 0) {
+			setRelatedBlog(response.data.data);
+		}
+	};
+	const gotoBlogPage = () => {
+		navigate('/blogs');
+	};
 	const changeFruit = (newFruit) => {
-		console.log("selected value is..",newFruit)
-		setcurrentFruit(newFruit)
-	  }
-	  const changeHighestQulaification=(newFruit)=>{
-		console.log("selected value is..",newFruit)
-		setHighestQualification(newFruit)
-	  }
+		console.log('selected value is..', newFruit);
+		setcurrentFruit(newFruit);
+	};
+	const changeHighestQulaification = (newFruit) => {
+		console.log('selected value is..', newFruit);
+		setHighestQualification(newFruit);
+	};
 	return (
 		<div className='mb-5'>
 			<ToastContainer />
 			<HtmlHead
 				title='Excelsior | Online Education Platform | Data Science and Cloud technologies'
-				desc='We keep it simple- we focus on the things that really produce results. Keeping this in mind, we encourage you to AIM HIGHER. Excelsior is the best online Data Science institute in Delhi and best online Data Science institute in Bengaluru. Contact- Info@getexcelsior.Com'
-				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
-				pathname='https://getexcelsior.com'
+				desc='We keep it simple- we focus on the things that really produce results. Keeping this in mind, we encourage you to AIM HIGHER. Excelsior is the best online Data Science institute in Delhi and best online Data Science institute in Bengaluru. Contact - info@getexcelsior.com'
+				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics'
+				pathname='/'
 			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
@@ -355,11 +361,7 @@ const Home = () => {
 			</div>
 			<div className='home__banner-left-content d-flex flex-column justify-content-center mb-2 container mx-auto'>
 				<div className='container pt-4 pl-4'>
-					<h2
-						className='text-white admission_heading'
-					>
-						Get the Boost
-					</h2>
+					<h2 className='text-white admission_heading'>Get the Boost</h2>
 					<div>
 						<Row>
 							<Col lg={12}>
@@ -401,7 +403,11 @@ const Home = () => {
 				<div className='mb-5'>
 					<Row gutter={[10, 30]}>
 						<Col xs={24} sm={24} md={8} lg={8}>
-							<h2 className='admission_heading' id='helpSection' style={{ color: '#f35d5d' }}>
+							<h2
+								className='admission_heading'
+								id='helpSection'
+								style={{ color: '#f35d5d' }}
+							>
 								Take your first step
 							</h2>
 							<Card>
@@ -444,7 +450,7 @@ const Home = () => {
 										className='mb-3'
 									>
 										<Input
-										min={9}
+											min={9}
 											value={phone}
 											type='number'
 											placeholder='Phone Number '
@@ -462,7 +468,7 @@ const Home = () => {
 											onChange={(event) => changeFruit(event.target.value)}
 										>
 											<option value='experience'>Experience</option>
-											<option value='fresher' >Fresher</option>
+											<option value='fresher'>Fresher</option>
 											<option value='0-2yrs'>0-2 Years</option>
 											<option value='2-5yrs'>2-5 Years</option>
 											<option value='5-8yrs'>5-8 Years</option>
@@ -476,7 +482,9 @@ const Home = () => {
 											name='highest-qualification'
 											id='highest-qualification'
 											value={HighestQualification}
-											onChange={(event) => changeHighestQulaification(event.target.value)}
+											onChange={(event) =>
+												changeHighestQulaification(event.target.value)
+											}
 										>
 											<option value='highest-qualification'>
 												Highest Qualification
@@ -542,7 +550,13 @@ const Home = () => {
 
 				<div className='mb-5'>
 					<Row gutter={[20, 30]}>
-						<Col xs={24} sm={24} md={24} lg={12} className='mb-5 d-flex flex-column'>
+						<Col
+							xs={24}
+							sm={24}
+							md={24}
+							lg={12}
+							className='mb-5 d-flex flex-column'
+						>
 							<h2 className='admission_heading' style={{ color: '#f35d5d' }}>
 								Latest News
 							</h2>
@@ -559,25 +573,42 @@ const Home = () => {
 								</div>
 							</Card>
 						</Col>
-							<Col xs={24} sm={24} md={24} lg={12} className='mb-5 d-flex flex-column'>
+						<Col
+							xs={24}
+							sm={24}
+							md={24}
+							lg={12}
+							className='mb-5 d-flex flex-column'
+						>
 							<h2 className='admission_heading '>Speak With Expert</h2>
-													
-					<Card style={{ backgroundColor: '#f35d5d' }}>
-					<Col xs={24} sm={24} md={24} lg={6} />
-						<h2 className='text-white mb-5'>
-						Schedule your session with a Data Science expert
-						</h2>
-						<h3 className=' text-white mb-4' style={{ lineHeight: '1.5' }}>
-						Talk to a real data scientist before you even think of joining the field:  We've built this platform for those who already have an understanding of the various terminologies and are looking to gain more insights through personalised interviews with real data scientists from top companies.
-						</h3>
-						<Row className='text-white'>
-							<Col lg={20}></Col>
-							<Col lg={4}>
-							<Button><a href="https://calendly.com/datasciencecounselling-excelsior" target="_blank" rel="noreferrer">Schedule Now</a></Button>
-							</Col>
-						</Row>
-					</Card>
-				</Col>
+
+							<Card
+								style={{ backgroundColor: '#f35d5d' }}
+								className='home__app-info_speak-with-expert'
+							>
+								<Col xs={24} sm={24} md={24} lg={6} />
+								<h2 className='text-white mb-5'>
+									Schedule your session with a Data Science expert
+								</h2>
+								<h3 className=' text-white mb-4' style={{ lineHeight: '1.5' }}>
+									Talk to a real data scientist to get an understanding of the
+									various terminologies and are looking to gain more insights
+									through personalised interviews with real data scientists from
+									top companies.
+								</h3>
+								<Row className='text-white'>
+									<Button>
+										<a
+											href='https://calendly.com/datasciencecounselling-excelsior'
+											target='_blank'
+											rel='noreferrer'
+										>
+											Schedule Now
+										</a>
+									</Button>
+								</Row>
+							</Card>
+						</Col>
 					</Row>
 				</div>
 
@@ -585,9 +616,15 @@ const Home = () => {
 					<Review reviews={Program_DB_Master[0].reviews} />
 				</div>
 				<div className='mt-5' id='Blogs' name='Recent Blogs'>
-								<Blogs/>						
-								
-							</div>
+					<Blogs />
+					<Row className='text-white mb-5 justify-content-center'>
+						<Button>
+							<h3>
+								<Link to='/blogs'>Read More</Link>
+							</h3>
+						</Button>
+					</Row>
+				</div>
 				<h2 className='admission_heading'>Mail List</h2>
 				<Card>
 					<h3 className=' mb-3 text-center' style={{ color: '#f35d5d' }}>

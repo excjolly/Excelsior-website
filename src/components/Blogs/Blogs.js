@@ -71,7 +71,7 @@ const Blogs = () => {
 				title='About Excelsior | Blogs | Best Online Education Platform for Data Science'
 				desc='Experts are willing to share their knowledge about Data Science, Machine Learning and Artificial Intelligence'
 				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
-        pathname='https://getexcelsior.com/blogs'
+        pathname='/blogs'
       />
       <h1 className="admission_heading">Blogs</h1>
       <Row
