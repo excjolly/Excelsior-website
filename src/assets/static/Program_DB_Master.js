@@ -51,7 +51,7 @@ const Program_DB_Master = [
 		},
 		overview: {
 			description:
-				'A complete program that caters to learning complete Data Science along with the complete domain knowledge of IT industry including product management and complete product life cycle. This is an end-to-end IT training program that gives you all the knowledge required to start and grow your career in Data Science. It covers everything from basic statistics and modelling techniques up to advanced machine learning, deep learning, artificial intelligence, NLP (Natural Language Processing), computer vision and other areas of AI.',
+				'A program that caters to learning complete Data Science along with the extensive domain knowledge of IT industry including product management and product life cycle. This is an end-to-end IT training program that gives you all the knowledge required to start and grow your career in Data Science. It covers everything from basic statistics and modelling techniques up to advanced machine learning, deep learning, artificial intelligence, NLP (Natural Language Processing), computer vision and other areas of AI.',
 			dropdownQuestion: [
 				{
 					question: 'What does a Data Scientist do in an IT product companies?',
@@ -323,7 +323,7 @@ const Program_DB_Master = [
 					{
 						name: 'EMI Options',
 						answer:
-							'This is a 0% interest option. You can also pay in 6 EMI(s) of  ₹21666.50. The amount may vary for learners eligible for scholarships',
+							'This is a 0% interest option. You can also pay in 6 EMI(s) of  ₹16666.50. The amount may vary for learners eligible for scholarships',
 					},
 					{
 						name: 'Can you get a finanical AD',
@@ -707,7 +707,7 @@ const Program_DB_Master = [
 		banner: DSforFinance,
 		icon: i2,
 		description:
-			'A unique program, an innovative course that will give you a holistic understanding of how Data Science is used in the Finance & Banking industry. It iss not just limited to Bankers or Bankers-to-be, but it can help anyone who aspires to work in this field.',
+			'A unique program, an innovative course that will give you a holistic understanding of how Data Science is used in the Finance & Banking industry. It is not just limited to Bankers or Bankers-to-be, but it can help anyone who aspires to work in this field.',
 		shortDescription:
 			'A holistic understanding of how Data Science is used in the Finance & Banking industry.',
 		highlight: {
@@ -1376,8 +1376,20 @@ const Program_DB_Master = [
 			dropdownQuestion: [
 				{
 					question: 'What does a Data Scientist do in an Finance product companies?',
-					answer:
-						'A Data Scientist has a very vast area of work. But a Data Scientist who has expertise in AI, deep learning, and machine learning is already in high demand. And the demand will keep rising. Here is the typical hiring profile of a Data Scientist: 1) A Data Scientist should be able to efficiently use Python libraries like Scikit Learn, PyTorch, Tensor Flow, and NumPy. 2)A Data Scientist should be able to build predictive models like Random Forest, Gradient Boosting, Neural Networks etc. 3) A Data Scientist should be able to communicate his/her ideas and results to Management, Technical people, and Business people. 4) A Data Scientist should be able to extract insights from data, create results, and present them to others. Here are some of the popular job postings for AI, deep learning and machine learning engineers: Google, Amazon, Microsoft, Airbnb, Facebook and many more.',
+					answer:(
+						<>
+						A Data Scientist has a very vast area of work. But a Data Scientist who has expertise in AI, deep learning, and machine learning is already in high demand. And the demand will keep rising. Here is the typical hiring profile of a Data Scientist: 
+						<br />
+						<ul className='px-4'>
+
+						<li>A Data Scientist should be able to efficiently use Python libraries like Scikit Learn, PyTorch, Tensor Flow, and NumPy. </li>
+						<li>A Data Scientist should be able to build predictive models like Random Forest, Gradient Boosting, Neural Networks etc. </li>
+						<li> A Data Scientist should be able to communicate his/her ideas and results to Management, Technical people, and Business people.</li>
+						<li>A Data Scientist should be able to extract insights from data, create results, and present them to others. Here are some of the popular job postings for AI, deep learning and machine learning engineers: Google, Amazon, Microsoft, Airbnb, Facebook and many more.'</li>
+				
+						</ul>
+						</>
+					),
 				},
 				{
 					question: 'Who can enroll for this course and what are the prerequisites?',
@@ -1777,7 +1789,7 @@ const Program_DB_Master = [
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 5,
 				description:
-					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science. I am really thankful to them for helping me build my profile and gain the head start I needed.',
+					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science.',
 				linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
 				},
 		],
@@ -2168,7 +2180,7 @@ const Program_DB_Master = [
 					{
 						name: 'EMI Options',
 						answer:
-							'This is a 0% interest option. You can also pay in 3 EMI(s) of  ₹16666.50. The amount may vary for learners eligible for scholarships',
+							'This is a 0% interest option. You can also pay in 3 EMI(s) of  ₹20000.00. The amount may vary for learners eligible for scholarships',
 					},
 					{
 						name: 'Can you get a finanical AD',
@@ -3372,7 +3384,7 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I have been to many well-known Data Science / Machine Learning courses in Bangalore. But I could not find the right course which could help me to land my first job in this field. Then, I found Excelsior. Excelsior mentor Mr. Sachin was so helpful and so knowledgeable in this field that he could guide me throughout the course and they helped me to get placed in a Top MNC through his their extensive placement program.',
-				Linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/'
+				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/'
 				},
 			{
 				name: 'Nishant Gupta(Data Scientist-HDFC)',
@@ -3381,7 +3393,7 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Excelsior is the best Data Science institute in Bangalore. They offer a wide range of courses to learn Data Science. Moreover, they have one of the best placement program which helps the students to get placed in top companies. Big thanks to Mr. Sandeep and the entire Excelsior team for helping me to get my dream job in Data Science field.',
-					Linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/'
+					linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/'
 				},
 			{
 				name: 'Hemanth Reddy(Data Scientist-Airtel)',
@@ -3389,8 +3401,8 @@ const Program_DB_Master = [
 					'https://acorn-react-classic-dashboard.coloredstrategies.com/img/profile/profile-1.webp',
 				rating: 4.5,
 				description:
-					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science. I am really thankful to them for helping me build my profile and gain the head start I needed.',
-					Linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
+					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science.',
+					linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
 				},
 			{
 				name: 'Rahul Goswami (Marketing Analyst-Chegg)',
@@ -3399,7 +3411,7 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Being from Civil Engineering Background, I was afraid of coding. . I have been really anxious about learning Data Science, Excelsior has given me that confidence. Support is excellent and very empathetic. I was able to easily follow my passion for numbers in the Marketing Analytics course.',
-					Linkedin: 'https://www.linkedin.com/in/torahulgoswami/'
+					linkedin: 'https://www.linkedin.com/in/torahulgoswami/'
 				},
 			{
 				name: 'T Pavan Kumar(Data Scientist-IBM)',
@@ -3408,7 +3420,7 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It is a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
-					Linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
+					linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
 				},
 			{
 				name: 'Vikram (Data Scientist-Axis)',
@@ -3417,7 +3429,7 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I liked the class, it was easy to follow and understand. I have a good understanding of Python and Data Science now. Overall I really liked the class and feel like I learned a lot.',
-					Linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/'
+					linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/'
 				},
 		],
 		faq: [

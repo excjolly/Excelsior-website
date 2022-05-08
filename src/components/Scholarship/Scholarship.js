@@ -6,6 +6,7 @@ import { RightOutlined, UploadOutlined } from "@ant-design/icons";
 import axios from "axios";
 import React, { useEffect,useState } from "react";
 import { useNavigate } from "react-router-dom";
+import HtmlHead from "../HtmlHead";
 function Scholarship() {
   const [quiz,setQuiz]=useState([]);
   const navigate = useNavigate();
@@ -25,8 +26,19 @@ getAllQuiz()
     }
   }
   return (
+    
     <div className="container mt-3 mb-5">
-      <h1 className="admission_heading"> Scholarship Test </h1>
+      <HtmlHead
+				title='Excelsior | Online Education Platform | Scholarship Offers Available'
+				desc='A transparent and easy merit based scholarship option for students to showcase their skills '
+        kw='spacialization in data science for IT, Discounts, free courses, Data Science, Machine Learning'
+        pathname='https://getexcelsior.com/scholarship'
+        />
+      			<div className='container mt-4'>
+				<h1 className='Banner_Heading'>EXCELSIOR</h1>
+				<h3 className='mb-4 '>We don't just train, We make careers</h3>
+			</div>
+      <h2 className="admission_heading"> Scholarship Test </h2>
       <Row gutter={[20, 30]}>
       {quiz.slice(0, 2).map((item,inde)=>(
         <Col className="hover-scale-up" xs={24} sm={24} md={12} lg={8} onClick={()=>onButtonClick(item)}>
@@ -73,7 +85,7 @@ getAllQuiz()
         </Col>
        ))}
       </Row>
-      <h1 className="admission_heading mt-20"> Practice Test </h1>
+      <h2 className="admission_heading mt-20"> Practice Test </h2>
       <Row gutter={[20, 30]}>
       {quiz.slice(-2).map((item,inde)=>(
         <Col className="hover-scale-up" xs={24} sm={24} md={12} lg={8} onClick={()=>onButtonClick(item)}>

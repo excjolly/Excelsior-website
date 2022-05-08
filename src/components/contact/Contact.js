@@ -61,12 +61,14 @@ function Contact() {
 		<>
 			<ToastContainer />
 			<HtmlHead
-				title='About Excelsior |Best Online Education Platform for Data Science'
-				desc='Students can enrol in online courses on topics such as Data Analytics, Marketing Analytics, and Artificial Intelligence. Get in touch with us at +91-9289470444, or email us at info@getexcelsior.com.'
+		title='Excelsior | Online Education Platform | Contact'
+		desc='Reach out to the Best Data Science institute in Bengaluru and Delhi NCR'
+        kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+		pathname='https://getexcelsior.com/contact/'
 			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
-				<p className='mb-4 '>Excelsior is ideal for professionals who wants to</p>
+				<p className='mb-4 '>We don't just train, We make careers</p>
 			</div>
 			<div>
 				<div

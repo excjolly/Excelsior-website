@@ -1,9 +1,16 @@
 import React from 'react'
+import HtmlHead from '../HtmlHead'
 
 const PrivacPolicy = () => {
   return (
 
     <div>
+       <HtmlHead
+		title='Excelsior | Online Education Platform | Privacy Policy'
+		desc='Best online training institute in Delhi NCR and Bengaluru for Data Science '
+        kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+        pathname='https://getexcelsior.com/scholarship'
+        />
         <div className='container mt-4'>
     <h1 className='Banner_Heading'>EXCELSIOR</h1>
     <h3 className='mb-4 '>Privacy Policy</h3>

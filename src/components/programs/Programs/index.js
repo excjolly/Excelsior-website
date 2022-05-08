@@ -12,6 +12,7 @@ import moment from 'moment';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import HtmlHead from '../../HtmlHead';
 
 
 const responsive = {
@@ -78,6 +79,12 @@ const Program = () => {
 	return (
 		<div className='container mt-3'>
 			<ToastContainer />
+			<HtmlHead
+				title='Excelsior | Online Data Science Programs'
+				desc='Learn more about the programs from the best Data science institute in Delhi NCR and Bengaluru'
+				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+				pathname='https://getexcelsior.com/programs/'
+			/>
 			<div className='mb-5'>
 				<h2 className='admission_heading'>Features</h2>
 				<Row gutter={[20, 30]}>
@@ -118,7 +125,7 @@ const Program = () => {
 						</div>
 					</Col>
 					<Col className='mb-5' lg={24}>
-						<h2 className='admission_heading'>Homework</h2>
+						<h2 className='admission_heading'>Live Sessions</h2>
 						<Carousel className='videoSlide' responsive={responsive}
 						autoPlay={false}
 						infinite={true}
@@ -276,7 +283,7 @@ const Program = () => {
 						<li className='notifications_list scrollContent test_admission'>
 							{programData.notifications.map((item, index) => (
 								<div className='d-flex flex-column' key={index}>
-									<div className='d-flex mb-2'>
+									<div className='d-flex mb-3'>
 										<span className='mr-2'>&#10146;</span>
 										<h4 style={{ lineHeight: '1.3' }}>{item.title}</h4>
 									</div>

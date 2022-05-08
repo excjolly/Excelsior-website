@@ -3,6 +3,7 @@ import { Row, Col, Card, Form, Input, Button, Upload } from "antd";
 import { RightOutlined, UploadOutlined } from "@ant-design/icons";
 import BlogCard from "./components/BlogCard";
 import BlogMiniCard from "./components/BlogMiniCard";
+import HtmlHead from "../HtmlHead";
 import axios from "axios";
 import { ToastContainer,toast } from "react-toastify";
 const { Meta } = Card;
@@ -66,6 +67,12 @@ const Blogs = () => {
   return (
     <div className="blogs__container mt-3 container">
        <ToastContainer/>
+       <HtmlHead
+				title='About Excelsior | Blogs | Best Online Education Platform for Data Science'
+				desc='Experts are willing to share their knowledge about Data Science, Machine Learning and Artificial Intelligence'
+				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+        pathname='https://getexcelsior.com/blogs'
+      />
       <h1 className="admission_heading">Blogs</h1>
       <Row
         gutter={[20, 30]}

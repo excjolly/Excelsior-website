@@ -13,6 +13,7 @@ import {
 	message,
 } from 'antd';
 import BlogMiniCard from '../Blogs/components/BlogMiniCard';
+import Blogs from '../programs/Blogs';
 
 import { RightOutlined } from '@ant-design/icons';
 import { Link, useNavigate } from 'react-router-dom';
@@ -137,7 +138,7 @@ const Home = () => {
 			title: 'Earn Scholarship upto 50%',
 		},
 		{
-			title: 'New Data Engineer Course',
+			title: 'New Batch starting 17th May 2022',
 		},
 		{
 			title: 'Average Placement increased from 10.1 to 10.7 LPA in this batch',
@@ -146,7 +147,19 @@ const Home = () => {
 			title: 'Tesla Added to our client list for automobile industry enthusiasts',
 		},
 		{
-			title: '98.3% placement record in the last batch',
+			title: '98.1% placement record in the last batch',
+		},
+		{
+			title: '18% students interned with FAANG companies',
+		},
+		{
+			title: '49% Students got Prep-placement offers',
+		},
+		{
+			title: 'Wells Fargo Added to our client list for Finance Domain Aspirants',
+		},
+		{
+			title: 'Recorded our highest ever placement of 77 LPA in the last batch',
 		},
 	]);
 	const [recentTestimonialsData, setRecentTestimonialsData] = useState([
@@ -333,6 +346,8 @@ const Home = () => {
 			<HtmlHead
 				title='Excelsior | Online Education Platform | Data Science and Cloud technologies'
 				desc='We keep it simple- we focus on the things that really produce results. Keeping this in mind, we encourage you to AIM HIGHER. Excelsior is the best online Data Science institute in Delhi and best online Data Science institute in Bengaluru. Contact- Info@getexcelsior.Com'
+				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+				pathname='https://getexcelsior.com'
 			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
@@ -356,9 +371,9 @@ const Home = () => {
 								</h3>
 							</Col>
 						</Row>
-						<button className='enroll_button' onClick={() => clickToScroll()}>
+						{/* <button className='enroll_button' onClick={() => clickToScroll()}>
 							Get Started
-						</button>
+						</button> */}
 					</div>
 				</div>
 			</div>
@@ -527,7 +542,7 @@ const Home = () => {
 
 				<div className='mb-5'>
 					<Row gutter={[20, 30]}>
-						<Col xs={24} sm={24} md={24} lg={12} className='d-flex flex-column'>
+						<Col xs={24} sm={24} md={24} lg={12} className='review-card'>
 							<h2 className='admission_heading' style={{ color: '#f35d5d' }}>
 								Latest News
 							</h2>
@@ -536,47 +551,43 @@ const Home = () => {
 									{latestNewsData?.map((item, index) => (
 										<Row gutter={[20, 30]} key={index}>
 											<div className='d-flex'>
-												<span className='mr-2'>&#10146;</span>
-												<h4 style={{ lineHeight: '1.3' }}>{item.title}</h4>
+												<span className='mr-1'>&#10146;</span>
+												<h4 style={{ lineHeight: '1.2' }}>{item.title}</h4>
 											</div>
 										</Row>
 									))}
 								</div>
 							</Card>
 						</Col>
-						{/* <Col xs={24} sm={24} md={24} lg={8} className='d-flex flex-column'>
-							<h2 className='admission_heading' style={{ color: '#f35d5d' }}>
-								Recent Testimonials
-							</h2>
-							<Card className='test_admission'>
-								<TestimonialCarousel
-									carouselData={Program_DB_Master[0].reviews}
-								/>
-							</Card>
-						</Col> */}
-						<Col xs={24} sm={24} md={24} lg={12} className='d-flex flex-column'>
-							<h2 className='admission_heading' style={{ color: '#f35d5d' }}>
-								Recent Blogs
-							</h2>
-
-							<Card className='test_admission'>
-								<Col xs={24} sm={24} md={24} lg={6} />
-
-								{realted.map((item, index) => (
-									<BlogMiniCard key={index} item={item} />
-								))}
-								<Row align='middle' justify='center'>
-									<Button type='primary' onClick={()=>gotoBlogPage()}>See More</Button>
-								</Row>
-							</Card>
-						</Col>
+							<Col xs={24} sm={24} md={24} lg={12} className='review-card'>
+							<h2 className='admission_heading '>Speak With Expert</h2>
+													
+					<Card style={{ backgroundColor: '#f35d5d' }}>
+					<Col xs={24} sm={24} md={24} lg={6} />
+						<h2 className='text-white mb-5'>
+						Schedule your session with a Data Science expert
+						</h2>
+						<h3 className=' text-white mb-4' style={{ lineHeight: '1.5' }}>
+						Talk to a real data scientist before you even think of joining the field:  We've built this platform for those who already have an understanding of the various terminologies and are looking to gain more insights through personalised interviews with real data scientists from top companies.
+						</h3>
+						<Row className='text-white'>
+							<Col lg={20}></Col>
+							<Col lg={4}>
+							<Button><a href="https://calendly.com/datasciencecounselling-excelsior" target="_blank" rel="noreferrer">Schedule Now</a></Button>
+							</Col>
+						</Row>
+					</Card>
+				</Col>
 					</Row>
 				</div>
 
 				<div className='mt-5' id='Review' name='Review'>
 					<Review reviews={Program_DB_Master[0].reviews} />
 				</div>
-
+				<div className='mt-5' id='Blogs' name='Blogs'>
+								<Blogs/>						
+								
+							</div>
 				<h2 className='admission_heading'>Mail List</h2>
 				<Card>
 					<h3 className=' mb-3 text-center' style={{ color: '#f35d5d' }}>

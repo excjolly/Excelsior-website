@@ -37,10 +37,10 @@ function Blogs() {
 				<b>{item.title}</b>
 			</div>
 			<div className='d-flex justify-content-between p-3'>
-				<span className='text-muted'>Artcile</span>
+				{/* <span className='text-muted'>Artcile</span> */}
 				{/* moment('timestamp').format('MMMM Do YYYY') */}
-				<span className='text-muted'>
-				{moment(item.created_at).format('MMMM Do YYYY')}</span>
+				{/* <span className='text-muted'> */}
+				{/* {moment(item.created_at).format('MMMM Do YYYY')}</span> */}
 			</div>
 		</div>
 	</Card>

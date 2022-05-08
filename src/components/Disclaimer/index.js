@@ -1,8 +1,15 @@
 import React from 'react'
+import HtmlHead from '../HtmlHead'
 
 const Disclaimer = () => {
   return (
     <div>
+       <HtmlHead
+		title='Excelsior | Online Education Platform | Disclaimer'
+		desc='Best Data Science institute in Bengaluru and Delhi NCR'
+        kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+        pathname='https://getexcelsior.com/disclaimer'
+      />
         <div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
 				<h3 className='mb-4 '>Disclaimer</h3>

@@ -10,7 +10,7 @@ import {
 import images from '../../assets/images';
 import BlogCard from './components/BlogCard';
 import BlogMiniCard from './components/BlogMiniCard';
-
+import HtmlHead from '../HtmlHead';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 const { Meta } = Card;
@@ -41,12 +41,17 @@ const BlogDetail = () => {
 	return (
 		<>
 			<div className='blog__details-container section-container'>
-				
+			<HtmlHead
+				title='About Excelsior | Knowledge Center | Best Online Education Platform for Data Science'
+				desc='Enhance your knowledge about Data Science by reading carefully curated Blogs'
+				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+				pathname='{pathname}'
+			/>
 				<h2>Blog Detail</h2>
 				<Row gutter={[20, 30]} className='mt-20'>
 					<Col xs={24} sm={24} md={24} lg={18}>
 						<div className='blog__details-container'>
-							<img className='blog__details__image' src={blogId.fullimage} alt='food' />
+							<img className='blog__details__image' src={blogId.fullimage} alt='Data science Blogs' />
 							<div className='blog__details-content section'>
 								<h1>{blogId.title}</h1>
 
