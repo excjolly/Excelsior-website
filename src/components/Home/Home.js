@@ -542,7 +542,7 @@ const Home = () => {
 
 				<div className='mb-5'>
 					<Row gutter={[20, 30]}>
-						<Col xs={24} sm={24} md={24} lg={12} className='review-card'>
+						<Col xs={24} sm={24} md={24} lg={12} className='mb-5 d-flex flex-column'>
 							<h2 className='admission_heading' style={{ color: '#f35d5d' }}>
 								Latest News
 							</h2>
@@ -559,7 +559,7 @@ const Home = () => {
 								</div>
 							</Card>
 						</Col>
-							<Col xs={24} sm={24} md={24} lg={12} className='review-card'>
+							<Col xs={24} sm={24} md={24} lg={12} className='mb-5 d-flex flex-column'>
 							<h2 className='admission_heading '>Speak With Expert</h2>
 													
 					<Card style={{ backgroundColor: '#f35d5d' }}>
@@ -584,7 +584,7 @@ const Home = () => {
 				<div className='mt-5' id='Review' name='Review'>
 					<Review reviews={Program_DB_Master[0].reviews} />
 				</div>
-				<div className='mt-5' id='Blogs' name='Blogs'>
+				<div className='mt-5' id='Blogs' name='Recent Blogs'>
 								<Blogs/>						
 								
 							</div>

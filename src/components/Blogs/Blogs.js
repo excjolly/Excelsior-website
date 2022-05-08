@@ -94,6 +94,7 @@ const Blogs = () => {
         <Col xs={24} sm={24} md={24} lg={6}>
           <Card className="blogs__mail-list">
             <Form layout="vertical">
+              <h3 className="mb-2 custom-text-primary">Show your Data Science Knowledge</h3>
               <Form.Item>
                 <Input placeholder="Name" type="name"  onChange={(text)=>setName(text.target.value)
                 }/>
@@ -108,7 +109,7 @@ const Blogs = () => {
                 <Button  type="primary" icon={<UploadOutlined />}>Click to Upload</Button>
               </Upload> */}
               <Button onClick={()=>JoinFormSubmit()} className="mt-3" type="" icon={<RightOutlined />}>
-                Join Now
+                Submit
               </Button>
             </Form>
           </Card>
