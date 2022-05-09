@@ -593,7 +593,7 @@ button {
 		border-bottom-left-radius: $borderRadius;
 	}
 
-	&:nth-last-child(2){
+	&:nth-last-child(2) {
 		margin-bottom: 15px;
 	}
 	.blogs__must-read-card_content {
@@ -629,7 +629,6 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	padding: 30px 0px;
-
 }
 
 .blog__details__image {
@@ -671,7 +670,7 @@ button {
 	}
 }
 
-.blogs__details-advertise-blog{
+.blogs__details-advertise-blog {
 	background-color: $primaryColor;
 }
 
@@ -799,7 +798,7 @@ button {
 	padding: 15px 10px;
 	list-style: none;
 	display: grid;
-	grid-template-columns: 1.6fr repeat(3, 1fr);
+	grid-template-columns: 1.6fr repeat(2, 1fr);
 	justify-items: center;
 	align-items: center;
 	background-color: #ffffff;
@@ -815,7 +814,7 @@ button {
 	font-size: 1rem;
 }
 .programs_listdark {
-	color: #afafaf;
+	color: #000;
 }
 //3.quizes and events
 .quizes_events {
@@ -914,16 +913,24 @@ button {
 	margin-bottom: 10px;
 }
 .enroll_button {
-	border: none;
+	border: 1px solid transparent;
 	margin-top: 10px;
+	display: inline-block;
 	padding: 5px 20px;
 	background-color: white;
 	border-radius: 5px;
+	color: #000;
+	transition: all 0.1s;
 }
 .enroll_button:hover {
 	background-color: $primaryColor;
 	cursor: pointer;
 	color: white;
+	border-color: #fff;
+}
+.enroll_button:focus {
+	border-color: #fff;
+	outline: none;
 }
 .programs_insights {
 	background-color: rgba(255, 255, 255, 0.8);
@@ -1123,7 +1130,7 @@ button {
 .padding_card .ant-card-body {
 	padding: 0px !important;
 }
-.blogs_header{
+.blogs_header {
 	height: 100%;
 	cursor: pointer;
 }
@@ -1382,42 +1389,50 @@ button {
 		}
 	}
 }
-.blog__details-content{
-	cite{
+.blog__details-content {
+	cite {
 		font-style: normal !important;
-		article{
-			*{
-				font-family: "Montserrat", sans-serif !important;
+		article {
+			* {
+				font-family: 'Montserrat', sans-serif !important;
 			}
 		}
 	}
 }
 // .blog__details-content cite{font-style: normal !important;}.blog__details-content cite article *{font-family: "Montserrat", sans-serif !important;}
-.videoSlide{
-	li{
+.videoSlide {
+	li {
 		padding: 0 20px;
 	}
-	.react-multiple-carousel__arrow--left{
+	.react-multiple-carousel__arrow--left {
 		left: 2px;
 	}
-	.react-multiple-carousel__arrow--right{
+	.react-multiple-carousel__arrow--right {
 		right: 2px;
 	}
-	iframe{
+	iframe {
 		width: 100%;
 		height: 300px;
 		border: none;
 	}
 }
-.scrollContent{
+.scrollContent {
 	max-height: 380px;
 	overflow-y: scroll;
 }
-.antDate{
+.antDate {
 	width: 100%;
 }
 
-.home__app-info_speak-with-expert{
+.home__app-info_speak-with-expert {
 	height: 320px;
 	overflow-y: scroll;
+}
+
+.curriculum__download-btn {
+	margin-left: 1rem;
+	font-size: 16px;
+	padding: 10px 1rem;
+	border: 1px solid $primaryColor;
+	border-radius: 5px;
 }

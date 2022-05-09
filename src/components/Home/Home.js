@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import {
 	Row,
 	Col,
@@ -12,7 +12,6 @@ import {
 	Menu,
 	message,
 } from 'antd';
-import BlogMiniCard from '../Blogs/components/BlogMiniCard';
 import Blogs from '../programs/Blogs';
 
 import { RightOutlined } from '@ant-design/icons';
@@ -27,101 +26,95 @@ import { ToastContainer, toast } from 'react-toastify';
 import Program_DB_Master from '../../assets/static/Program_DB_Master';
 import HtmlHead from '../HtmlHead';
 import Review from '../programs/Review';
-import { CheckSquare, ChartUp, Star, Wizard, StartUp, Suitcase } from '../Icons';
-import {BiRupee} from 'react-icons/bi'
+import { CheckSquare, ChartUp, OnlineClass, StartUp, Suitcase } from '../Icons';
+import { BiRupee } from 'react-icons/bi';
 
 const { Option } = Select;
 const Home = () => {
 	const navigate = useNavigate();
-	const [name, setName] = useState();
+	const [name, setName] = useState('');
 	const [realted, setRelatedBlog] = useState([]);
-	const [email, setEmail] = useState();
-	const [currentFruit, setcurrentFruit] = useState();
-	const [subscribeEmail, setSubscribeEmail] = useState();
-	const [subscribeName, setSubscribeName] = useState();
-	const [phone, setPhone] = useState();
-	const [experience, setExperience] = useState();
-	const [emailName, setEmailName] = useState();
-	// const
-	const [HighestQualification, setHighestQualification] = useState();
-	const [registerFormCurrentStep, setRegisterFormCurrentStep] = useState(0);
-	const [statsData, setStatsData] = useState([
-		{
-			title: 'Total Placed',
-			text: '6600+ students',
-			icon: (
-				<CheckSquare
-					strokeWidth='1.2'
-					className='custom-text-primary'
-					width='28px'
-					height='28px'
-				/>
-			),
-		},
-		{
-			title: 'Average Salary Hike',
-			text: '53%',
-			icon: (
-				<ChartUp
-					strokeWidth='1.2'
-					className='custom-text-primary'
-					width='28px'
-					height='28px'
-				/>
-			),
-		},
-		{
-			title: 'Average Salary',
-			text: '10.7 LPA',
-			icon: (
-				<BiRupee
-					// strokeWidth='1.2'
-					className='custom-text-primary'
-					size='32px'
-				/>
-			),
-		},
-		{
-			title: 'Placement %',
-			text: '96.80%',
-			icon: (
-				<Wizard
-					strokeWidth='1.2'
-					className='custom-text-primary'
-					width='28px'
-					height='28px'
-				/>
-			),
-		},
-		{
-			title: 'Highest Salary',
-			text: '76.8 LPA',
-			icon: (
-				<StartUp
-					strokeWidth='1.2'
-					className='custom-text-primary'
-					width='28px'
-					height='28px'
-				/>
-			),
-		},
-		{
-			title: 'Number of Clients',
-			text: '160+',
-			icon: (
-				<Suitcase
-					strokeWidth='1.2'
-					className='custom-text-primary'
-					width='28px'
-					height='28px'
-				/>
-			),
-		},
-	]);
+	const [email, setEmail] = useState('');
+	const [subscribeEmail, setSubscribeEmail] = useState('');
+	const [subscribeName, setSubscribeName] = useState('');
+	const [phone, setPhone] = useState('');
+	const [experience, setExperience] = useState('default');
+	const [emailName, setEmailName] = useState('');
+	const [highestQualification, setHighestQualification] = useState('default');
+
+	const statsData = useMemo(
+		() => [
+			{
+				title: 'Total Placed',
+				text: '6600+ students',
+				icon: (
+					<CheckSquare
+						strokeWidth='1.2'
+						className='custom-text-primary'
+						width='28px'
+						height='28px'
+					/>
+				),
+			},
+			{
+				title: 'Average Salary Hike',
+				text: '53%',
+				icon: (
+					<ChartUp
+						strokeWidth='1.2'
+						className='custom-text-primary'
+						width='28px'
+						height='28px'
+					/>
+				),
+			},
+			{
+				title: 'Average Salary',
+				text: '10.7 LPA',
+				icon: <BiRupee className='custom-text-primary' size='32px' />,
+			},
+			{
+				title: 'Placement %',
+				text: '96.80%',
+				icon: (
+					<OnlineClass
+						strokeWidth='1.2'
+						className='custom-text-primary'
+						width='28px'
+						height='28px'
+					/>
+				),
+			},
+			{
+				title: 'Highest Salary',
+				text: '76.8 LPA',
+				icon: (
+					<StartUp
+						strokeWidth='1.2'
+						className='custom-text-primary'
+						width='28px'
+						height='28px'
+					/>
+				),
+			},
+			{
+				title: 'Number of Clients',
+				text: '160+',
+				icon: (
+					<Suitcase
+						strokeWidth='1.2'
+						className='custom-text-primary'
+						width='28px'
+						height='28px'
+					/>
+				),
+			},
+		],
+		[]
+	);
 	function clickToScroll() {
-		document
-			.getElementById('helpSection')
-			.scrollIntoView({ top: '-100px', behavior: 'smooth' });
+		const elRect = document.getElementById('first-step-form').getBoundingClientRect();
+		window.scrollTo({ top: elRect.top - 100, left: 0, behavior: 'smooth' });
 	}
 	function handleButtonClick(e) {
 		message.info('Click on left button.');
@@ -237,7 +230,7 @@ const Home = () => {
 		);
 	};
 	const homeSubmitApi = async () => {
-		if (!name && !email && !phone && !experience && !HighestQualification) {
+		if (!name && !email && !phone && !experience && !highestQualification) {
 			toast.error('Some Parameter is missing..');
 		} else {
 			if (validator.isEmail(email)) {
@@ -249,8 +242,8 @@ const Home = () => {
 						name: name,
 						email: email,
 						phone_number: phone,
-						experience: currentFruit,
-						qualification: HighestQualification,
+						experience: experience,
+						qualification: highestQualification,
 					};
 					console.log('home body is..', body);
 					let response = await axios.post(
@@ -261,8 +254,8 @@ const Home = () => {
 						setName('');
 						setEmail('');
 						setPhone('');
-						setExperience('');
-						setHighestQualification('');
+						setExperience('default');
+						setHighestQualification('default');
 						toast.success('Your Form is succefully submit');
 					} else {
 						toast.error('Your Form is not succefully submit');
@@ -330,7 +323,7 @@ const Home = () => {
 	}, []);
 	const getBlogList = async () => {
 		let response = await axios.get('http://3.111.207.167:8000/api/bloglist');
-		console.log(response.data.data);
+		// console.log(response.data.data);
 		if (response.data.data.length > 0) {
 			setRelatedBlog(response.data.data);
 		}
@@ -338,14 +331,7 @@ const Home = () => {
 	const gotoBlogPage = () => {
 		navigate('/blogs');
 	};
-	const changeFruit = (newFruit) => {
-		console.log('selected value is..', newFruit);
-		setcurrentFruit(newFruit);
-	};
-	const changeHighestQulaification = (newFruit) => {
-		console.log('selected value is..', newFruit);
-		setHighestQualification(newFruit);
-	};
+
 	return (
 		<div className='mb-5'>
 			<ToastContainer />
@@ -373,9 +359,9 @@ const Home = () => {
 								</h3>
 							</Col>
 						</Row>
-						{/* <button className='enroll_button' onClick={() => clickToScroll()}>
+						<button className='enroll_button' onClick={() => clickToScroll()}>
 							Get Started
-						</button> */}
+						</button>
 					</div>
 				</div>
 			</div>
@@ -402,7 +388,7 @@ const Home = () => {
 				</div>
 				<div className='mb-5'>
 					<Row gutter={[10, 30]}>
-						<Col xs={24} sm={24} md={8} lg={8}>
+						<Col xs={24} sm={24} md={8} lg={8} id='first-step-form'>
 							<h2
 								className='admission_heading'
 								id='helpSection'
@@ -434,7 +420,7 @@ const Home = () => {
 									>
 										<Input
 											value={email}
-											type='text'
+											type='email'
 											placeholder='Email Address '
 											onChange={(text) => setEmail(text.target.value)}
 										/>
@@ -459,41 +445,39 @@ const Home = () => {
 									</Form.Item>
 
 									<Form.Item>
-										<select
-											className='ant-input'
-											defaultValue='experience'
+										<Select
+											defaultValue='default'
 											name='experience'
 											id='experience'
-											value={currentFruit}
-											onChange={(event) => changeFruit(event.target.value)}
+											value={experience}
+											onChange={setExperience}
 										>
-											<option value='experience'>Experience</option>
-											<option value='fresher'>Fresher</option>
-											<option value='0-2yrs'>0-2 Years</option>
-											<option value='2-5yrs'>2-5 Years</option>
-											<option value='5-8yrs'>5-8 Years</option>
-											<option value='8+yrs'>8+ Years</option>
-										</select>
+											<Option value='default' disabled>
+												Experience
+											</Option>
+											<Option value='fresher'>Fresher</Option>
+											<Option value='0-2 yrs'>0-2 Years</Option>
+											<Option value='2-5 yrs'>2-5 Years</Option>
+											<Option value='5-8 yrs'>5-8 Years</Option>
+											<Option value='8+ yrs'>8+ Years</Option>
+										</Select>
 									</Form.Item>
 									<Form.Item>
-										<select
-											className='ant-input'
-											defaultValue='highest-qualification'
+										<Select
+											defaultValue='default'
 											name='highest-qualification'
 											id='highest-qualification'
-											value={HighestQualification}
-											onChange={(event) =>
-												changeHighestQulaification(event.target.value)
-											}
+											value={highestQualification}
+											onChange={setHighestQualification}
 										>
-											<option value='highest-qualification'>
+											<Option value='default' disabled>
 												Highest Qualification
-											</option>
-											<option value='UG'>Undergraduate</option>
-											<option value='Graduate'>Graduate</option>
-											<option value='PG'>Post Graduate</option>
-											<option value='PhD'>Ph.D</option>
-										</select>
+											</Option>
+											<Option value='Undergraduate'>Undergraduate</Option>
+											<Option value='Graduate'>Graduate</Option>
+											<Option value='Post Graduate'>Post Graduate</Option>
+											<Option value='Ph.D'>Ph.D</Option>
+										</Select>
 									</Form.Item>
 									<Form.Item shouldUpdate>
 										{() => (

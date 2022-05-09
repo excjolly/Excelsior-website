@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Wizard = ({ ...props }) => {
+const OnlineClass = ({ ...props }) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -9,7 +9,7 @@ const Wizard = ({ ...props }) => {
 			viewBox='0 0 20 20'
 			fill='none'
 			stroke='currentColor'
-			stroke-width='1.5'
+			strokeWidth='1.5'
 			strokeLinecap='round'
 			strokeLinejoin='round'
 			{...props}
@@ -21,4 +21,4 @@ const Wizard = ({ ...props }) => {
 	);
 };
 
-export default Wizard;
+export default OnlineClass;

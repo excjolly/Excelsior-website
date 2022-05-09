@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, Col, Form, Input, Row, Button, DatePicker, TimePicker } from 'antd';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
-import validator from 'validator'
+import validator from 'validator';
 import ProgramsCards from '../ProgramsCards';
 import Program_DB_Master from '../../../assets/static/Program_DB_Master';
 import { programData } from './data';
@@ -14,67 +14,66 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import HtmlHead from '../../HtmlHead';
 
-
 const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 2
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 2
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
+	superLargeDesktop: {
+		// the naming can be any, depends on you.
+		breakpoint: { max: 4000, min: 3000 },
+		items: 2,
+	},
+	desktop: {
+		breakpoint: { max: 3000, min: 1024 },
+		items: 2,
+	},
+	tablet: {
+		breakpoint: { max: 1024, min: 464 },
+		items: 2,
+	},
+	mobile: {
+		breakpoint: { max: 464, min: 0 },
+		items: 1,
+	},
 };
 
 const Program = () => {
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
 	const [phone, setPhone] = useState();
-	const [chooseDate,setChooseDate]=useState();
-	const [chooseTime,setChooseTime]=useState(moment());
+	const [chooseDate, setChooseDate] = useState();
+	const [chooseTime, setChooseTime] = useState(moment());
 	const ProgramFormSubmit = async () => {
 		if (!name && !email && !phone && !chooseDate && !chooseTime) {
 			toast.error('All Fileds is required');
 		} else {
 			if (validator.isEmail(email) && validator.isMobilePhone(phone)) {
-			let body = {
-				"name": name,
-				"email": email,
-				"phone_number": phone,
-				"date": chooseDate,
-				"time": chooseTime
+				let body = {
+					name: name,
+					email: email,
+					phone_number: phone,
+					date: chooseDate,
+					time: chooseTime,
+				};
+				console.log('event body is...', body);
+				let response = await axios.post('http://3.111.207.167:8000/api/events', body);
+				if (response.data.Success === 1) {
+					toast.success('Form succesfully submitted');
+				} else {
+					toast.error('Something went wrong into the server side');
 				}
-				console.log("event body is...",body)
-			let response = await axios.post('http://3.111.207.167:8000/api/events', body);
-			if (response.data.Success === 1) {
-				toast.success('Form succesfully submitted');
 			} else {
-				toast.error('Something went wrong into the server side');
+				toast.error('Email is not valid');
 			}
-		}else{
-			toast.error("Email is not valid")
 		}
-	}
 	};
-	const handleChange=(e,value)=>{
-		console.log("e",e);
-		console.log("vaule",value)
+	const handleChange = (e, value) => {
+		console.log('e', e);
+		console.log('vaule', value);
 		setChooseDate(value);
-	}
-	const handleValueChange = value => {
+	};
+	const handleValueChange = (value) => {
 		setChooseTime(value && value.format('HH:mm:ss'));
 		// this.setState({ value });
 		// console.log("Time is..",value);
-	  };
+	};
 
 	return (
 		<div className='container mt-3'>
@@ -103,13 +102,10 @@ const Program = () => {
 									<b>Name Of Program</b>
 								</ul>
 								<ul>
-									<b>Duration In Weeks</b>
+									<b>Duration (Weeks)</b>
 								</ul>
 								<ul>
 									<b>Rating</b>
-								</ul>
-								<ul>
-									<b>Completed By</b>
 								</ul>
 							</li>
 							{Program_DB_Master.map((e, index) => (
@@ -118,7 +114,6 @@ const Program = () => {
 										<ul className='custom-text-primary'>{e.nameOfProgram}</ul>
 										<ul className='programs_listdark'>{e.durationInWeeks}</ul>
 										<ul className='programs_listdark'>{e.rating}</ul>
-										<ul className='programs_listdark'>{e.completedBy}</ul>
 									</li>
 								</Link>
 							))}
@@ -126,17 +121,20 @@ const Program = () => {
 					</Col>
 					<Col className='mb-5' lg={24}>
 						<h2 className='admission_heading'>Live Sessions</h2>
-						<Carousel className='videoSlide' responsive={responsive}
-						autoPlay={false}
-						infinite={true}
+						<Carousel
+							className='videoSlide'
+							responsive={responsive}
+							autoPlay={false}
+							infinite={true}
 						>
-							<iframe src="https://www.youtube.com/embed/Y_wXF1Pe4AA"></iframe>
-							<iframe src="https://www.youtube.com/embed/Y_wXF1Pe4AA"></iframe>
-							<iframe src="https://www.youtube.com/embed/43GDcx1RuTk"></iframe>
-							<iframe src="https://www.youtube.com/embed/xneV8HU4ZyE"></iframe>
-							<iframe src="https://www.youtube.com/embed/suNHrZWVzE8"></iframe>
-							<iframe src="https://www.youtube.com/embed/bnmooThvUno"></iframe>
-						</Carousel>;
+							<iframe src='https://www.youtube.com/embed/Y_wXF1Pe4AA'></iframe>
+							<iframe src='https://www.youtube.com/embed/Y_wXF1Pe4AA'></iframe>
+							<iframe src='https://www.youtube.com/embed/43GDcx1RuTk'></iframe>
+							<iframe src='https://www.youtube.com/embed/xneV8HU4ZyE'></iframe>
+							<iframe src='https://www.youtube.com/embed/suNHrZWVzE8'></iframe>
+							<iframe src='https://www.youtube.com/embed/bnmooThvUno'></iframe>
+						</Carousel>
+						;
 					</Col>
 				</Row>
 			</div>
@@ -243,8 +241,11 @@ const Program = () => {
 										},
 									]}
 								>
-									<DatePicker className='antDate'  onChange={(value, e) => handleChange(value, e)}
-   selected={chooseDate} />
+									<DatePicker
+										className='antDate'
+										onChange={(value, e) => handleChange(value, e)}
+										selected={chooseDate}
+									/>
 								</Form.Item>
 								<Form.Item
 									name='time'
@@ -255,7 +256,12 @@ const Program = () => {
 										},
 									]}
 								>
-									<TimePicker className='antDate' format={'HH:mm'} value={chooseTime} onChange={handleValueChange} />
+									<TimePicker
+										className='antDate'
+										format={'HH:mm'}
+										value={chooseTime}
+										onChange={handleValueChange}
+									/>
 								</Form.Item>
 								<Form.Item shouldUpdate>
 									{() => (

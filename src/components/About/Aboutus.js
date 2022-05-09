@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import HtmlHead from '../HtmlHead';
 import banner from '../../assets/images/AboutUs.png';
-import { CheckSquare, ChartUp, Star, Wizard, StartUp, Suitcase } from '../Icons';
+import { CheckSquare, ChartUp, Star, OnlineClass, StartUp, Suitcase } from '../Icons';
 
 function Aboutus() {
 	return (
@@ -16,7 +16,7 @@ function Aboutus() {
 				desc='Students can enrol in online courses on topics such as Data Analytics, Marketing Analytics, and Artificial Intelligence. Get in touch with us at +91-9289470444, or email us at info@getexcelsior.com.'
 				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
 				pathname='https://getexcelsior.com/aboutus'
-				/>
+			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
 				<p className='mb-4'>We don't just train, We make careers</p>
@@ -127,7 +127,7 @@ function Aboutus() {
 											className='d-flex align-items-center justify-content-center'
 											size={42}
 											src={
-												<Wizard
+												<OnlineClass
 													strokeWidth='1.2'
 													className='custom-text-primary'
 													width='30px'

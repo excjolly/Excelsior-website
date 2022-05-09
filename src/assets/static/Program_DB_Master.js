@@ -1,20 +1,26 @@
 import DSforIT from '../images/DSforIT.png';
 import i1 from '../images/Home page Program Icons/DS for IT.png';
+import DSforITCurriculum from '../Brochure/Specialization in Data Science For IT.pdf';
 
 import DSforFinance from '../images/DS for Finance.png';
 import i2 from '../images/Home page Program Icons/DS for Finance.png';
+import DSforFinanceCurriculum from '../Brochure/Specialization in Data Science For Finance.pdf';
 
 import DeepLearning from '../images/Deep Learning.png';
 import i3 from '../images/Home page Program Icons/Deep Learning.png';
+import DeepLearningCurriculum from '../Brochure/Complete Deep Learning Program.pdf';
 
 import ML from '../images/Machine Learning with Python.png';
 import i4 from '../images/Home page Program Icons/Machine Learning with Python.png';
+import MLCurriculum from '../Brochure/Machine Learning with Python.pdf';
 
 import DataAnalytics from '../images/Data Analytics.png';
 import i5 from '../images/Home page Program Icons/Data Analytics.png';
+import DataAnalyticsCurriculum from '../Brochure/Data Analytics Program.pdf';
 
 import PythonBootcamp from '../images/Python Bootcamp.png';
 import i6 from '../images/Home page Program Icons/Python Bootcamp.png';
+import PythonBootcampCurriculum from '../Brochure/Python Preparatory Course.pdf';
 
 import mentor1 from '../images/ashutosh.png';
 import mentor2 from '../images/charuchhabra.webp';
@@ -261,6 +267,7 @@ const Program_DB_Master = [
 					],
 				},
 			],
+			file: DSforITCurriculum,
 		},
 		admissionProcedure: {
 			description: 'Your steps to success',
@@ -467,8 +474,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I have been to many well-known Data Science / Machine Learning courses in Bangalore. But I could not find the right course which could help me to land my first job in this field. Then, I found Excelsior. Our mentor Mr. Sachin was so helpful and so knowledgeable in this field that he could guide me throughout the course and they helped me to get placed in a Top MNC through his their extensive placement program.',
-				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/',	
-				},
+				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/',
+			},
 			{
 				name: 'Suresh Goel (Data Scientist - Amazon)',
 				imageURL:
@@ -476,8 +483,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I took Excelsior’s course to learn how to do Data Science from a theoretical perspective, and I was not disappointed. The course is accessible to a wide range of students, and the materials are top notch. The professor is a real Data Scientist who knows his stuff and explains it well. The assignments are varied and thought provoking. The placement process was excellent and very transparent.',
-				linkedin: 'https://www.linkedin.com/in/suresh-goel-092014227/'
-				},
+				linkedin: 'https://www.linkedin.com/in/suresh-goel-092014227/',
+			},
 			{
 				name: 'Hemanth Reddy (Data Scientist - Airtel)',
 				imageURL:
@@ -485,8 +492,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science.',
-				linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
-				},
+				linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/',
+			},
 			{
 				name: 'T Pavan Kumar (Data Scientist - IBM)',
 				imageURL:
@@ -494,8 +501,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It was a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
-				linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
-				},
+				linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/',
+			},
 			{
 				name: 'Neelam Singhal (Data Scientist - Goldman Sachs)',
 				imageURL:
@@ -503,8 +510,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I highly recommend Excelsior Data Science Courses. The best part is that they have a placement team that will help you get a job after the course which absolutely rocks! I loved their 1-on-1 classes where I learnt from someone who has been in the field for quite a while!',
-				linkedin: 'https://www.linkedin.com/in/neelam-singhal-6347bb223/'
-				},
+				linkedin: 'https://www.linkedin.com/in/neelam-singhal-6347bb223/',
+			},
 			{
 				name: 'Neelam Gupta (Data Scientist - AWS)',
 				imageURL:
@@ -512,8 +519,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I just wanted to thank you all. I finished Excelsior Data Science for IT program recently and it was great. The materials were clear and simple, so it didn’t take me much time to finish the program. And now I have got a job at my dream Company',
-				linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/'
-				},
+				linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/',
+			},
 		],
 		faq: [
 			{
@@ -907,6 +914,7 @@ const Program_DB_Master = [
 					],
 				},
 			],
+			file: DSforFinanceCurriculum,
 		},
 		admissionProcedure: {
 			description: 'Your steps to success',
@@ -1376,18 +1384,36 @@ const Program_DB_Master = [
 			dropdownQuestion: [
 				{
 					question: 'What does a Data Scientist do in an Finance product companies?',
-					answer:(
+					answer: (
 						<>
-						A Data Scientist has a very vast area of work. But a Data Scientist who has expertise in AI, deep learning, and machine learning is already in high demand. And the demand will keep rising. Here is the typical hiring profile of a Data Scientist: 
-						<br />
-						<ul className='px-4'>
-
-						<li>A Data Scientist should be able to efficiently use Python libraries like Scikit Learn, PyTorch, Tensor Flow, and NumPy. </li>
-						<li>A Data Scientist should be able to build predictive models like Random Forest, Gradient Boosting, Neural Networks etc. </li>
-						<li> A Data Scientist should be able to communicate his/her ideas and results to Management, Technical people, and Business people.</li>
-						<li>A Data Scientist should be able to extract insights from data, create results, and present them to others. Here are some of the popular job postings for AI, deep learning and machine learning engineers: Google, Amazon, Microsoft, Airbnb, Facebook and many more.'</li>
-				
-						</ul>
+							A Data Scientist has a very vast area of work. But a Data Scientist
+							who has expertise in AI, deep learning, and machine learning is
+							already in high demand. And the demand will keep rising. Here is the
+							typical hiring profile of a Data Scientist:
+							<br />
+							<ul className='px-4'>
+								<li>
+									A Data Scientist should be able to efficiently use Python
+									libraries like Scikit Learn, PyTorch, Tensor Flow, and NumPy.{' '}
+								</li>
+								<li>
+									A Data Scientist should be able to build predictive models like
+									Random Forest, Gradient Boosting, Neural Networks etc.{' '}
+								</li>
+								<li>
+									{' '}
+									A Data Scientist should be able to communicate his/her ideas
+									and results to Management, Technical people, and Business
+									people.
+								</li>
+								<li>
+									A Data Scientist should be able to extract insights from data,
+									create results, and present them to others. Here are some of
+									the popular job postings for AI, deep learning and machine
+									learning engineers: Google, Amazon, Microsoft, Airbnb, Facebook
+									and many more.'
+								</li>
+							</ul>
 						</>
 					),
 				},
@@ -1539,6 +1565,7 @@ const Program_DB_Master = [
 					],
 				},
 			],
+			file: DeepLearningCurriculum,
 		},
 		admissionProcedure: {
 			description: 'Your steps to success',
@@ -1745,8 +1772,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I have always been interested in Learning Data Science, but never had the time to study for it. When I found out about Excelsior and their online, accelerated course, I was instantly intrigued. The course is well organized with a good mix of Live Classes, reading material and videos. It also provides a great way to learn through hands on experiences while working on real world projects and learning what we have to use.',
-				linkedin: 'https://www.linkedin.com/in/suresh-gupta-2b962622a/'
-				},
+				linkedin: 'https://www.linkedin.com/in/suresh-gupta-2b962622a/',
+			},
 			{
 				name: 'Neelam Singhal (Data Scientist - Goldman Sachs)',
 				imageURL:
@@ -1754,8 +1781,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I highly recommend Excelsior Data Science Courses. The best part is that they have a placement team that will help you get a job after the course which absolutely rocks! I loved their 1-on-1 classes where I learnt from someone who has been in the field for quite a while!',
-				linkedin: 'https://www.linkedin.com/in/neelam-singhal-6347bb223/'
-				},
+				linkedin: 'https://www.linkedin.com/in/neelam-singhal-6347bb223/',
+			},
 			{
 				name: 'Suresh Goel (Data Scientist - Amazon)',
 				imageURL:
@@ -1763,8 +1790,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I took Excelsior’s course to learn how to do Data Science from a theoretical perspective, and I was not disappointed. The course is accessible to a wide range of students, and the materials are top notch. The professor is a real Data Scientist who knows his stuff and explains it well. The assignments are varied and thought provoking. The placement process was excellent and very transparent.',
-				linkedin: 'https://www.linkedin.com/in/suresh-goel-092014227/'
-				},
+				linkedin: 'https://www.linkedin.com/in/suresh-goel-092014227/',
+			},
 			{
 				name: 'Shashank Sinha (Data Scientist - Paytm)',
 				imageURL:
@@ -1772,8 +1799,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I have been to many well-known Data Science / Machine Learning courses in Bangalore. But I could not find the right course which could help me to land my first job in this field. Then, I found Excelsior. Excelsior mentor Mr. Sachin was so helpful and so knowledgeable in this field that he could guide me throughout the course and they helped me to get placed in a Top MNC through his their extensive placement program.',
-				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/'
-				},
+				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/',
+			},
 			{
 				name: 'Harshita (Data Scientist - Mondelez International)',
 				imageURL:
@@ -1781,8 +1808,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I was a fresher in Analytics industry, and I wanted to start my career in Data Science. I needed guidance from an expert for this. Excelsior’s Team is very supportive and helped me a lot to get started with in this field. They provided me with in-depth curriculum and detailed teaching which helped me in achieving my goals in the right direction.',
-				linkedin: 'https://www.linkedin.com/in/harshita-rampal-06a971224/'
-				},
+				linkedin: 'https://www.linkedin.com/in/harshita-rampal-06a971224/',
+			},
 			{
 				name: 'Hemanth Reddy (Data Scientist - Airtel)',
 				imageURL:
@@ -1790,8 +1817,8 @@ const Program_DB_Master = [
 				rating: 5,
 				description:
 					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science.',
-				linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
-				},
+				linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/',
+			},
 		],
 		faq: [
 			{
@@ -2118,6 +2145,7 @@ const Program_DB_Master = [
 					],
 				},
 			],
+			file: MLCurriculum,
 		},
 		admissionProcedure: {
 			description: 'Your steps to success',
@@ -2264,7 +2292,8 @@ const Program_DB_Master = [
 			{
 				title: 'Loan eligibility prediction',
 				description:
-					'Building a machine learning model to accurately predict if a loan applicant is going to pay off or default the loan would help banks avoid financial loss. In this data science project, you will use historical data from past loans and build predictive models using machine learning algorithms. You will be learning data procurement and pre-processing before applying machine learning algorithms such as Gradient boosting and XGBoost to calculate various metrics to identify the best model that predicts whether a customer is eligible for loan or not. The implications of accurate prediction would be impacted on different groups of people across all sorts of businesses.',			},
+					'Building a machine learning model to accurately predict if a loan applicant is going to pay off or default the loan would help banks avoid financial loss. In this data science project, you will use historical data from past loans and build predictive models using machine learning algorithms. You will be learning data procurement and pre-processing before applying machine learning algorithms such as Gradient boosting and XGBoost to calculate various metrics to identify the best model that predicts whether a customer is eligible for loan or not. The implications of accurate prediction would be impacted on different groups of people across all sorts of businesses.',
+			},
 			{
 				title: 'Cafe’s Retail Selling Price',
 				description:
@@ -2323,8 +2352,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Excelsior is the best Data Science institute in Bangalore. They offer a wide range of courses to learn Data Science. Moreover, they have one of the best placement program which helps the students to get placed in top companies. Big thanks to Mr. Sandeep and the entire Excelsior team for helping me to get my dream job in Data Science field.',
-				linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/'
-				},
+				linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/',
+			},
 			{
 				name: 'Vikram (Data Scientist-Axis)',
 				imageURL:
@@ -2332,8 +2361,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I liked the class, it was easy to follow and understand. I have a good understanding of Python and Data Science now. Overall I really liked the class and feel like I learned a lot.',
-				linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/'
-				},
+				linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/',
+			},
 			{
 				name: 'T Pavan Kumar(Data Scientist-IBM)',
 				imageURL:
@@ -2341,8 +2370,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It is a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
-					linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
-				},
+				linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/',
+			},
 			{
 				name: 'Rahul Goswami (Marketing Analyst-Chegg)',
 				imageURL:
@@ -2350,8 +2379,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Being from Civil Engineering Background, I was afraid of coding. . I have been really anxious about learning Data Science, Excelsior has given me that confidence. Support is excellent and very empathetic. I was able to easily follow my passion for numbers in the Marketing Analytics course.',
-					linkedin: 'https://www.linkedin.com/in/torahulgoswami/'
-				},
+				linkedin: 'https://www.linkedin.com/in/torahulgoswami/',
+			},
 			{
 				name: 'Neelam Gupta(Data Scientist-AWS)',
 				imageURL:
@@ -2359,8 +2388,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I just wanted to thank you all. I finished Excelsior Data Science for IT program recently and it was great. The materials were clear and simple, so it didn’t take me much time to finish the program. And now I have got a job at my dream Company',
-					linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/'
-				},
+				linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/',
+			},
 			{
 				name: 'Deepak(Data Scientist-Reliance Jio)',
 				imageURL:
@@ -2368,8 +2397,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Excelsior has a well-designed course that is broken down into easily manageable sections. The Excelsior team is responsive to questions and requests, and they do an excellent job of keeping the community engaged. I will recommend this course to anyone who wants to learn how to use Data in a practical way but does not have time for a degree program.',
-					linkedin: 'https://www.linkedin.com/in/deepak-kumar-909812229/'
-				},
+				linkedin: 'https://www.linkedin.com/in/deepak-kumar-909812229/',
+			},
 		],
 		faq: [
 			{
@@ -2557,7 +2586,7 @@ const Program_DB_Master = [
 		pathname: '/programs/data-analytics',
 		nameOfProgram: 'Data Analytics',
 		durationInWeeks: '16',
-		rating: 4.3 ,
+		rating: 4.3,
 		completedBy: 577,
 		demoVideoURL: 'https://youtu.be/Y_wXF1Pe4AA',
 		banner: DataAnalytics,
@@ -2587,9 +2616,9 @@ const Program_DB_Master = [
 				{
 					question: 'What does a Data Analyst do?',
 					answer:
-					'A data analyst is responsible for performing the data analysis and reporting in a company. The focus of a data analyst is on collecting the data, information and statistics that are essential to the functioning of a company. They usually carry out the analytical procedures on the basis of the research data or the past data that is available in the company. It is the responsibility of a data analyst to prepare reports about the functioning of a company for senior members and CEOs of the organization. Data analysts are responsible for ensuring that the data related to the performance of the company is correctly interpreted and communicated to the target audience. They work closely with the marketing and sales teams in a company to provide them with the data that they require.',
-			},
-				
+						'A data analyst is responsible for performing the data analysis and reporting in a company. The focus of a data analyst is on collecting the data, information and statistics that are essential to the functioning of a company. They usually carry out the analytical procedures on the basis of the research data or the past data that is available in the company. It is the responsibility of a data analyst to prepare reports about the functioning of a company for senior members and CEOs of the organization. Data analysts are responsible for ensuring that the data related to the performance of the company is correctly interpreted and communicated to the target audience. They work closely with the marketing and sales teams in a company to provide them with the data that they require.',
+				},
+
 				{
 					question: 'Who can enroll for this course and what are the prerequisites?',
 					answer:
@@ -2666,6 +2695,7 @@ const Program_DB_Master = [
 					],
 				},
 			],
+			file: DataAnalyticsCurriculum,
 		},
 		admissionProcedure: {
 			description: 'Your steps to success',
@@ -2872,8 +2902,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I liked the class, it was easy to follow and understand. I have a good understanding of Python and Data Science now. Overall I really liked the class and feel like I learned a lot.',
-				linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/'
-				},
+				linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/',
+			},
 			{
 				name: 'Nishant Gupta(Data Scientist-HDFC)',
 				imageURL:
@@ -2881,8 +2911,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Excelsior is the best Data Science institute in Bangalore. They offer a wide range of courses to learn Data Science. Moreover, they have one of the best placement program which helps the students to get placed in top companies. Big thanks to Mr. Sandeep and the entire Excelsior team for helping me to get my dream job in Data Science field.',
-					linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/'
-				},
+				linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/',
+			},
 			{
 				name: 'T Pavan Kumar(Data Scientist-IBM)',
 				imageURL:
@@ -2890,8 +2920,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It is a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
-					linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
-				},
+				linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/',
+			},
 			{
 				name: 'Neelam Gupta(Data Scientist-AWS)',
 				imageURL:
@@ -2899,8 +2929,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I just wanted to thank you all. I finished Excelsior Data Science for IT program recently and it was great. The materials were clear and simple, so it didn’t take me much time to finish the program. And now I have got a job at my dream Company',
-					linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/'
-				},
+				linkedin: 'https://www.linkedin.com/in/neelam-gupta-a7a62922a/',
+			},
 			{
 				name: 'Deepak(Data Scientist-Reliance Jio)',
 				imageURL:
@@ -2908,8 +2938,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Excelsior has a well-designed course that is broken down into easily manageable sections. The Excelsior team is responsive to questions and requests, and they do an excellent job of keeping the community engaged. I will recommend this course to anyone who wants to learn how to use Data in a practical way but does not have time for a degree program.',
-					linkedin: 'https://www.linkedin.com/in/deepak-kumar-909812229/'
-				},
+				linkedin: 'https://www.linkedin.com/in/deepak-kumar-909812229/',
+			},
 			{
 				name: 'Nishant Singh (Data Scientist- RBS)',
 				imageURL:
@@ -2917,8 +2947,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Excelsior is a very good institute to learn Business Intelligence & Analytics because they have a very good team of faculties who are experts in their field. They really helped me a lot when I was stuck and guided me towards the right direction. I recommend Excelsior to anyone who wants to learn Business Intelligence or Analytics.',
-					linkedin: 'https://www.linkedin.com/in/nishant-singh-15b745223/'
-				},
+				linkedin: 'https://www.linkedin.com/in/nishant-singh-15b745223/',
+			},
 		],
 		faq: [
 			{
@@ -3188,6 +3218,7 @@ const Program_DB_Master = [
 					],
 				},
 			],
+			file: PythonBootcampCurriculum,
 		},
 		admissionProcedure: {
 			description: 'Your steps to success',
@@ -3234,18 +3265,16 @@ const Program_DB_Master = [
 				question: [
 					{
 						name: 'What does ISA mean?',
-						answer:
-						'ISA plan is not available for this program.'
-			}
-		],
+						answer: 'ISA plan is not available for this program.',
+					},
+				],
 			},
 			{
 				typeOfPayment: 'EMI and Finanical AD',
 				question: [
 					{
 						name: 'EMI Options',
-						answer:
-						'EMI Option is not available for this program.'
+						answer: 'EMI Option is not available for this program.',
 					},
 				],
 			},
@@ -3384,8 +3413,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I have been to many well-known Data Science / Machine Learning courses in Bangalore. But I could not find the right course which could help me to land my first job in this field. Then, I found Excelsior. Excelsior mentor Mr. Sachin was so helpful and so knowledgeable in this field that he could guide me throughout the course and they helped me to get placed in a Top MNC through his their extensive placement program.',
-				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/'
-				},
+				linkedin: 'https://www.linkedin.com/in/shashank-singh-3a022b22a/',
+			},
 			{
 				name: 'Nishant Gupta(Data Scientist-HDFC)',
 				imageURL:
@@ -3393,8 +3422,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Excelsior is the best Data Science institute in Bangalore. They offer a wide range of courses to learn Data Science. Moreover, they have one of the best placement program which helps the students to get placed in top companies. Big thanks to Mr. Sandeep and the entire Excelsior team for helping me to get my dream job in Data Science field.',
-					linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/'
-				},
+				linkedin: 'https://www.linkedin.com/in/nishant-gupta-1a0484229/',
+			},
 			{
 				name: 'Hemanth Reddy(Data Scientist-Airtel)',
 				imageURL:
@@ -3402,8 +3431,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I am writing this review to thank Excelsior for making Data Science online course. I have recently completed this course and it was the best decision I have made in my life. The course is well designed with details, examples, exercises, lectures and assignments. The mentors are really helpful, and they helped me to clear all my doubts regarding the program. They always replied to my emails on time, and I also got a job through Brilliant Data Science.',
-					linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/'
-				},
+				linkedin: 'https://www.linkedin.com/in/hemanth-reddy-b3a273225/',
+			},
 			{
 				name: 'Rahul Goswami (Marketing Analyst-Chegg)',
 				imageURL:
@@ -3411,8 +3440,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'Being from Civil Engineering Background, I was afraid of coding. . I have been really anxious about learning Data Science, Excelsior has given me that confidence. Support is excellent and very empathetic. I was able to easily follow my passion for numbers in the Marketing Analytics course.',
-					linkedin: 'https://www.linkedin.com/in/torahulgoswami/'
-				},
+				linkedin: 'https://www.linkedin.com/in/torahulgoswami/',
+			},
 			{
 				name: 'T Pavan Kumar(Data Scientist-IBM)',
 				imageURL:
@@ -3420,8 +3449,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'My experience with the course and support team has been very positive. The Excelsior team is friendly and always available to answer questions, and they provide a good mix of reading material and videos. It is a challenging course with a steep learning curve, but it is also very rewarding. I would recommend the Excelsior to anyone who is willing to learn with hands on experience.',
-					linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/'
-				},
+				linkedin: 'https://www.linkedin.com/in/t-pavan-k-699314227/',
+			},
 			{
 				name: 'Vikram (Data Scientist-Axis)',
 				imageURL:
@@ -3429,8 +3458,8 @@ const Program_DB_Master = [
 				rating: 4.5,
 				description:
 					'I liked the class, it was easy to follow and understand. I have a good understanding of Python and Data Science now. Overall I really liked the class and feel like I learned a lot.',
-					linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/'
-				},
+				linkedin: 'https://www.linkedin.com/in/vikram-rajput-9a5698226/',
+			},
 		],
 		faq: [
 			{

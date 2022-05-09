@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Helmet from 'react-helmet';
 import { Link as ScrollLink } from 'react-scroll';
 import ProgramHeader from './ProgramHeader';
 import KeyHighlights from './KeyHighlights';
@@ -15,9 +14,6 @@ import Blogs from './Blogs';
 import SpeakWithExpert from './SpeakWithExpert';
 import FAQ from './FAQ';
 import HtmlHead from '../HtmlHead';
-import Program_DB_Master from '../../assets/static/Program_DB_Master';
-import { Pathname } from 'react-router-dom';
-import { Carousel } from 'antd';
 
 const ProgramDetails = ({ programData }) => {
 	useEffect(() => {
@@ -44,11 +40,13 @@ const ProgramDetails = ({ programData }) => {
 				pathname={`https://getexcelsior.com/programs${programData.pathname}`}
 			/>
 			<div className='container mt-4'>
-				<h1 className='Banner_Heading'>EXCELSIOR</h1>
+				<h2 className='Banner_Heading' style={{ fontSize: '28px' }}>
+					EXCELSIOR
+				</h2>
 				<p className='mb-4 '>We don't just train, We make careers</p>
 			</div>
 			<div className='programDetails'>
-				{programData.length != 0 ? (
+				{programData.length !== 0 ? (
 					<>
 						<ProgramHeader programData={programData} />
 						<KeyHighlights highlight={programData.highlight} />
