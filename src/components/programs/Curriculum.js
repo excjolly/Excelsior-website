@@ -71,7 +71,7 @@ function Curriculum({ curriculum }) {
 			<h2 className='curriculum_heading custom-text-primary mb-4'>
 				<span>Curriculum</span>
 				<a href={curriculum.file} download className='curriculum__download-btn'>
-					Download Curriculum{' '}
+					Download {' '}
 					<Download
 						strokeWidth='1.2'
 						className='ml-1 custom-text-primary'
