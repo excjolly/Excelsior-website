@@ -247,7 +247,7 @@ const Home = () => {
 					};
 					console.log('home body is..', body);
 					let response = await axios.post(
-						'http://3.111.207.167:8000/api/help',
+						'https://getexcelsior.com/api/api/help',
 						body
 					);
 					if (response.data.Success === 1) {
@@ -301,7 +301,7 @@ const Home = () => {
 				};
 				console.log('body..', body);
 				let response = await axios.post(
-					'http://3.111.207.167:8000/api/Subscribe',
+					'https://getexcelsior.com/api/api/Subscribe',
 					body
 				);
 				console.log('res', response.data);
@@ -322,7 +322,7 @@ const Home = () => {
 		// let response=await
 	}, []);
 	const getBlogList = async () => {
-		let response = await axios.get('http://3.111.207.167:8000/api/bloglist');
+		let response = await axios.get('https://getexcelsior.com/api/api/bloglist');
 		// console.log(response.data.data);
 		if (response.data.data.length > 0) {
 			setRelatedBlog(response.data.data);

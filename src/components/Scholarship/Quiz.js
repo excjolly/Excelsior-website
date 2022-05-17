@@ -73,7 +73,7 @@ function Quiz() {
 				quiz: id,
 				session_id: '',
 			};
-			let response = await axios.post('http://3.111.207.167:8000/api/session', body);
+			let response = await axios.post('https://getexcelsior.com/api/api/session', body);
 			// console.log("response..",response.data.data)
 			if (response.data.Success === 1) {
 				localStorage.setItem('user_Data', JSON.stringify(response.data.data));
@@ -94,7 +94,7 @@ function Quiz() {
 		for (var i = 0; i < ele.length; i++) ele[i].checked = false;
 
 		let response = await axios.get(
-			`http://3.111.207.167:8000/api/quizquestion?quiz_id=${id}`
+			`https://getexcelsior.com/api/api/quizquestion?quiz_id=${id}`
 		);
 		// console.log("Quiz .......",response.data);
 		array1 = [];
@@ -163,7 +163,7 @@ function Quiz() {
 		};
 		console.log('bodyyy..', body);
 		setLoader(true);
-		let responce = await axios.post('http://3.111.207.167:8000/api/submitanswer', body);
+		let responce = await axios.post('https://getexcelsior.com/api/api/submitanswer', body);
 		// console.log("rfinal array is..",responce.data);
 		setTotalCorrect(responce.data.totalcorrect);
 		setTotalWrong(responce.data.totalwrong);
@@ -204,7 +204,7 @@ function Quiz() {
 					<Card className='quizz_list'>
 						<img
 							className='card-img-top sh-25'
-							src={`http://3.111.207.167:8000/uploads/quiz/${image}`}
+							src={`https://getexcelsior.com/api/uploads/quiz/${image}`}
 							alt='card-image'
 						/>
 						<div className='p-4'>

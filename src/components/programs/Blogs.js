@@ -10,7 +10,7 @@ function Blogs() {
 		blogList()
 	},[])
 	const blogList=async()=>{
-		let response=await axios.get('http://3.111.207.167:8000/api/bloglist');
+		let response=await axios.get('https://getexcelsior.com/api/api/bloglist');
 		console.log(response.data.data);
 		if(response.data.data.length>0){
 		  setData(response.data.data)

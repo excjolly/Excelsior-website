@@ -35,7 +35,7 @@ function Curriculum({ curriculum }) {
 					};
 					console.log('home body is..', body);
 					let response = await axios.post(
-						'http://3.111.207.167:8000/api/help',
+						'https://getexcelsior.com/api/api/help',
 						body
 					);
 					if (response.data.Success === 1) {

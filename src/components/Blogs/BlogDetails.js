@@ -18,7 +18,7 @@ const BlogDetail = () => {
 		let body = {
 			id: blogId.id,
 		};
-		let response = await axios.post('http://3.111.207.167:8000/api/blogdetail', body);
+		let response = await axios.post('https://getexcelsior.com/api/api/blogdetail', body);
 		console.log('particular res..', response.data);
 		if (response.data.data) {
 			setDetails(response.data.data);

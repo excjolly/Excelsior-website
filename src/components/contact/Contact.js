@@ -36,7 +36,7 @@ function Contact() {
 			experience: currentFruit,
 			comments : comment
 		};
-		let response = await axios.post('http://3.111.207.167:8000/api/contact_us', body);
+		let response = await axios.post('https://getexcelsior.com/api/api/contact_us', body);
 		console.log('contact us', response.data.Success);
 		if (response.data.Success === 1) {
 			toast.success('Form Successfully submitted');

@@ -53,7 +53,7 @@ const Program = () => {
 					time: chooseTime,
 				};
 				console.log('event body is...', body);
-				let response = await axios.post('http://3.111.207.167:8000/api/events', body);
+				let response = await axios.post('https://getexcelsior.com/api/api/events', body);
 				if (response.data.Success === 1) {
 					toast.success('Form succesfully submitted');
 				} else {

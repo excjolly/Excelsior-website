@@ -19,7 +19,7 @@ function Scholarship() {
 getAllQuiz()
   },[])
   const getAllQuiz=async()=>{
-    let response= await axios.get('http://3.111.207.167:8000/api/quiz')
+    let response= await axios.get('https://getexcelsior.com/api/api/quiz')
     console.log("vikas",response.data);
     if(response.data.data.length>0){
       setQuiz(response.data.data);
