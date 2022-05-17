@@ -1,8 +1,8 @@
-import { Button, Col, Divider, Form, Input, Row,Card } from 'antd';
+import { Button, Col, Divider, Form, Input, Row, Card } from 'antd';
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
 import axios from 'axios';
-import validator from 'validator'
+import validator from 'validator';
 import banner from '../../assets/images/contact.png';
 import HtmlHead from '../HtmlHead';
 import { ToastContainer, toast } from 'react-toastify';
@@ -13,58 +13,61 @@ function Contact() {
 	const [phone, setPhone] = useState();
 	const [comment, setComment] = useState();
 	const [chooseProgram, setChooseProgram] = useState();
-	const [currentFruit,setcurrentFruit]=useState();
-	const [HighestQualification,setHighestQualification]=useState();
+	const [currentFruit, setcurrentFruit] = useState();
+	const [HighestQualification, setHighestQualification] = useState();
 	// const [experience,setExperience]=useState();
 	const contactUs = async () => {
-		if(!name && !email && !phone && !currentFruit && !HighestQualification){
-			toast.error("All fileds are required")
-		}else{
-			if (validator.isEmail(email)) {
-		let body = {
-			// name: name,
-			// company_name: company,
-			// email: email,
-			// phone_number: phone,
-			// program: chooseProgram,
-			// comments: comment,
-			name: name,
-     
-			email:email,
-			phone_number:phone,
-			qualification: HighestQualification,
-			experience: currentFruit,
-			comments : comment
-		};
-		let response = await axios.post('https://getexcelsior.com/api/api/contact_us', body);
-		console.log('contact us', response.data.Success);
-		if (response.data.Success === 1) {
-			toast.success('Form Successfully submitted');
+		if (!name && !email && !phone && !currentFruit && !HighestQualification) {
+			toast.error('All fileds are required');
 		} else {
-			toast.warning('Form not  submitted');
+			if (validator.isEmail(email)) {
+				let body = {
+					// name: name,
+					// company_name: company,
+					// email: email,
+					// phone_number: phone,
+					// program: chooseProgram,
+					// comments: comment,
+					name: name,
+
+					email: email,
+					phone_number: phone,
+					qualification: HighestQualification,
+					experience: currentFruit,
+					comments: comment,
+				};
+				let response = await axios.post(
+					'http://3.111.207.167:8000/api/contact_us',
+					body
+				);
+				console.log('contact us', response.data.Success);
+				if (response.data.Success === 1) {
+					toast.success('Form Successfully submitted');
+				} else {
+					toast.warning('Form not  submitted');
+				}
+			} else {
+				toast.error('Email is not Valid');
+			}
 		}
-	}else{
-		toast.error("Email is not Valid")
-	}
-}
 	};
 	const changeFruit = (newFruit) => {
-		console.log("selected value is..",newFruit)
-		setcurrentFruit(newFruit)
-	  }
-	  const changeHighestQulaification=(newFruit)=>{
-		console.log("selected value is..",newFruit)
-		setHighestQualification(newFruit)
-	  }
+		console.log('selected value is..', newFruit);
+		setcurrentFruit(newFruit);
+	};
+	const changeHighestQulaification = (newFruit) => {
+		console.log('selected value is..', newFruit);
+		setHighestQualification(newFruit);
+	};
 
 	return (
 		<>
 			<ToastContainer />
 			<HtmlHead
-		title='Excelsior | Online Education Platform | Contact'
-		desc='Reach out to the Best Data Science institute in Bengaluru and Delhi NCR'
-        kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
-		pathname='https://getexcelsior.com/contact/'
+				title='Excelsior | Online Education Platform | Contact'
+				desc='Reach out to the Best Data Science institute in Bengaluru and Delhi NCR'
+				kw='Best Data Science Course, Machine Learning Courses, Best online Course in Delhi NCR, Best online course in Bengaluru, Specialization in Data Science for Finance, Specialization in Data Science for IT, Finance Data Science, Data Science for IT, Deep Learning, Python programming, Machine Learning, Data Analytics, Financial Analytics '
+				pathname='https://getexcelsior.com/contact/'
 			/>
 			<div className='container mt-4'>
 				<h1 className='Banner_Heading'>EXCELSIOR</h1>
@@ -83,7 +86,13 @@ function Contact() {
 						<Row>
 							<Col lg={12}>
 								<h3 className='mb-4 text-white' style={{ lineHeight: '1.5' }}>
-								Make a difference in the Data Science Job Market. Contact us to start learning the right way. Whether you're seeking a one-on-one mentorship, or are interested in one of our live data science workshops, we can help. If you need to learn how to become a Data Scientist, then Excelsior is for you. This course will help you master the state-of‐the-art machine learning tools and techniques.
+									Make a difference in the Data Science Job Market. Contact us to
+									start learning the right way. Whether you're seeking a
+									one-on-one mentorship, or are interested in one of our live
+									data science workshops, we can help. If you need to learn how
+									to become a Data Scientist, then Excelsior is for you. This
+									course will help you master the state-of‐the-art machine
+									learning tools and techniques.
 								</h3>
 							</Col>
 						</Row>
@@ -135,9 +144,7 @@ function Contact() {
 							</div>
 							<div className='mt-5'>
 								<div className='mb-3'>
-									<h2 className='mb-5 custom-text-primary'>
-										Points of Contact
-									</h2>
+									<h2 className='mb-5 custom-text-primary'>Points of Contact</h2>
 									<div className='mb-4'>
 										<div className='d-flex mb-3'>
 											<h6>
@@ -158,7 +165,9 @@ function Contact() {
 											<h6>Know about the course</h6>
 										</div>
 										<div className='mb-3'>
-											<a href='#'>contact@getexcelsior.com</a>
+											<a href='mailto:contact@getexcelsior.com'>
+												contact@getexcelsior.com
+											</a>
 										</div>
 									</div>
 									<div className='mb-4'>
@@ -166,7 +175,9 @@ function Contact() {
 											<h6>Speak to a Career Counselor</h6>
 										</div>
 										<div className='mb-3'>
-											<a href='#'>info@getexcelsior.com</a>
+											<a href='mailto:info@getexcelsior.com'>
+												info@getexcelsior.com
+											</a>
 										</div>
 									</div>
 									<div className='mb-4'>
@@ -174,34 +185,43 @@ function Contact() {
 											<h6>Speak to a Data Scientist</h6>
 										</div>
 										<div className='mb-3'>
-											<a href='#'>dscounselling@getexcelsior.com</a>
+											<a href='mailto:dscounselling@getexcelsior.com'>
+												dscounselling@getexcelsior.com
+											</a>
 										</div>
 									</div>
 								</div>
 								<div className='mb-4'>
-										<div className='mb-3'>
-											<h6>OUR CONTACT NUMBER</h6>
-										</div>
-										<div className='mb-3'>
-											<a href='#'><ul><li>tel: +91 9289460444</li>
-															<li>tel: +91 9289460555</li>
-															</ul></a>
-										</div>
+									<div className='mb-3'>
+										<h6>OUR CONTACT NUMBER</h6>
 									</div>
-									<div className='mb-4'>
-										<div className='mb-3'>
-											<h6>Whatsapp Us</h6>
-										</div>
-										<div className='mb-3'>
-											<a href='https://wa.me/+919289460444' target="_blank" rel="noreferrer">+91 9289460444 </a>
-															
-										</div>
+									<div className='mb-3'>
+										<a href='tel:+91 9289460444'>
+											<li>tel: +91 9289460444</li>
+										</a>
+										<a href='tel:+91 9289460555'>
+											<li>tel: +91 9289460555</li>
+										</a>
 									</div>
+								</div>
+								<div className='mb-4'>
+									<div className='mb-3'>
+										<h6>Whatsapp Us</h6>
+									</div>
+									<div className='mb-3'>
+										<a
+											href='https://wa.me/+919289460444'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											+91 9289460444
+										</a>
+									</div>
+								</div>
 							</div>
-
 						</Col>
 						<Col xs={24} sm={24} md={12} lg={12}>
-						<Card>
+							<Card>
 								<Form name='horizontal_login' layout='outline'>
 									<Form.Item
 										name='name'
@@ -241,7 +261,7 @@ function Contact() {
 										className='mb-3'
 									>
 										<Input
-										min={9}
+											min={9}
 											value={phone}
 											type='number'
 											placeholder='Phone Number '
@@ -259,7 +279,7 @@ function Contact() {
 											onChange={(event) => changeFruit(event.target.value)}
 										>
 											<option value='experience'>Experience</option>
-											<option value='fresher' >Fresher</option>
+											<option value='fresher'>Fresher</option>
 											<option value='0-2yrs'>0-2 Years</option>
 											<option value='2-5yrs'>2-5 Years</option>
 											<option value='5-8yrs'>5-8 Years</option>
@@ -273,7 +293,9 @@ function Contact() {
 											name='highest-qualification'
 											id='highest-qualification'
 											value={HighestQualification}
-											onChange={(event) => changeHighestQulaification(event.target.value)}
+											onChange={(event) =>
+												changeHighestQulaification(event.target.value)
+											}
 										>
 											<option value='highest-qualification'>
 												Highest Qualification
@@ -287,7 +309,10 @@ function Contact() {
 									<Form.Item
 										name='Comment'
 										rules={[
-											{ required: true, message: 'Please input your comment!' },
+											{
+												required: true,
+												message: 'Please input your comment!',
+											},
 										]}
 										className='mb-3'
 									>
