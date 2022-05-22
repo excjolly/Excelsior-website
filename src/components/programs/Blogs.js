@@ -1,8 +1,7 @@
 import { Card } from 'antd';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import moment from 'moment';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function Blogs() {
 	const navigate = useNavigate();
 	const [Data, setData] = useState([]);
