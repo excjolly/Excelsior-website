@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /path
+Sitemap: https://getexcelsior.com/sitemap.xml
